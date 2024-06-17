@@ -62,8 +62,8 @@ export default function CheckboxesTags() {
 
     return (
 
-
-      <div className='bg-teal-100 w-svw h-screen text-black'>
+      <div className='flex overflow-auto'>
+      <div className='bg-teal-100 absolute h-full w-full items-center justify-center text-black overflow-auto'>
       <div className='p-10 mx-auto w-4/5 text-black'>  
       <h1 className='mx-auto w-4/5'><p>SAIT Course Offerings (2024 Fall)</p></h1>
       <Autocomplete className='m-5 mx-auto w-1/2'
@@ -88,7 +88,7 @@ export default function CheckboxesTags() {
         ))}
       </div> */}
 
-      <div>
+      <div className= 'p-8 rounded-lg shadow-md'>
         {filteredList.map((item, index, arr) => {
           const prevItem = arr[index - 1];
           const isNewValue = prevItem ? item.value !== prevItem.value : true;
@@ -106,6 +106,7 @@ export default function CheckboxesTags() {
         })}
       </div>
 
+    </div>
     </div>
     </div>
 
