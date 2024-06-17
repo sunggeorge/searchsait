@@ -66,6 +66,7 @@ export default function DataFetcher() {
               </div>
             )
           }
+          
           else {
             return (
               <div className="p-2 text-center bg-blue-500">

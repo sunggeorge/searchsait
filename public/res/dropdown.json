@@ -1,0 +1,1923 @@
+{
+  "data": [
+    {
+      "label": "ACCT1010    Introductory Financial Accounting I",
+      "group": "ACCT"
+    },
+    { "label": "ACCT2010    Accounting for Managers", "group": "ACCT" },
+    {
+      "label": "ACCT2020    Introductory Management Accounting",
+      "group": "ACCT"
+    },
+    {
+      "label": "ACCT206    Financial Accounting for the Hospitality Industry",
+      "group": "ACCT"
+    },
+    {
+      "label": "ACCT215    Introductory Financial Accounting I",
+      "group": "ACCT"
+    },
+    { "label": "ACCT225    Accounting for Managers", "group": "ACCT" },
+    { "label": "ACCT2375     Introduction to Taxation", "group": "ACCT" },
+    {
+      "label": "ACCT255    Introductory Financial Accounting II",
+      "group": "ACCT"
+    },
+    { "label": "ACCT3010    External Auditing", "group": "ACCT" },
+    { "label": "ACCT3020    Personal and Corporate Taxation", "group": "ACCT" },
+    {
+      "label": "ACCT315    Intermediate Financial Accounting I",
+      "group": "ACCT"
+    },
+    {
+      "label": "ACCT3210    Intermediate Financial Accounting I",
+      "group": "ACCT"
+    },
+    {
+      "label": "ACCT338    Introductory Management Accounting",
+      "group": "ACCT"
+    },
+    {
+      "label": "ACCT350    Intermediate Financial Accounting II",
+      "group": "ACCT"
+    },
+    { "label": "ACCT352    Energy Accounting", "group": "ACCT" },
+    { "label": "ACCT375    Introduction to Taxation", "group": "ACCT" },
+    {
+      "label": "ACCT380    Intermediate Management Accounting",
+      "group": "ACCT"
+    },
+    { "label": "ACCT395    Computer Accounting Software", "group": "ACCT" },
+    { "label": "ACCT4020    Accounting Theory", "group": "ACCT" },
+    { "label": "ACCT411    Personal and Corporate Taxation", "group": "ACCT" },
+    { "label": "ACCT4117    Applied External Audit", "group": "ACCT" },
+    { "label": "ACCT413    Internal Auditing and Controls", "group": "ACCT" },
+    { "label": "ACCT4130    Advanced Information Systems", "group": "ACCT" },
+    { "label": "ACCT415    Accounting Theory", "group": "ACCT" },
+    { "label": "ACCT416    Advanced Information Systems", "group": "ACCT" },
+    {
+      "label": "ACCT418    Applied Personal and Corporate Taxation",
+      "group": "ACCT"
+    },
+    { "label": "ACCT4220    Advanced Management Accounting", "group": "ACCT" },
+    { "label": "ACCT434    Advanced Financial Accounting", "group": "ACCT" },
+    { "label": "ACCT4410    Advanced Financial Accounting", "group": "ACCT" },
+    { "label": "ACCT491    Advanced Management Accounting", "group": "ACCT" },
+    { "label": "ACCT495    External Auditing", "group": "ACCT" },
+    {
+      "label": "ACWE300    Business Diploma Integrative Experience Capstone",
+      "group": "ACWE"
+    },
+    {
+      "label": "ACWE410    Cyber Security Analyst Field Placement",
+      "group": "ACWE"
+    },
+    { "label": "ACWE4990    Business Practicum", "group": "ACWE" },
+    {
+      "label": "ACWE500    Directed Field Studies - Accounting I",
+      "group": "ACWE"
+    },
+    {
+      "label": "ACWE501    Directed Field Studies - Accounting II",
+      "group": "ACWE"
+    },
+    { "label": "ADMN411    Team Skills", "group": "ADMN" },
+    { "label": "ADVR304    Radio Advertising II", "group": "ADVR" },
+    { "label": "AERO200    Advanced Mapping for RPAS", "group": "AERO" },
+    { "label": "AERO201    Basic Mapping for RPAS", "group": "AERO" },
+    {
+      "label": "AERO202    Beyond Visual Line of Sight Operations (BVLOS)",
+      "group": "AERO"
+    },
+    { "label": "AERO206    Aircraft Windows and Lenses", "group": "AERO" },
+    {
+      "label": "AERO208    Remotely Piloted Aircraft Systems - Professional Flight School",
+      "group": "AERO"
+    },
+    { "label": "AERO209    RPAS System Servicing", "group": "AERO" },
+    { "label": "AERO211    Aircraft Wood and Fabric Repair", "group": "AERO" },
+    {
+      "label": "AERO212    RPAS - Professional Operations and Planning",
+      "group": "AERO"
+    },
+    {
+      "label": "AERO214    Introduction to Aircraft Structures",
+      "group": "AERO"
+    },
+    {
+      "label": "AERO215    Introduction to Basic Aircraft Systems",
+      "group": "AERO"
+    },
+    { "label": "AERO220    Aerodynamics", "group": "AERO" },
+    {
+      "label": "AMAT220    Applied Mathematics for Aircraft Maintenance",
+      "group": "AMAT"
+    },
+    { "label": "AMAT240    Applied Mathematics for Business", "group": "AMAT" },
+    { "label": "AMEC306    Applied Mechanics I", "group": "AMEC" },
+    {
+      "label": "ANPH200    Physiology and Physical Assessment",
+      "group": "ANPH"
+    },
+    {
+      "label": "ANPH201    Physiology and Physical Assessment",
+      "group": "ANPH"
+    },
+    { "label": "ANPH202    Anatomy and Pathology 1", "group": "ANPH" },
+    { "label": "ANPH204    Human Anatomy and Physiology", "group": "ANPH" },
+    { "label": "ANPH205    Sectional Anatomy", "group": "ANPH" },
+    { "label": "ANPH209    Anatomy and Physiology", "group": "ANPH" },
+    { "label": "ANPH215    Anatomy and Physiology", "group": "ANPH" },
+    { "label": "ANPH220    Anatomy and Applied Terminology", "group": "ANPH" },
+    { "label": "ANPR300    Analysis and Presentation", "group": "ANPR" },
+    { "label": "ANTH2230    Indigenous Studies", "group": "ANTH" },
+    { "label": "APPH202    Calculations and Science", "group": "APPH" },
+    { "label": "APPH226    Apparatus and Image Management", "group": "APPH" },
+    { "label": "APSC180    Science Preparation", "group": "APSC" },
+    {
+      "label": "APSC202    Applied Chemistry for Instrumentation",
+      "group": "APSC"
+    },
+    {
+      "label": "APSC215    Applied Physics for Instrumentation",
+      "group": "APSC"
+    },
+    {
+      "label": "APSC250    Science for Trades and Technicians",
+      "group": "APSC"
+    },
+    { "label": "ARCH1010    History of Architecture", "group": "ARCH" },
+    { "label": "ARCH200    Documentation and Regulation I", "group": "ARCH" },
+    { "label": "ARCH201    Science and Systems I", "group": "ARCH" },
+    { "label": "ARCH203    Technology I", "group": "ARCH" },
+    { "label": "ARCH205    Research and Design I", "group": "ARCH" },
+    { "label": "ARCH261    Science and Systems II", "group": "ARCH" },
+    { "label": "ARCH262    Documentation and Regulation II", "group": "ARCH" },
+    { "label": "ARCH263    Technology II", "group": "ARCH" },
+    { "label": "ARCH285    Research and Design II", "group": "ARCH" },
+    {
+      "label": "ARCH300    Documentation &amp; Regulation III",
+      "group": "ARCH"
+    },
+    { "label": "ARCH301    Science and Systems III", "group": "ARCH" },
+    { "label": "ARCH303    Technology III", "group": "ARCH" },
+    { "label": "ARCH305    Research and Design III", "group": "ARCH" },
+    {
+      "label": "ARCP210    Reciprocating Engine Fundamentals Theory",
+      "group": "ARCP"
+    },
+    {
+      "label": "ARCP215    Reciprocating Engine Fundamentals Lab",
+      "group": "ARCP"
+    },
+    {
+      "label": "AREG250    Introduction to Canadian Aviation Regulatory Requirements",
+      "group": "AREG"
+    },
+    {
+      "label": "ARTI404    Web Development and Cloud Computing",
+      "group": "ARTI"
+    },
+    { "label": "ARTI406    Human-Centred AI", "group": "ARTI" },
+    {
+      "label": "ARTI407    Introduction to Natural Language Processing",
+      "group": "ARTI"
+    },
+    { "label": "ARTI408    Introduction to Computer Vision", "group": "ARTI" },
+    { "label": "ARTI409    AI Management and Maintenance", "group": "ARTI" },
+    { "label": "ASYS220    Aircraft Systems Theory", "group": "ASYS" },
+    { "label": "ASYS225    Aircraft Systems Laboratory", "group": "ASYS" },
+    { "label": "ASYS245    Aircraft Systems I", "group": "ASYS" },
+    {
+      "label": "ASYS307    Electrical System Interfacing and Installation Theory",
+      "group": "ASYS"
+    },
+    { "label": "ASYS310    Aircraft Navigation Systems", "group": "ASYS" },
+    { "label": "ASYS340    Aircraft Systems II", "group": "ASYS" },
+    {
+      "label": "ASYS351    Electrical Interface II Laboratory",
+      "group": "ASYS"
+    },
+    { "label": "AUDI203    Introduction to Radio", "group": "AUDI" },
+    {
+      "label": "AUDI300    Technical Operations for Broadcast News II",
+      "group": "AUDI"
+    },
+    { "label": "AUDI322    Radio Production II", "group": "AUDI" },
+    { "label": "AUDI324    Radio Operations II", "group": "AUDI" },
+    { "label": "AVTR315    Aircraft Technical Records", "group": "AVTR" },
+    {
+      "label": "AVTR353    Introduction  to Technical Records",
+      "group": "AVTR"
+    },
+    {
+      "label": "BAKE219    Introduction to Basic Bread Making",
+      "group": "BAKE"
+    },
+    { "label": "BAKE227    Introduction to Cooking", "group": "BAKE" },
+    { "label": "BAKE228    Bakery Fundamentals", "group": "BAKE" },
+    {
+      "label": "BAKE252    Introduction to Cakes and Decorating Techniques",
+      "group": "BAKE"
+    },
+    { "label": "BAKE256    Introduction to Pastry Making", "group": "BAKE" },
+    { "label": "BAKE300    Art of Chocolate", "group": "BAKE" },
+    { "label": "BAKE320    Fine Pastries", "group": "BAKE" },
+    { "label": "BAKE365    Advanced Yeast Products", "group": "BAKE" },
+    {
+      "label": "BCMP1225    Business Productivity Tools and Technology",
+      "group": "BCMP"
+    },
+    {
+      "label": "BCMP215    Collaborative Software and Technologies",
+      "group": "BCMP"
+    },
+    { "label": "BCMP220    Business Software Foundations", "group": "BCMP" },
+    {
+      "label": "BCMP225    Business Productivity Tools and Technology",
+      "group": "BCMP"
+    },
+    { "label": "BCMP250    Word Processing Essentials", "group": "BCMP" },
+    { "label": "BCMP260    Spreadsheet Essentials", "group": "BCMP" },
+    { "label": "BCMP270    Presentation Software", "group": "BCMP" },
+    {
+      "label": "BCMP300    Advanced Word Processing Applications",
+      "group": "BCMP"
+    },
+    {
+      "label": "BCMP310    Advanced Spreadsheet Applications",
+      "group": "BCMP"
+    },
+    { "label": "BCMP320    Database Software for Business", "group": "BCMP" },
+    { "label": "BCMP330    Design Software for Business", "group": "BCMP" },
+    { "label": "BCMP340    Project Management Software", "group": "BCMP" },
+    { "label": "BEVM210    Beverage Exploration I", "group": "BEVM" },
+    { "label": "BEVM300    Beverage Exploration II", "group": "BEVM" },
+    { "label": "BEVM350    Beverage Exploration III", "group": "BEVM" },
+    { "label": "BFIN2301    Finance for Managers", "group": "BFIN" },
+    { "label": "BFIN2333    Money and Banking", "group": "BFIN" },
+    {
+      "label": "BFIN2380    Financial Planning Process and Estate Planning",
+      "group": "BFIN"
+    },
+    { "label": "BFIN2386    Integrated Finance", "group": "BFIN" },
+    { "label": "BFIN255    Personal Financial Planning", "group": "BFIN" },
+    { "label": "BFIN301    Finance for Managers", "group": "BFIN" },
+    { "label": "BFIN3010    Intermediate Finance I", "group": "BFIN" },
+    { "label": "BFIN333    Money and Banking", "group": "BFIN" },
+    {
+      "label": "BFIN341    Risk Management and Retirement Planning",
+      "group": "BFIN"
+    },
+    { "label": "BFIN356    Mutual Funds and Securities", "group": "BFIN" },
+    { "label": "BFIN360    Relationship Selling", "group": "BFIN" },
+    {
+      "label": "BFIN380    Financial Planning Process and Estate Planning",
+      "group": "BFIN"
+    },
+    { "label": "BFIN386    Integrated Finance", "group": "BFIN" },
+    { "label": "BFIN4020    Advanced Finance I", "group": "BFIN" },
+    {
+      "label": "BFIN430    Financial Control, Budgets, and Planning",
+      "group": "BFIN"
+    },
+    { "label": "BFIN492    Advanced Corporate Finance", "group": "BFIN" },
+    { "label": "BIOL181    Biology I", "group": "BIOL" },
+    { "label": "BIOL182    Biology II", "group": "BIOL" },
+    { "label": "BIOL201    Biology and Field Ecology", "group": "BIOL" },
+    {
+      "label": "BIOL2220    Organisms and their Relationships",
+      "group": "BIOL"
+    },
+    { "label": "BLAW2030    Business Law", "group": "BLAW" },
+    { "label": "BLAW205    Business Law", "group": "BLAW" },
+    { "label": "BLAW300    Business Law", "group": "BLAW" },
+    {
+      "label": "BLAW301    Legal, Ethical and Security for Digital Organizations",
+      "group": "BLAW"
+    },
+    { "label": "BLPR214    Carpentry Blueprint Reading", "group": "BLPR" },
+    { "label": "BLPR229    Blueprint Reading 1", "group": "BLPR" },
+    { "label": "BLPR232    Drawings and Specifications", "group": "BLPR" },
+    { "label": "BLPR239    Cabinetmaking Blueprint Reading", "group": "BLPR" },
+    {
+      "label": "BLPR282    Blueprint Reading for Welding Engineering Technology",
+      "group": "BLPR"
+    },
+    { "label": "BLPR301    Blueprint Reading (CAD/CAM) 3", "group": "BLPR" },
+    { "label": "BLPR307    Industrial Blueprint Reading", "group": "BLPR" },
+    { "label": "BMAT1040    Business Mathematics", "group": "BMAT" },
+    {
+      "label": "BMAT201    Digital Technology for Business Math Applications",
+      "group": "BMAT"
+    },
+    { "label": "BMAT230    Business Mathematics", "group": "BMAT" },
+    { "label": "CADD308    Geomatics CADD Applications", "group": "CADD" },
+    { "label": "CBMK220    Cabinet Making Shop I", "group": "CBMK" },
+    { "label": "CBMK221    Cabinet Making Theory I", "group": "CBMK" },
+    { "label": "CDAB210    Data Classification 1", "group": "CDAB" },
+    { "label": "CDAB310    Data Classification 3", "group": "CDAB" },
+    { "label": "CHEM181    Chemistry I", "group": "CHEM" },
+    { "label": "CHEM182    Chemistry II", "group": "CHEM" },
+    { "label": "CHEM213    Chemistry and the Environment", "group": "CHEM" },
+    { "label": "CHEM224    Engineering Chemistry I", "group": "CHEM" },
+    { "label": "CHEM232    Petroleum Engineering Chemistry", "group": "CHEM" },
+    { "label": "CHEM240    General Chemistry", "group": "CHEM" },
+    { "label": "CHEM270    Basic Laboratory Techniques", "group": "CHEM" },
+    { "label": "CHEM276    Analytical Laboratory Skills", "group": "CHEM" },
+    { "label": "CHEM303    Chemometric Applications", "group": "CHEM" },
+    { "label": "CHEM345    Unit Chemical Process Operations", "group": "CHEM" },
+    {
+      "label": "CHEN308    Chemical Engineering Calculations",
+      "group": "CHEN"
+    },
+    { "label": "CHEN309    Process Computer Simulation Lab", "group": "CHEN" },
+    { "label": "CHEN312    Unit Operations Laboratory", "group": "CHEN" },
+    { "label": "CHEN313    Heat Transfer", "group": "CHEN" },
+    { "label": "CHEN314    Mass Transfer", "group": "CHEN" },
+    { "label": "CHEN402    Fluid Phase Behaviour", "group": "CHEN" },
+    { "label": "CHEN405    Process Engineering", "group": "CHEN" },
+    { "label": "CHEN465    Process Design Using Computers", "group": "CHEN" },
+    { "label": "CIVL201    Introduction to Civil Drafting", "group": "CIVL" },
+    { "label": "CIVL2010    Structures I", "group": "CIVL" },
+    { "label": "CIVL222    Concrete Technology", "group": "CIVL" },
+    { "label": "CIVL226    Soil Mechanics", "group": "CIVL" },
+    { "label": "CIVL252    Construction Practices Theory", "group": "CIVL" },
+    {
+      "label": "CIVL301    Structural Design for Technologists",
+      "group": "CIVL"
+    },
+    { "label": "CIVL302    Virtual and Augmented Reality", "group": "CIVL" },
+    { "label": "CIVL303    Advanced Drafting", "group": "CIVL" },
+    { "label": "CIVL304    Building Systems", "group": "CIVL" },
+    { "label": "CIVL305    Construction Modelling", "group": "CIVL" },
+    { "label": "CIVL306    Civil Drafting and Modelling", "group": "CIVL" },
+    { "label": "CIVL3110    Construction Productivity", "group": "CIVL" },
+    { "label": "CIVL312    Contracts and Regulations", "group": "CIVL" },
+    { "label": "CIVL315    Project Planning and Control", "group": "CIVL" },
+    { "label": "CIVL318    Water Resources", "group": "CIVL" },
+    { "label": "CIVL326    Geotechnical Design", "group": "CIVL" },
+    { "label": "CIVL328    Asphalt Technology", "group": "CIVL" },
+    { "label": "CIVL340    Building Science and Systems", "group": "CIVL" },
+    { "label": "CIVL351    Structural Steel Design", "group": "CIVL" },
+    { "label": "CIVL353    Transportation Engineering", "group": "CIVL" },
+    { "label": "CIVL355    Reinforced Concrete Design", "group": "CIVL" },
+    { "label": "CIVL4110    Value Engineering", "group": "CIVL" },
+    { "label": "CLAW3011    Construction Law", "group": "CLAW" },
+    {
+      "label": "CMPC401    Security Standards and Compliance",
+      "group": "CMPC"
+    },
+    {
+      "label": "CMPC402    Industrial Control System Security",
+      "group": "CMPC"
+    },
+    {
+      "label": "CMPC403    Industrial Control System Security Risk Assessment",
+      "group": "CMPC"
+    },
+    { "label": "CMPH209    Introduction to Hardware", "group": "CMPH" },
+    { "label": "CMPH239    IT Essentials", "group": "CMPH" },
+    { "label": "CMPH365    Aircraft Computers", "group": "CMPH" },
+    {
+      "label": "CMPN274    Oracle Architecture and Administration",
+      "group": "CMPN"
+    },
+    { "label": "CMPN276    Internetworks Level I", "group": "CMPN" },
+    { "label": "CMPN277    Internetworks Level II", "group": "CMPN" },
+    { "label": "CMPN317    Remote Automation Systems", "group": "CMPN" },
+    { "label": "CMPN337    Distributed Control Systems I", "group": "CMPN" },
+    {
+      "label": "CMPN403    Networking Protocols and Security",
+      "group": "CMPN"
+    },
+    {
+      "label": "CMPP252    Oracle Fundamentals: SQL and PL/SQL",
+      "group": "CMPP"
+    },
+    {
+      "label": "CMPP264    Java Programming for Object Oriented Software Development",
+      "group": "CMPP"
+    },
+    {
+      "label": "CMPP267    Database Operating Systems Network Fundamentals",
+      "group": "CMPP"
+    },
+    { "label": "CMPP273    Data Modelling and RDB Design", "group": "CMPP" },
+    { "label": "CNTR224    Refrigeration Controls I", "group": "CNTR" },
+    { "label": "CNTR300    Control Systems", "group": "CNTR" },
+    {
+      "label": "CNTR309    PLC- Premium Unity Pro Applications",
+      "group": "CNTR"
+    },
+    { "label": "CNTR322    Process Control Systems I", "group": "CNTR" },
+    { "label": "CNTR358    PLC - Contrologix Applications", "group": "CNTR" },
+    { "label": "CNTR360    AutoPilot and Control Systems", "group": "CNTR" },
+    {
+      "label": "CNTR405    Instrumentation and Process Control",
+      "group": "CNTR"
+    },
+    { "label": "CODE232    Electrical Code I", "group": "CODE" },
+    { "label": "CODE270    Materials and Processes for NDT", "group": "CODE" },
+    { "label": "CODE315    Codes and Regulations", "group": "CODE" },
+    {
+      "label": "COMM1070    Communication and Presentation Skills",
+      "group": "COMM"
+    },
+    { "label": "COMM181    Literature and Composition II", "group": "COMM" },
+    { "label": "COMM182    Literature and Composition III", "group": "COMM" },
+    { "label": "COMM238    Technical Communications I", "group": "COMM" },
+    { "label": "COMM249    Technical Communications", "group": "COMM" },
+    {
+      "label": "COMM256    Professional Communication and Presentation Skills",
+      "group": "COMM"
+    },
+    {
+      "label": "COMM265    Communication Fundamentals and Technology",
+      "group": "COMM"
+    },
+    {
+      "label": "COMM267    Professional Communication Skills",
+      "group": "COMM"
+    },
+    { "label": "COMM288    Technical Communications II", "group": "COMM" },
+    { "label": "COMM300    Intercultural Communications", "group": "COMM" },
+    { "label": "COMM3300    Intercultural Communications", "group": "COMM" },
+    { "label": "COMM3310    Presentations", "group": "COMM" },
+    { "label": "COMM352    Communicating in the Workplace", "group": "COMM" },
+    { "label": "COMM405    Industrial Communications", "group": "COMM" },
+    { "label": "COMM415    Professional Communications", "group": "COMM" },
+    { "label": "COMN180    Literature and Composition I", "group": "COMN" },
+    {
+      "label": "COMN200    Communications in Early Childhood Education",
+      "group": "COMN"
+    },
+    {
+      "label": "COMN220    Communication and Presentation Skills",
+      "group": "COMN"
+    },
+    {
+      "label": "COMN280    Communication and Presentation Skills II",
+      "group": "COMN"
+    },
+    {
+      "label": "COMP213    Computing for Engineering Technology",
+      "group": "COMP"
+    },
+    { "label": "COMP220    Computer Fundamentals", "group": "COMP" },
+    {
+      "label": "COMP241    Digital Applications and Laboratory Information System",
+      "group": "COMP"
+    },
+    { "label": "COMP254    Petroleum Computer Applications", "group": "COMP" },
+    { "label": "COMP261    Applied Digital Technologies", "group": "COMP" },
+    {
+      "label": "COMP264    Introduction to Digital Productivity Applications",
+      "group": "COMP"
+    },
+    {
+      "label": "COMP267    Introduction to Digital Productivity Applications and Web Design",
+      "group": "COMP"
+    },
+    { "label": "COOK204    Culinary Fundamentals", "group": "COOK" },
+    { "label": "COOK207    Breakfast and Brunch", "group": "COOK" },
+    { "label": "COOK217    Vegetables and Starches", "group": "COOK" },
+    { "label": "COOK223    Fundamentals of Cold Foods", "group": "COOK" },
+    { "label": "COOK227    Soup, Sauces and Stock", "group": "COOK" },
+    {
+      "label": "COOK233    Classic and Contemporary Hot Foods",
+      "group": "COOK"
+    },
+    { "label": "COOK253    Butchery for Chefs", "group": "COOK" },
+    { "label": "COOK263    Quick Service Cooking", "group": "COOK" },
+    { "label": "COOK267    Baking and Yeast Goods", "group": "COOK" },
+    {
+      "label": "COOK303    Contemporary Restaurant Cuisine &ndash; Lunch",
+      "group": "COOK"
+    },
+    { "label": "COOK304    Exploration of Canadian Cuisine", "group": "COOK" },
+    { "label": "COOK307    Patisserie", "group": "COOK" },
+    {
+      "label": "COOK317    Contemporary Restaurant Cuisine - Dinner",
+      "group": "COOK"
+    },
+    { "label": "COOK333    Garde Manger", "group": "COOK" },
+    { "label": "COOK350    Exploration of Global Cuisines", "group": "COOK" },
+    { "label": "CPLN240    Career Planning and Management", "group": "CPLN" },
+    {
+      "label": "CPMT1010    Introduction to Construction Project Management",
+      "group": "CPMT"
+    },
+    { "label": "CPMT2010    Project Planning and Scheduling", "group": "CPMT" },
+    {
+      "label": "CPMT3020    Project Delivery Systems and Contracts",
+      "group": "CPMT"
+    },
+    {
+      "label": "CPMT3110    Heavy Construction Equipment and Methods",
+      "group": "CPMT"
+    },
+    { "label": "CPMT4060    Scope and Design Management", "group": "CPMT" },
+    {
+      "label": "CPMT4110    Project Organization and Supervision",
+      "group": "CPMT"
+    },
+    { "label": "CPNT200    Content Management Systems", "group": "CPNT" },
+    { "label": "CPNT201    Web Design Tools and Techniques", "group": "CPNT" },
+    {
+      "label": "CPNT209    Network Resilience and Scalability",
+      "group": "CPNT"
+    },
+    { "label": "CPNT217    Introduction to Network Systems", "group": "CPNT" },
+    { "label": "CPNT219    Introduction to Networks", "group": "CPNT" },
+    { "label": "CPNT223    Network Security", "group": "CPNT" },
+    { "label": "CPNT224    Switching and Routing Essentials", "group": "CPNT" },
+    {
+      "label": "CPNT260    Web Page Construction Fundamentals",
+      "group": "CPNT"
+    },
+    {
+      "label": "CPNT262    Web Client and Server Programming",
+      "group": "CPNT"
+    },
+    { "label": "CPNT264    Career and Consulting Essentials", "group": "CPNT" },
+    { "label": "CPNT265    The Business of the Web", "group": "CPNT" },
+    {
+      "label": "CPNT300    Enterprise Networking, Security, and Automation",
+      "group": "CPNT"
+    },
+    { "label": "CPNT302    Wireless Networking Fundamentals", "group": "CPNT" },
+    { "label": "CPNT400    Advanced Networking Security", "group": "CPNT" },
+    {
+      "label": "CPRG200    Rapid Application Development for OOSD",
+      "group": "CPRG"
+    },
+    { "label": "CPRG208    Security for Developers", "group": "CPRG" },
+    { "label": "CPRG210    Web Application Development", "group": "CPRG" },
+    { "label": "CPRG211    Object-Oriented Programming 2", "group": "CPRG" },
+    { "label": "CPRG212    Database Development", "group": "CPRG" },
+    { "label": "CPRG213    Web Development 1", "group": "CPRG" },
+    { "label": "CPRG214    .NET Web Applications", "group": "CPRG" },
+    { "label": "CPRG216    Object-Oriented Programming 1", "group": "CPRG" },
+    { "label": "CPRG217    Scripting", "group": "CPRG" },
+    { "label": "CPRG218    Intermediate Web Communications", "group": "CPRG" },
+    {
+      "label": "CPRG219    Introduction to Web Communications",
+      "group": "CPRG"
+    },
+    { "label": "CPRG220    Open Source Web Applications", "group": "CPRG" },
+    { "label": "CPRG250    Database Design and Programming", "group": "CPRG" },
+    { "label": "CPRG303    Mobile Application Development", "group": "CPRG" },
+    { "label": "CPRG304    Object-Oriented Programming 3", "group": "CPRG" },
+    { "label": "CPRG305    Software Testing and Deployment", "group": "CPRG" },
+    { "label": "CPRG306    Web Development 2", "group": "CPRG" },
+    { "label": "CPRG307    Database Programming", "group": "CPRG" },
+    {
+      "label": "CPRG308    Database Programming &amp; Testing",
+      "group": "CPRG"
+    },
+    { "label": "CPRG309    Programming Languages", "group": "CPRG" },
+    { "label": "CPRG310    Web Application Development", "group": "CPRG" },
+    {
+      "label": "CPRG407    Programming Industrial Control Systems",
+      "group": "CPRG"
+    },
+    { "label": "CPSY200    Software Analysis and Design", "group": "CPSY" },
+    { "label": "CPSY201    Introduction to Data Management", "group": "CPSY" },
+    { "label": "CPSY202    User Experience and Design", "group": "CPSY" },
+    { "label": "CPSY203    Architecture and Design", "group": "CPSY" },
+    { "label": "CPSY204    Server Fundamentals", "group": "CPSY" },
+    { "label": "CPSY205    Data Discovery and Ingestion", "group": "CPSY" },
+    { "label": "CPSY206    Virtualization Fundamentals", "group": "CPSY" },
+    { "label": "CPSY207    Reporting and Analytics", "group": "CPSY" },
+    {
+      "label": "CPSY209    Data Preparation and Presentation",
+      "group": "CPSY"
+    },
+    { "label": "CPSY300    Operating Systems", "group": "CPSY" },
+    {
+      "label": "CPSY301    Software Projects: Analysis, Design, and Management",
+      "group": "CPSY"
+    },
+    { "label": "CPSY302    Advanced Servers", "group": "CPSY" },
+    { "label": "CPSY304    Cloud Computing", "group": "CPSY" },
+    { "label": "CPSY350    Intermediate Virtualization", "group": "CPSY" },
+    { "label": "CPSY352    IT Service Management", "group": "CPSY" },
+    {
+      "label": "CPSY401    Operating Systems and Shell Programming",
+      "group": "CPSY"
+    },
+    { "label": "CPWK252    Cooperative Work Term", "group": "CPWK" },
+    { "label": "CPWK255    Cooperative Work Term", "group": "CPWK" },
+    { "label": "CSTN201    Carpentry Construction Theory", "group": "CSTN" },
+    { "label": "CSTN202    Construction Laboratory I", "group": "CSTN" },
+    { "label": "DATA201    Data Interpretation", "group": "DATA" },
+    {
+      "label": "DATA240    Energy Asset Management Software Applications",
+      "group": "DATA"
+    },
+    { "label": "DATA310    Aircraft Instruments", "group": "DATA" },
+    { "label": "DATA375    Online Database Searching", "group": "DATA" },
+    { "label": "DATA401    Data Literacy", "group": "DATA" },
+    {
+      "label": "DATA410    Business Context for Data Analysis",
+      "group": "DATA"
+    },
+    { "label": "DATA415    Statistical Analysis of Data", "group": "DATA" },
+    { "label": "DATA420    Predictive Analytics", "group": "DATA" },
+    {
+      "label": "DATA440    Predictive Analytics and Modeling Fundamentals",
+      "group": "DATA"
+    },
+    { "label": "DATA445    Business Analytics", "group": "DATA" },
+    { "label": "DATA460    Business Intelligence Reporting", "group": "DATA" },
+    {
+      "label": "DATA475    Advanced Concepts in Data Analytics",
+      "group": "DATA"
+    },
+    {
+      "label": "DATA480    Predictive Analytics and Modeling",
+      "group": "DATA"
+    },
+    { "label": "DENT201    Clinical Foundations", "group": "DENT" },
+    { "label": "DENT202    Preventive Procedures 1", "group": "DENT" },
+    { "label": "DENT206    Restorative Procedures 1", "group": "DENT" },
+    { "label": "DENT207    Dental Emergencies &amp; Records", "group": "DENT" },
+    { "label": "DENT227    Dental Specialties 1", "group": "DENT" },
+    { "label": "DENT237    Oral Anatomy and Histology", "group": "DENT" },
+    { "label": "DENT252    Prosthodontics 1", "group": "DENT" },
+    { "label": "DENT262    Preventive Procedures 2", "group": "DENT" },
+    { "label": "DENT263    Practice Management", "group": "DENT" },
+    { "label": "DENT276    Restorative Procedures 2", "group": "DENT" },
+    { "label": "DFTG250    Aircraft Electrical Drawing I", "group": "DFTG" },
+    { "label": "DFTG305    Aircraft Electrical Drawing II", "group": "DFTG" },
+    {
+      "label": "DIGI200    Digital Literacy in Early Childhood Education",
+      "group": "DIGI"
+    },
+    { "label": "DIGI210    Digital Fundamentals", "group": "DIGI" },
+    { "label": "DIGI235    Digital I Theory", "group": "DIGI" },
+    { "label": "DIGI236    Digital I Lab", "group": "DIGI" },
+    { "label": "DIGI300    Digital Imaging", "group": "DIGI" },
+    { "label": "DMST202    Ultrasound Scanning Fundamentals", "group": "DMST" },
+    { "label": "DMST217    Professional Practice 1", "group": "DMST" },
+    { "label": "DMST276    Professional Practice 2", "group": "DMST" },
+    {
+      "label": "DMST315    Obstetrics and Gynecology Sonography 3",
+      "group": "DMST"
+    },
+    {
+      "label": "DMST326    Abdomen and Superficial Structures 3",
+      "group": "DMST"
+    },
+    { "label": "DMST333    Adult Echocardiography 3", "group": "DMST" },
+    { "label": "DMST343    Vascular Sonography 3", "group": "DMST" },
+    { "label": "DMST375    Clinical Integration", "group": "DMST" },
+    { "label": "DRLG304    Advance Well Design", "group": "DRLG" },
+    { "label": "DRLG412    Drilling", "group": "DRLG" },
+    { "label": "DRLG451    Drilling Technology - Advanced", "group": "DRLG" },
+    { "label": "DSGN221    Intermediate Visual Design", "group": "DSGN" },
+    {
+      "label": "DSGN227    Introduction to User Experience (UX)",
+      "group": "DSGN"
+    },
+    { "label": "DSGN228    Introduction to Visual Design", "group": "DSGN" },
+    {
+      "label": "DSGN270    Web Design Theory and Social Media Concepts",
+      "group": "DSGN"
+    },
+    { "label": "DSGN301    Electrical Design Principles", "group": "DSGN" },
+    { "label": "DSGN304    Advanced Visual Design", "group": "DSGN" },
+    { "label": "DSGN306    Design Studio 1", "group": "DSGN" },
+    { "label": "DSGN311    Interaction Design", "group": "DSGN" },
+    {
+      "label": "DSGN312    Intermediate User Experience (UX)",
+      "group": "DSGN"
+    },
+    { "label": "DSGN313    Typography", "group": "DSGN" },
+    { "label": "DSGN314    User Research", "group": "DSGN" },
+    { "label": "DSGN396    Industrial Electrical Design", "group": "DSGN" },
+    { "label": "DYNA265    Dynamics", "group": "DYNA" },
+    {
+      "label": "EAMG210    Overview of Energy Asset Management and Energy Industry",
+      "group": "EAMG"
+    },
+    { "label": "EAMG250    Pre-Acquisition and Acquisition", "group": "EAMG" },
+    { "label": "EAMG300    Maintenance", "group": "EAMG" },
+    { "label": "EAMG306    Production Facilities", "group": "EAMG" },
+    { "label": "EAMG350    Production", "group": "EAMG" },
+    {
+      "label": "ECED200    Programming 1: Introduction to Early Childhood Education&nbsp;",
+      "group": "ECED"
+    },
+    {
+      "label": "ECED201    Childhood Development 1: Growth and Development&nbsp;",
+      "group": "ECED"
+    },
+    { "label": "ECON1010    Microeconomics", "group": "ECON" },
+    { "label": "ECON250    Microeconomics", "group": "ECON" },
+    { "label": "ECON302    Economics", "group": "ECON" },
+    { "label": "ECON305    Macroeconomics", "group": "ECON" },
+    {
+      "label": "ECON355    Economic Development Fundamentals",
+      "group": "ECON"
+    },
+    { "label": "ECON404    Petroleum Economics", "group": "ECON" },
+    { "label": "EFAB202    Electronic Fabrication", "group": "EFAB" },
+    { "label": "EFAB340    Avionics System Installation", "group": "EFAB" },
+    { "label": "ELAW350    Employment Law", "group": "ELAW" },
+    { "label": "ELCM250    Electronic Communications Theory", "group": "ELCM" },
+    { "label": "ELCM322    Wireless Communication Systems", "group": "ELCM" },
+    {
+      "label": "ELCM348    Communications Systems II Laboratory",
+      "group": "ELCM"
+    },
+    { "label": "ELCM349    Communications Systems II Theory", "group": "ELCM" },
+    { "label": "ELCM355    Avionics Systems Intro Theory", "group": "ELCM" },
+    {
+      "label": "ELCM356    Avionics Systems Introduction Lab",
+      "group": "ELCM"
+    },
+    {
+      "label": "ELCM374    Industrial Networks and Communications",
+      "group": "ELCM"
+    },
+    { "label": "ELCM390    Avionics Systems Laboratory", "group": "ELCM" },
+    { "label": "ELCT205    Electrical Principles", "group": "ELCT" },
+    { "label": "ELCT254    Electrical and Controls I", "group": "ELCT" },
+    { "label": "ELCT304    Electrical and Controls II", "group": "ELCT" },
+    { "label": "ELEC214    Electricity for Aircraft Theory", "group": "ELEC" },
+    { "label": "ELEC227    Electrical Theory", "group": "ELEC" },
+    { "label": "ELEC230    Electrician Theory I", "group": "ELEC" },
+    { "label": "ELEC231    Electrician Laboratory I", "group": "ELEC" },
+    {
+      "label": "ELEC245    Electrician Practical Applications I",
+      "group": "ELEC"
+    },
+    { "label": "ELEC256    Electrical Fundamentals", "group": "ELEC" },
+    { "label": "ELEC266    Electrical Practices", "group": "ELEC" },
+    { "label": "ELEC269    Basic Electricity for Aircraft", "group": "ELEC" },
+    {
+      "label": "ELEC279    Aircraft Electricity and Electronics",
+      "group": "ELEC"
+    },
+    { "label": "ELEC291    Electrical Analysis", "group": "ELEC" },
+    { "label": "ELEC302    Generation and Grid Operations", "group": "ELEC" },
+    { "label": "ELEC305    Applied Analysis", "group": "ELEC" },
+    { "label": "ELEC306    Machine Applications", "group": "ELEC" },
+    { "label": "ELEC352    Rotating Machines", "group": "ELEC" },
+    { "label": "ELEC353    Transformer Applications", "group": "ELEC" },
+    { "label": "ELEC361    Power System Analysis", "group": "ELEC" },
+    { "label": "ELEC364    Protection and Control", "group": "ELEC" },
+    {
+      "label": "ELTR216    Applied Sciences for Aviation Electronics",
+      "group": "ELTR"
+    },
+    { "label": "ELTR217    Electrical I", "group": "ELTR" },
+    {
+      "label": "ELTR232    Digital &amp; Electronic Circuits",
+      "group": "ELTR"
+    },
+    { "label": "ELTR235    Electronics I Theory", "group": "ELTR" },
+    { "label": "ELTR236    Electronics I Lab", "group": "ELTR" },
+    { "label": "ELTR238    Electronic Fundamentals", "group": "ELTR" },
+    { "label": "ELTR259    Electronics II Theory", "group": "ELTR" },
+    { "label": "ELTR260    Electronics II Lab", "group": "ELTR" },
+    { "label": "ELTR262    Power Electronics", "group": "ELTR" },
+    { "label": "ELTR288    Electrical/Electronics II", "group": "ELTR" },
+    {
+      "label": "ELTR300    Electronic Devices and Circuits II",
+      "group": "ELTR"
+    },
+    {
+      "label": "ELTR310    Aircraft Instrument and Communications Systems",
+      "group": "ELTR"
+    },
+    { "label": "ELTR315    Aircraft Navigation Systems", "group": "ELTR" },
+    { "label": "ELTR328    Electrical/Electronics III", "group": "ELTR" },
+    { "label": "ELTR348    Electrical/Electronics IV", "group": "ELTR" },
+    { "label": "EMED216    OBGYN and Pediatrics", "group": "EMED" },
+    {
+      "label": "EMED223    Environmental and Aeromedical Emergencies",
+      "group": "EMED"
+    },
+    { "label": "EMRG202    Paramedicine Laboratory 1", "group": "EMRG" },
+    { "label": "EMRG206    Paramedicine Laboratory 3", "group": "EMRG" },
+    { "label": "EMRG223    Basic Pharmacology", "group": "EMRG" },
+    { "label": "EMRG230    Community Integration", "group": "EMRG" },
+    { "label": "EMRG233    Respiratory Emergencies", "group": "EMRG" },
+    {
+      "label": "EMRG236    Primary Care Paramedic Laboratory 1",
+      "group": "EMRG"
+    },
+    { "label": "EMRG244    Professional Practice 1", "group": "EMRG" },
+    { "label": "EMRG262    Cardiac Emergencies", "group": "EMRG" },
+    { "label": "EMRG265    Professional Practice 2", "group": "EMRG" },
+    { "label": "EMRG271    Wellness", "group": "EMRG" },
+    { "label": "EMRG305    Neurological Emergencies", "group": "EMRG" },
+    { "label": "EMRG310    Special Population Groups", "group": "EMRG" },
+    { "label": "EMRG320    Gastro-Urinary Emergencies", "group": "EMRG" },
+    { "label": "EMSI300    Modern Automation Integration", "group": "EMSI" },
+    { "label": "EMSI320    Robots and Robotics", "group": "EMSI" },
+    {
+      "label": "EMTL207    Introduction to Aircraft Metal Structures",
+      "group": "EMTL"
+    },
+    { "label": "EMTL214    Equipment and Materials", "group": "EMTL" },
+    { "label": "EMTL240    Aircraft Sheet Metal Basics", "group": "EMTL" },
+    { "label": "EMTL250    Engineering Materials", "group": "EMTL" },
+    { "label": "EMTL255    Aircraft Structural Theory", "group": "EMTL" },
+    {
+      "label": "EMTL260    Sheet Metal and Composite Laboratory",
+      "group": "EMTL"
+    },
+    { "label": "EMTL280    Welding Metallurgy", "group": "EMTL" },
+    { "label": "EMTL300    Mechanics of Materials", "group": "EMTL" },
+    { "label": "EMTL305    Trade Science", "group": "EMTL" },
+    { "label": "ENGD213    Geomatics Drafting", "group": "ENGD" },
+    { "label": "ENGD238    Electrical Diagrams and AutoCAD", "group": "ENGD" },
+    { "label": "ENGL1010    Critical Reading and Writing", "group": "ENGL" },
+    { "label": "ENGL205    Grammar and Proofreading", "group": "ENGL" },
+    { "label": "ENGL3370    Comparative World Literature", "group": "ENGL" },
+    { "label": "ENGN240    1.", "group": "ENGN" },
+    { "label": "ENTI2300    Design Thinking and Innovation", "group": "ENTI" },
+    { "label": "ENTI300    Design Thinking and Innovation", "group": "ENTI" },
+    { "label": "ENTI310    New Venture Planning", "group": "ENTI" },
+    { "label": "ENTR2350    Entrepreneurship", "group": "ENTR" },
+    { "label": "ENTR350    Entrepreneurship", "group": "ENTR" },
+    {
+      "label": "ENVS2010    Environmental Science for Sustainability",
+      "group": "ENVS"
+    },
+    {
+      "label": "ENVS222    Introduction to Environmental Organic Chemistry",
+      "group": "ENVS"
+    },
+    {
+      "label": "ENVS229    Environmental Law &amp; Regulation",
+      "group": "ENVS"
+    },
+    {
+      "label": "ENVS236    Ecosystems and Environmental Impact Assessment",
+      "group": "ENVS"
+    },
+    { "label": "ENVS247    Safety and Environment", "group": "ENVS" },
+    { "label": "ENVS300    Site Reclamation", "group": "ENVS" },
+    { "label": "ENVS301    Water Treatment", "group": "ENVS" },
+    { "label": "ENVS302    Environmental Engineering", "group": "ENVS" },
+    { "label": "ENVS3020    Sustainable Construction", "group": "ENVS" },
+    {
+      "label": "ENVS303    Environmental Audits and Management Systems",
+      "group": "ENVS"
+    },
+    {
+      "label": "ENVS304    Environmental Sampling and Analysis",
+      "group": "ENVS"
+    },
+    { "label": "ENVS330    Environmental Field School", "group": "ENVS" },
+    { "label": "ENVS360    Environmental Chemistry II", "group": "ENVS" },
+    { "label": "ENVS402    Environmental Considerations", "group": "ENVS" },
+    { "label": "ESTM2010    Project Cost Estimation", "group": "ESTM" },
+    { "label": "ESTM262    Estimating I", "group": "ESTM" },
+    { "label": "ETHI401    AI Governance and Ethics", "group": "ETHI" },
+    { "label": "EVAL402    Well Logging", "group": "EVAL" },
+    { "label": "EVNT300    Event Strategy and Planning", "group": "EVNT" },
+    { "label": "EVNT310    Live Events II", "group": "EVNT" },
+    {
+      "label": "FDPM300    Community Events and Guest Service",
+      "group": "FDPM"
+    },
+    { "label": "FLDS350    Fluid Mechanics", "group": "FLDS" },
+    { "label": "FNCE207    Leasing, Finance and Insurance", "group": "FNCE" },
+    {
+      "label": "FNCE350    Financial Management in Hospitality",
+      "group": "FNCE"
+    },
+    { "label": "FNCE390    Finance Management", "group": "FNCE" },
+    { "label": "FNCE4120    Advanced Corporate Finance", "group": "FNCE" },
+    {
+      "label": "FNCE4210    Financial Management in Hospitality and Tourism",
+      "group": "FNCE"
+    },
+    { "label": "FSAN207    Food Handling and Safety", "group": "FSAN" },
+    {
+      "label": "FTEC1010    Introduction to FinTech and Innovation",
+      "group": "FTEC"
+    },
+    {
+      "label": "FTNS205    Foundations in Strength and Conditioning",
+      "group": "FTNS"
+    },
+    { "label": "FTNS300    Functional Movement and Mobility", "group": "FTNS" },
+    { "label": "FVDO200    Film Production I", "group": "FVDO" },
+    { "label": "FVDO202    Film Post-Production I", "group": "FVDO" },
+    { "label": "FVDO203    Film Directing and Producing", "group": "FVDO" },
+    { "label": "FVDO204    Story Writing for Film I", "group": "FVDO" },
+    { "label": "FVDO208    Introduction to Film", "group": "FVDO" },
+    { "label": "FVDO250    Film Production II", "group": "FVDO" },
+    { "label": "FVDO252    Film Post-Production II", "group": "FVDO" },
+    { "label": "FVDO254    Story Writing for Film II", "group": "FVDO" },
+    { "label": "FVDO256    Film and Video Directing I", "group": "FVDO" },
+    { "label": "FVDO258    Business of Film I", "group": "FVDO" },
+    { "label": "FVDO300    Film Production III", "group": "FVDO" },
+    { "label": "FVDO302    Film Post-Production III", "group": "FVDO" },
+    { "label": "FVDO303    Film and Video Directing II", "group": "FVDO" },
+    { "label": "FVDO304    Story Writing for Film III", "group": "FVDO" },
+    { "label": "FVDO308    Business of Film II", "group": "FVDO" },
+    { "label": "FVDO350    Film Production IV", "group": "FVDO" },
+    { "label": "FVDO353    Film and Video Directing III", "group": "FVDO" },
+    { "label": "FVDO357    Business of Film III", "group": "FVDO" },
+    { "label": "GEOL246    Physical Geology", "group": "GEOL" },
+    { "label": "GEOL410    Petroleum Geology", "group": "GEOL" },
+    { "label": "GEOS406    Geospatial Project Foundations", "group": "GEOS" },
+    {
+      "label": "GEOS409    Geographic Information Systems Data Capture I",
+      "group": "GEOS"
+    },
+    {
+      "label": "GEOS410    GIS Data Manipulation and Transformation",
+      "group": "GEOS"
+    },
+    {
+      "label": "GEOS418    Geographic Information Systems Data Modelling",
+      "group": "GEOS"
+    },
+    { "label": "GEOS419    GIS Data  Analysis and Output", "group": "GEOS" },
+    {
+      "label": "GEOS450    Enterprise and Web Geographic Information Systems",
+      "group": "GEOS"
+    },
+    {
+      "label": "GEOS451    Geographic Information Systems Data Capture II",
+      "group": "GEOS"
+    },
+    {
+      "label": "GEOS456    Geographic Information Systems Programming",
+      "group": "GEOS"
+    },
+    { "label": "GEOS457    Cartography and Geovisualization", "group": "GEOS" },
+    {
+      "label": "GEOS459    Applied Geographic Information Systems Capstone Project",
+      "group": "GEOS"
+    },
+    {
+      "label": "GEOS540    Applied Geographic Information Systems Directed Field Studies",
+      "group": "GEOS"
+    },
+    {
+      "label": "HCAR400    Emergency Preparedness and Planning",
+      "group": "HCAR"
+    },
+    { "label": "HCAR401    Health Economics", "group": "HCAR" },
+    { "label": "HCAR402    Healthcare Leadership Capstone", "group": "HCAR" },
+    {
+      "label": "HCAR403    Healthcare Systems and Governance",
+      "group": "HCAR"
+    },
+    {
+      "label": "HCAR404    Quality and Performance in Healthcare Services",
+      "group": "HCAR"
+    },
+    { "label": "HCPP220    Healthcare Systems Fundamental", "group": "HCPP" },
+    { "label": "HCPP300    Healthcare Database Design", "group": "HCPP" },
+    { "label": "HDMC223    Basic Hydraulics", "group": "HDMC" },
+    { "label": "HDMC224    Braking Systems", "group": "HDMC" },
+    { "label": "HDMC227    Electrical and Electronics", "group": "HDMC" },
+    { "label": "HDMC228    3", "group": "HDMC" },
+    { "label": "HDMC229    Suspension, Wheels and Systems", "group": "HDMC" },
+    { "label": "HDMC300    Advanced Hydraulics", "group": "HDMC" },
+    { "label": "HDMC301    Off-Road Powertrain", "group": "HDMC" },
+    { "label": "HDMC302    Steering and Suspension Systems", "group": "HDMC" },
+    { "label": "HELI280    Helicopter Fundamentals", "group": "HELI" },
+    { "label": "HELI320    Helicopter Maintenance Practices", "group": "HELI" },
+    { "label": "HEMA256    Hematology 1", "group": "HEMA" },
+    { "label": "HFAC245    Human Factors", "group": "HFAC" },
+    { "label": "HILA200    Health Information Law 1", "group": "HILA" },
+    { "label": "HLTH200    Introduction to Wellness", "group": "HLTH" },
+    {
+      "label": "HLTH201    Respiratory Therapy Healthcare Core",
+      "group": "HLTH"
+    },
+    {
+      "label": "HLTH300    Athletic Injury Prevention and Care",
+      "group": "HLTH"
+    },
+    { "label": "HLTH301    Health Promotion and Coaching", "group": "HLTH" },
+    {
+      "label": "HLTH302    Physical Fitness Assessment and Program Design",
+      "group": "HLTH"
+    },
+    {
+      "label": "HOSP200    Introduction to Hospitality and Tourism",
+      "group": "HOSP"
+    },
+    { "label": "HOSP210    Safety and Certifications", "group": "HOSP" },
+    {
+      "label": "HOSP300    Law and Ethics in Hospitality and Tourism",
+      "group": "HOSP"
+    },
+    { "label": "HOTL250    Hotel Operations and Practicum", "group": "HOTL" },
+    { "label": "HOTL300    Hotel Operations Capstone", "group": "HOTL" },
+    { "label": "HOTL310    Hotel Event Management", "group": "HOTL" },
+    {
+      "label": "HOTL350    Hotel Revenue and Financial Management",
+      "group": "HOTL"
+    },
+    { "label": "HRMT2320    Human Resource Management", "group": "HRMT" },
+    {
+      "label": "HRMT2350    Human Resource Information Management",
+      "group": "HRMT"
+    },
+    {
+      "label": "HRMT300    Talent Management I: Recruitment and Selection",
+      "group": "HRMT"
+    },
+    {
+      "label": "HRMT3020    Talent Management III: Total Rewards",
+      "group": "HRMT"
+    },
+    { "label": "HRMT320    Human Resource Management", "group": "HRMT" },
+    {
+      "label": "HRMT350    Human Resource Information Management",
+      "group": "HRMT"
+    },
+    {
+      "label": "HRMT360    Talent Management II: Training and Development",
+      "group": "HRMT"
+    },
+    { "label": "HRMT4010    Labour Relations", "group": "HRMT" },
+    { "label": "HRSC206    Patient Record Fundamentals", "group": "HRSC" },
+    { "label": "HRSC210    Health Information Management 1", "group": "HRSC" },
+    { "label": "HRSC220    Unit Clerk Fundamentals", "group": "HRSC" },
+    { "label": "HRSC231    Electronic Medical Record", "group": "HRSC" },
+    { "label": "HRSC320    Health Information Management 2", "group": "HRSC" },
+    {
+      "label": "HSCI218    Applied Ophthalmic and Optometric Assisting",
+      "group": "HSCI"
+    },
+    { "label": "HSCI219    Ocular Anatomy &amp; Physiology", "group": "HSCI" },
+    {
+      "label": "HSCI221    Introduction to Ophthalmic Practice",
+      "group": "HSCI"
+    },
+    {
+      "label": "HSCI222    Ophthalmic Instruments and Testing",
+      "group": "HSCI"
+    },
+    { "label": "HSCI223    Ophthalmic and Optometric Skills", "group": "HSCI" },
+    { "label": "HSCI250    Contact Lenses 2", "group": "HSCI" },
+    { "label": "HSCI251    Assisting Surgical Procedures", "group": "HSCI" },
+    { "label": "HSCI252    Contact Lenses and Dispensing 2", "group": "HSCI" },
+    { "label": "HSCI253    Optical Dispensing  2", "group": "HSCI" },
+    { "label": "HSCI300    Immunology", "group": "HSCI" },
+    { "label": "HSCI301    Refracting Skills 1", "group": "HSCI" },
+    {
+      "label": "HSCI309    Systemic and Ocular Pathology and Pharmacology",
+      "group": "HSCI"
+    },
+    { "label": "HSCI350    Applied Refracting Skills 1", "group": "HSCI" },
+    { "label": "HTNG223    Heating Theory I", "group": "HTNG" },
+    { "label": "INFC215    Infection Prevention and Control", "group": "INFC" },
+    {
+      "label": "INRY200    Introduction to Chemical Engineering and Oil and Gas Technology",
+      "group": "INRY"
+    },
+    {
+      "label": "INRY206    Introduction to Automotive Technology",
+      "group": "INRY"
+    },
+    {
+      "label": "INRY301    Field School and Water Management Applications",
+      "group": "INRY"
+    },
+    { "label": "INSP200    Visual Inspection Level 2", "group": "INSP" },
+    { "label": "INSP207    Eddy Current Level I", "group": "INSP" },
+    { "label": "INSP210    Radiography Level I", "group": "INSP" },
+    {
+      "label": "INSP220    Certified Exposure Device Operator",
+      "group": "INSP"
+    },
+    { "label": "INSP236    Ultrasonics Level I", "group": "INSP" },
+    {
+      "label": "INSP263    Magnetic Particle Levels I &amp; II",
+      "group": "INSP"
+    },
+    { "label": "INSP264    Liquid Penetrant Levels I and II", "group": "INSP" },
+    { "label": "INSP310    Small Aircraft Inspection", "group": "INSP" },
+    { "label": "INSP341    Non-Destructive Inspection", "group": "INSP" },
+    { "label": "INSP350    Large Aircraft Inspection", "group": "INSP" },
+    { "label": "INST202    Process Instruments I", "group": "INST" },
+    { "label": "INST257    World of Instrumentation", "group": "INST" },
+    {
+      "label": "INST300    Applied Analytical Instrumentation I",
+      "group": "INST"
+    },
+    { "label": "INST335    Instrumentation Software", "group": "INST" },
+    {
+      "label": "INTL467    International Business Study Tour",
+      "group": "INTL"
+    },
+    { "label": "INTP301    Emerging Technologies", "group": "INTP" },
+    {
+      "label": "INTP302    Emerging Trends in Software Development",
+      "group": "INTP"
+    },
+    { "label": "ITRN4000    Internship", "group": "ITRN" },
+    { "label": "ITSC200    Secure Networking Fundamentals", "group": "ITSC" },
+    { "label": "ITSC201    Military and Strategic Studies", "group": "ITSC" },
+    { "label": "ITSC202    Programming Essentials", "group": "ITSC" },
+    { "label": "ITSC203    Scripting for Tool Construction", "group": "ITSC" },
+    { "label": "ITSC204    Computer Architecture", "group": "ITSC" },
+    { "label": "ITSC205    Operating Systems Internals", "group": "ITSC" },
+    {
+      "label": "ITSC206    Offensive and Defensive Networking",
+      "group": "ITSC"
+    },
+    { "label": "ITSC300    IT Security Fundamentals", "group": "ITSC" },
+    { "label": "ITSC301    Wireless Security", "group": "ITSC" },
+    { "label": "ITSC302    Web Application Security", "group": "ITSC" },
+    { "label": "ITSC303    Malware Analysis", "group": "ITSC" },
+    { "label": "ITSC304    Operating System Exploitation", "group": "ITSC" },
+    { "label": "ITSC305    Internet of Things Systems", "group": "ITSC" },
+    { "label": "ITSC306    Computer Forensics", "group": "ITSC" },
+    { "label": "ITSC307    Compliance and Encryption", "group": "ITSC" },
+    { "label": "ITSC308    Security Policies and Operations", "group": "ITSC" },
+    { "label": "ITSC309    Social Engineering", "group": "ITSC" },
+    { "label": "ITSC320    Software Security", "group": "ITSC" },
+    { "label": "ITSC350    Intermediate IT Security", "group": "ITSC" },
+    {
+      "label": "ITSC400    Standards &amp; Compliance Frameworks",
+      "group": "ITSC"
+    },
+    {
+      "label": "ITSC401    Strategic Fundamentals of Cyber Warfare",
+      "group": "ITSC"
+    },
+    {
+      "label": "ITSC402    Vulnerability, Threats and Attacks",
+      "group": "ITSC"
+    },
+    { "label": "ITSC403    Defense and Incident Response", "group": "ITSC" },
+    { "label": "ITSC404    Security Risk Identification", "group": "ITSC" },
+    {
+      "label": "ITSC405    Data &amp; Network Security Intelligence",
+      "group": "ITSC"
+    },
+    { "label": "ITSC406    Security Tools", "group": "ITSC" },
+    { "label": "ITSC407    Web &amp; Application Security", "group": "ITSC" },
+    {
+      "label": "ITSC408    Global Information Security Acumen",
+      "group": "ITSC"
+    },
+    { "label": "ITSC410    Cyber Security Essentials", "group": "ITSC" },
+    { "label": "ITSC411    Cyber Operations", "group": "ITSC" },
+    {
+      "label": "ITSC412    Governance, Standards, and Compliance Frameworks",
+      "group": "ITSC"
+    },
+    { "label": "JOUR206    Writing Fundamentals for Media", "group": "JOUR" },
+    { "label": "JOUR258    Journalism Ethics", "group": "JOUR" },
+    { "label": "JOUR301    Online Journalism II", "group": "JOUR" },
+    { "label": "JOUR302    News Writing II", "group": "JOUR" },
+    { "label": "JOUR303    Broadcast News for Digital II", "group": "JOUR" },
+    {
+      "label": "JOUR305    Visual Reportage and Storytelling",
+      "group": "JOUR"
+    },
+    { "label": "JOUR312    Radio Broadcast News II", "group": "JOUR" },
+    { "label": "JOUR317    Broadcast News for Radio II", "group": "JOUR" },
+    { "label": "JOUR320    Broadcast News for Television II", "group": "JOUR" },
+    { "label": "JOUR323    Field Reporting II", "group": "JOUR" },
+    { "label": "KMGT202    Culinary Management 1", "group": "KMGT" },
+    { "label": "KMGT312    Culinary Management 3", "group": "KMGT" },
+    { "label": "KMGT320    Culinary Management 4", "group": "KMGT" },
+    { "label": "LAND201    Land Documentation", "group": "LAND" },
+    {
+      "label": "LAND202    Surface Rights and Land Applications",
+      "group": "LAND"
+    },
+    { "label": "LAND203    Petroleum Industry Fundamentals", "group": "LAND" },
+    { "label": "LAND210    Land Practices Introduction", "group": "LAND" },
+    { "label": "LAND212    Mineral Lease Documentation", "group": "LAND" },
+    { "label": "LAND213    Contract Documentation", "group": "LAND" },
+    { "label": "LAND218    Lease Record Keeping", "group": "LAND" },
+    { "label": "LAND240    Surface Land Practices", "group": "LAND" },
+    {
+      "label": "LAWG200    Security Practice and the Canadian Legal System",
+      "group": "LAWG"
+    },
+    { "label": "LDSH202    Self Awareness and Team Dynamics", "group": "LDSH" },
+    { "label": "LDSH239    Leadership in Broadcasting", "group": "LDSH" },
+    { "label": "LDSH243    Leadership", "group": "LDSH" },
+    { "label": "LDSH3050    Leadership", "group": "LDSH" },
+    { "label": "LDSH310    Leading High-Performance Teams", "group": "LDSH" },
+    { "label": "LDSH360    Leadership", "group": "LDSH" },
+    {
+      "label": "LDSH370    Leadership and Organizational Culture",
+      "group": "LDSH"
+    },
+    { "label": "LDSH401    Applied Leadership I", "group": "LDSH" },
+    { "label": "LDSH405    Leadership", "group": "LDSH" },
+    { "label": "LEGA205    Keyboard Skill Building", "group": "LEGA" },
+    { "label": "LEGA215    Legal Computer Applications I", "group": "LEGA" },
+    { "label": "LEGA305    Legal Transcription", "group": "LEGA" },
+    { "label": "LEGL200    Introduction to Law", "group": "LEGL" },
+    { "label": "LEGL210    Corporate Law", "group": "LEGL" },
+    { "label": "LEGL300    Legal Writing II", "group": "LEGL" },
+    { "label": "LEGL310    Litigation Law II", "group": "LEGL" },
+    { "label": "LEGL320    Real Estate Law II", "group": "LEGL" },
+    { "label": "LIBR200    Introduction to Libraries", "group": "LIBR" },
+    {
+      "label": "LIBR202    Bibliographic Description and Access I",
+      "group": "LIBR"
+    },
+    { "label": "LIBR235    Library Information Services I", "group": "LIBR" },
+    { "label": "LIBR297    Library Operations", "group": "LIBR" },
+    {
+      "label": "LIBR302    Bibliographic Description and Access III",
+      "group": "LIBR"
+    },
+    {
+      "label": "LIBR305    Library Technology Customer Service",
+      "group": "LIBR"
+    },
+    {
+      "label": "LIBR315    Services Children and Young Adults",
+      "group": "LIBR"
+    },
+    { "label": "LIBR320    Design Web Tools for Libraries", "group": "LIBR" },
+    { "label": "LODG255    Front Office Management", "group": "LODG" },
+    { "label": "MACH201    Machine Shop 1", "group": "MACH" },
+    { "label": "MACH203    Machinist Theory 1", "group": "MACH" },
+    { "label": "MACH301    Machine Shop 3", "group": "MACH" },
+    { "label": "MACH305    Machinist Theory 3", "group": "MACH" },
+    { "label": "MACH380    Machine Dynamics", "group": "MACH" },
+    { "label": "MAPS204    Mapping Fundamentals", "group": "MAPS" },
+    { "label": "MAPS310    Geodesy and Map Projections", "group": "MAPS" },
+    { "label": "MAPS315    Geographic Information Systems", "group": "MAPS" },
+    { "label": "MATH100    Mathematics Foundations", "group": "MATH" },
+    { "label": "MATH1011    Technical Mathematics I", "group": "MATH" },
+    { "label": "MATH1111    Technical Mathematics II", "group": "MATH" },
+    { "label": "MATH162    Technical Mathematics II", "group": "MATH" },
+    { "label": "MATH172    Applied Mathematics II", "group": "MATH" },
+    { "label": "MATH180    Mathematics Preparation", "group": "MATH" },
+    { "label": "MATH181    Mathematics I", "group": "MATH" },
+    { "label": "MATH182    Mathematics II", "group": "MATH" },
+    { "label": "MATH236    Mathematics for Cabinetmaking", "group": "MATH" },
+    { "label": "MATH237    Mathematics for Technologists", "group": "MATH" },
+    {
+      "label": "MATH238    Mathematics for Engineering and Technology l",
+      "group": "MATH"
+    },
+    { "label": "MATH249    Mathematics for Carpentry", "group": "MATH" },
+    { "label": "MATH252    Mathematics", "group": "MATH" },
+    { "label": "MATH262    Technical Mathematics I", "group": "MATH" },
+    {
+      "label": "MATH266    Applied Mathematics for Technicians",
+      "group": "MATH"
+    },
+    { "label": "MATH268    Math for Apprentice Trades", "group": "MATH" },
+    { "label": "MATH280    Calculus for Technologists", "group": "MATH" },
+    {
+      "label": "MATH288    Mathematics for Engineering and Technology ll",
+      "group": "MATH"
+    },
+    {
+      "label": "MATH302    Applied Mathematics for Machinists - 3",
+      "group": "MATH"
+    },
+    { "label": "MBIO345    Clinical Microbiology 1", "group": "MBIO" },
+    { "label": "MCRO310    Microprocessor Fundamentals", "group": "MCRO" },
+    { "label": "MDOF203    Medical Billing Bookkeeping", "group": "MDOF" },
+    { "label": "MDOF240    Medical Office Procedures", "group": "MDOF" },
+    { "label": "MEAT206    Meat Science I", "group": "MEAT" },
+    { "label": "MEAT208    Meat Management I", "group": "MEAT" },
+    { "label": "MEAT210    Charcuterie and Cooking Trends", "group": "MEAT" },
+    { "label": "MEAT212    Practical Shop I", "group": "MEAT" },
+    {
+      "label": "MECH200    Mechanical Engineering Technology Concepts",
+      "group": "MECH"
+    },
+    { "label": "MECH205    Electro-Mechanical Systems", "group": "MECH" },
+    { "label": "MEDL200    Clinical Laboratory Foundations", "group": "MEDL" },
+    { "label": "MEDL201    Patient Services", "group": "MEDL" },
+    { "label": "MEDL202    Clinical Integration", "group": "MEDL" },
+    { "label": "MEDL203    Clinical Laboratory Testing", "group": "MEDL" },
+    { "label": "MEDL210    Analytical Techniques", "group": "MEDL" },
+    { "label": "MEDL300    Professional Skills", "group": "MEDL" },
+    { "label": "MEDL330    Specimen Collection and Handling", "group": "MEDL" },
+    {
+      "label": "MEDL354    Medical Laboratory Technology Quality Management",
+      "group": "MEDL"
+    },
+    { "label": "MEDT211    Medical Terminology 1", "group": "MEDT" },
+    { "label": "MGMT213    Tools and Techniques", "group": "MGMT" },
+    {
+      "label": "MGMT215    Advanced Information and Records Management",
+      "group": "MGMT"
+    },
+    {
+      "label": "MGMT244    Fundamentals of Information and Records Management",
+      "group": "MGMT"
+    },
+    { "label": "MGMT3010    Business Skills and Processes", "group": "MGMT" },
+    { "label": "MGMT315    Aircraft Maintenance Management", "group": "MGMT" },
+    { "label": "MKTG1060    Marketing Essentials", "group": "MKTG" },
+    { "label": "MKTG200    Brand and Guest Experience", "group": "MKTG" },
+    {
+      "label": "MKTG206    Concepts of the Automotive Industry",
+      "group": "MKTG"
+    },
+    { "label": "MKTG216    Canadian Auto Aftermarket", "group": "MKTG" },
+    { "label": "MKTG2306    Building and Managing Brands", "group": "MKTG" },
+    {
+      "label": "MKTG2322    Marketing Research and Analytics",
+      "group": "MKTG"
+    },
+    {
+      "label": "MKTG2336    Marketing Action: From Concept to Creation",
+      "group": "MKTG"
+    },
+    { "label": "MKTG2380    Strategic Marketing", "group": "MKTG" },
+    { "label": "MKTG250    Service Marketing and Sales", "group": "MKTG" },
+    { "label": "MKTG260    Marketing Essentials", "group": "MKTG" },
+    {
+      "label": "MKTG261    Digital and Social Media Advertising",
+      "group": "MKTG"
+    },
+    { "label": "MKTG265    Digital Marketing Foundations", "group": "MKTG" },
+    { "label": "MKTG3020    Innovation and Design", "group": "MKTG" },
+    { "label": "MKTG3030    Creating Your Personal Brand", "group": "MKTG" },
+    { "label": "MKTG306    Building and Managing Brands", "group": "MKTG" },
+    { "label": "MKTG322    Marketing Research and Analytics", "group": "MKTG" },
+    { "label": "MKTG3359    International Marketing", "group": "MKTG" },
+    {
+      "label": "MKTG336    Marketing Action: From Concept to Creation",
+      "group": "MKTG"
+    },
+    {
+      "label": "MKTG366    Business Development and Customer Relationship Management",
+      "group": "MKTG"
+    },
+    {
+      "label": "MKTG375    Integrated Marketing Communications",
+      "group": "MKTG"
+    },
+    { "label": "MKTG380    Strategic Marketing", "group": "MKTG" },
+    { "label": "MKTG390    Marketing Strategy", "group": "MKTG" },
+    { "label": "MKTG4020    Public Relations", "group": "MKTG" },
+    {
+      "label": "MKTG4040    Digital and Social Media Advertising",
+      "group": "MKTG"
+    },
+    {
+      "label": "MKTG4050    Advanced Digital Marketing Analytics",
+      "group": "MKTG"
+    },
+    { "label": "MMDA202    Digital Media Foundations", "group": "MMDA" },
+    {
+      "label": "MMDA203    Intermediate Digital Media Production",
+      "group": "MMDA"
+    },
+    { "label": "MMDA340    Production Company III", "group": "MMDA" },
+    { "label": "MMDA344    Digital Independent Study", "group": "MMDA" },
+    { "label": "MMDA385    Portfolio Development", "group": "MMDA" },
+    {
+      "label": "MMGT205    Business Analysis for Business Intelligence Applications",
+      "group": "MMGT"
+    },
+    {
+      "label": "MMGT206    Performance Management Applications",
+      "group": "MMGT"
+    },
+    { "label": "MMGT225    Management of Vital Records", "group": "MMGT" },
+    { "label": "MNFG201    CNC  Shop 1", "group": "MNFG" },
+    { "label": "MNFG202    CNC Theory 1", "group": "MNFG" },
+    { "label": "MNFG301    CNC Theory 3", "group": "MNFG" },
+    { "label": "MNFG303    CNC Shop 3", "group": "MNFG" },
+    { "label": "MNFG310    Advanced Manufacturing", "group": "MNFG" },
+    { "label": "MNGT1200    Introduction to Business", "group": "MNGT" },
+    { "label": "MNGT200    Introduction to Business", "group": "MNGT" },
+    { "label": "MNGT204    Water, Health, and Society", "group": "MNGT" },
+    { "label": "MNGT206    People and Project Management", "group": "MNGT" },
+    { "label": "MNGT213    Continuous Improvement", "group": "MNGT" },
+    { "label": "MNGT2250    Organizational Behaviour", "group": "MNGT" },
+    { "label": "MNGT2321    Project Management", "group": "MNGT" },
+    {
+      "label": "MNGT2322    Information Systems and Data Analytics",
+      "group": "MNGT"
+    },
+    { "label": "MNGT2360    International Business", "group": "MNGT" },
+    {
+      "label": "MNGT2370    Principles of Supply Chain Management",
+      "group": "MNGT"
+    },
+    { "label": "MNGT250    Organizational Behaviour", "group": "MNGT" },
+    {
+      "label": "MNGT251    Conflict Management and Negotiation Skills",
+      "group": "MNGT"
+    },
+    { "label": "MNGT252    Change Management", "group": "MNGT" },
+    { "label": "MNGT255    Introduction to Management", "group": "MNGT" },
+    { "label": "MNGT257    Business Certificate Capstone", "group": "MNGT" },
+    { "label": "MNGT3010    Continuous Improvement", "group": "MNGT" },
+    {
+      "label": "MNGT3020    Conflict Management and Negotiation Skills",
+      "group": "MNGT"
+    },
+    { "label": "MNGT321    Project Management", "group": "MNGT" },
+    {
+      "label": "MNGT322    Information Systems and Data Analytics",
+      "group": "MNGT"
+    },
+    { "label": "MNGT3310    Petroleum Management", "group": "MNGT" },
+    { "label": "MNGT360    International Business", "group": "MNGT" },
+    {
+      "label": "MNGT367    Municipal Structure and Governance",
+      "group": "MNGT"
+    },
+    {
+      "label": "MNGT370    Principles of Supply Chain Management",
+      "group": "MNGT"
+    },
+    { "label": "MNGT395    Managing Strategically", "group": "MNGT" },
+    { "label": "MNGT4010    Change Management", "group": "MNGT" },
+    { "label": "MNGT4020    Project Management II", "group": "MNGT" },
+    { "label": "MNGT405    Strategic Management", "group": "MNGT" },
+    { "label": "MNGT4050    Strategic Management", "group": "MNGT" },
+    { "label": "MNGT407    Operations Management", "group": "MNGT" },
+    { "label": "MNGT4070    Operations Management", "group": "MNGT" },
+    { "label": "MNGT408    Project and People Management", "group": "MNGT" },
+    { "label": "MNGT467    International Business Capstone", "group": "MNGT" },
+    { "label": "MNGT4990    Business Capstone", "group": "MNGT" },
+    { "label": "MOTR219    Safety, Materials and Tools", "group": "MOTR" },
+    { "label": "MOTR242    Suspension and Steering", "group": "MOTR" },
+    { "label": "MOTR243    Brake Systems", "group": "MOTR" },
+    { "label": "MOTR244    Basic Maintenance and Welding", "group": "MOTR" },
+    { "label": "MOTR260    Automotive Shop II", "group": "MOTR" },
+    { "label": "MOTR261    Automotive Theory II", "group": "MOTR" },
+    { "label": "MOTR303    Climate Control", "group": "MOTR" },
+    { "label": "MOTR320    Automotive Shop III", "group": "MOTR" },
+    { "label": "MOTR321    Automotive Theory III", "group": "MOTR" },
+    { "label": "MOTR360    Automotive Shop IV", "group": "MOTR" },
+    { "label": "MOTR361    Automotive Theory IV", "group": "MOTR" },
+    { "label": "MOTR370    Vehicle Modifications", "group": "MOTR" },
+    { "label": "MRAD204    Radiographic Technique 1", "group": "MRAD" },
+    { "label": "MRAD302    Specialized Imaging 2", "group": "MRAD" },
+    { "label": "MWRT203    Millwright Theory I", "group": "MWRT" },
+    { "label": "MWRT213    Millwright Machine Shop", "group": "MWRT" },
+    {
+      "label": "MWRT223    Millwirght Shop Rigging and Alignment",
+      "group": "MWRT"
+    },
+    { "label": "MWRT243    Millwright Machine Theory", "group": "MWRT" },
+    {
+      "label": "NETT262    Network Design and Implementation Project",
+      "group": "NETT"
+    },
+    {
+      "label": "NETT270    Linux Installation and Administration",
+      "group": "NETT"
+    },
+    { "label": "NMED310    Positron Emission Tomography", "group": "NMED" },
+    { "label": "NMED320    Dosimetry", "group": "NMED" },
+    { "label": "NMED331    Applied Clinical Procedures 1", "group": "NMED" },
+    { "label": "NUTR201    Human Nutrition Fundamentals", "group": "NUTR" },
+    { "label": "NUTR230    Nutrition", "group": "NUTR" },
+    {
+      "label": "NUTR313    Nutrition and Special Dietary Needs",
+      "group": "NUTR"
+    },
+    { "label": "OADM211    Business Studies", "group": "OADM" },
+    { "label": "OADM257    Office Administration", "group": "OADM" },
+    { "label": "OADM355    Meetings and Events", "group": "OADM" },
+    { "label": "OADM375    Industry Readiness", "group": "OADM" },
+    { "label": "OADM396    Integrated Business Applications", "group": "OADM" },
+    {
+      "label": "ORNT001    LaunchPad - Business Administration diploma and Bachelor of Business Administration degree",
+      "group": "ORNT"
+    },
+    { "label": "ORNT002    Career Prep", "group": "ORNT" },
+    { "label": "ORNT003    Program &amp; WIL Orientation", "group": "ORNT" },
+    { "label": "ORNT012    M&amp;A Career Prep", "group": "ORNT" },
+    { "label": "ORNT013    SOT Career Prep", "group": "ORNT" },
+    { "label": "ORNT014    LaunchPad - Journalism program", "group": "ORNT" },
+    {
+      "label": "ORNT015    LaunchPad - Administrative Information Management program",
+      "group": "ORNT"
+    },
+    {
+      "label": "ORNT016    LaunchPad - Legal Assistant program",
+      "group": "ORNT"
+    },
+    { "label": "ORNT118    Orientation", "group": "ORNT" },
+    { "label": "ORNT208    Orientation to Rehabilitation", "group": "ORNT" },
+    { "label": "PATH242    Pathophysiology 1", "group": "PATH" },
+    { "label": "PATH311    Pathophysiology 2", "group": "PATH" },
+    { "label": "PENG201    Power Theory I", "group": "PENG" },
+    { "label": "PENG203    Power Lab I", "group": "PENG" },
+    { "label": "PENG301    Power Theory III", "group": "PENG" },
+    {
+      "label": "PERS050    Student Rights and Responsibilities",
+      "group": "PERS"
+    },
+    {
+      "label": "PETR211    Petroleum Industry - Introduction",
+      "group": "PETR"
+    },
+    { "label": "PETR315    Petroleum Engineering Mechanics", "group": "PETR" },
+    {
+      "label": "PETR409    Refining and Petrochemical Technology",
+      "group": "PETR"
+    },
+    { "label": "PHAR204    Pharmaceutical Calculations", "group": "PHAR" },
+    { "label": "PHAR207    Pharmacology", "group": "PHAR" },
+    { "label": "PHAR230    Radiopharmacy 1", "group": "PHAR" },
+    { "label": "PHAR270    Pharmacy Services", "group": "PHAR" },
+    { "label": "PHAR271    Pharmacy Concepts &amp; Devices", "group": "PHAR" },
+    { "label": "PHAR272    Prescription Processing 1", "group": "PHAR" },
+    { "label": "PHAR273    Pharmacotherapy 1", "group": "PHAR" },
+    { "label": "PHAR274    Prescription Processing 2", "group": "PHAR" },
+    { "label": "PHAR275    Pharmacotherapy 2", "group": "PHAR" },
+    { "label": "PHIL1011    Critical Thinking", "group": "PHIL" },
+    { "label": "PHIL1030    Ethics in Technology", "group": "PHIL" },
+    { "label": "PHIL1040    Introduction to Philosophy", "group": "PHIL" },
+    { "label": "PHIL241    Critical Thinking", "group": "PHIL" },
+    { "label": "PHIL3010    Ethics", "group": "PHIL" },
+    { "label": "PHOT216    Visual Journalism I", "group": "PHOT" },
+    {
+      "label": "PHOT320    Lighting and Illustration for Photojournalists I",
+      "group": "PHOT"
+    },
+    {
+      "label": "PHOT325    Photojournalism for Print Media I",
+      "group": "PHOT"
+    },
+    {
+      "label": "PHOT334    Advanced Workflow for Photojournalists",
+      "group": "PHOT"
+    },
+    { "label": "PHOT336    Visual Journalism III", "group": "PHOT" },
+    { "label": "PHYF310    Facilities Management and Design", "group": "PHYF" },
+    { "label": "PHYS1011    Introductory Physics", "group": "PHYS" },
+    { "label": "PHYS1110    Physics II", "group": "PHYS" },
+    { "label": "PHYS181    Physics I", "group": "PHYS" },
+    { "label": "PHYS182    Physics II", "group": "PHYS" },
+    { "label": "PHYS209    Radiation Physics", "group": "PHYS" },
+    { "label": "PHYS216    Physics 1", "group": "PHYS" },
+    { "label": "PHYS235    Engineering Physics", "group": "PHYS" },
+    { "label": "PHYS314    DMS Physics 3", "group": "PHYS" },
+    { "label": "PINT200    Professional Internship", "group": "PINT" },
+    { "label": "PIPE215    Pipe Shop", "group": "PIPE" },
+    { "label": "PMGT200    Product Management", "group": "PMGT" },
+    { "label": "PRAC213    Practicum", "group": "PRAC" },
+    { "label": "PRAC249    Career Advancement Practicum", "group": "PRAC" },
+    { "label": "PRAC252    Ambulance Practicum", "group": "PRAC" },
+    { "label": "PRAC271    Clinical Placement", "group": "PRAC" },
+    { "label": "PRAC279    Practicum", "group": "PRAC" },
+    { "label": "PRAC297    Practicum", "group": "PRAC" },
+    { "label": "PRAC309    Practicum 1", "group": "PRAC" },
+    { "label": "PRAC320    Practicum Preparation", "group": "PRAC" },
+    { "label": "PRAC392    Library Practicum", "group": "PRAC" },
+    { "label": "PRAC395    New Media Practicum", "group": "PRAC" },
+    { "label": "PRAC400    Practicum I for BAPT", "group": "PRAC" },
+    { "label": "PRAC410    Practicum Project for BAPT", "group": "PRAC" },
+    { "label": "PRCT200    Practicum 1", "group": "PRCT" },
+    { "label": "PRCT204    Professional Practicum 1", "group": "PRCT" },
+    { "label": "PRCT205    Clinical Practicum", "group": "PRCT" },
+    { "label": "PRCT210    Ambulance Practicum 1", "group": "PRCT" },
+    { "label": "PRCT252    Clinical Practicum 1", "group": "PRCT" },
+    { "label": "PRCT302    Clinical Practicum 1", "group": "PRCT" },
+    { "label": "PRCT314    Respiratory Therapy Practicum 2", "group": "PRCT" },
+    { "label": "PRCT353    Clinical Practicum 1", "group": "PRCT" },
+    { "label": "PRCT365    Practicum", "group": "PRCT" },
+    { "label": "PRCT372    Clinical Practicum 2", "group": "PRCT" },
+    { "label": "PRCT380    Clinical Practicum 3", "group": "PRCT" },
+    { "label": "PRDT217    Audio Video Production", "group": "PRDT" },
+    { "label": "PRDT300    Product Development", "group": "PRDT" },
+    { "label": "PRDT305    Model Making and Prototyping", "group": "PRDT" },
+    { "label": "PRDT310    Applied Product Development", "group": "PRDT" },
+    { "label": "PREP100    The SAIT Experience", "group": "PREP" },
+    {
+      "label": "PREP200    Academic Preparation and Career Exploration",
+      "group": "PREP"
+    },
+    { "label": "PRES209    Speech and Presentation", "group": "PRES" },
+    { "label": "PRES322    Radio Announcing I", "group": "PRES" },
+    { "label": "PRNT300    Print Production", "group": "PRNT" },
+    { "label": "PROF201    Professional Practice 1", "group": "PROF" },
+    { "label": "PROF202    Professional Practice 2", "group": "PROF" },
+    { "label": "PROF203    Professional Practice 1", "group": "PROF" },
+    {
+      "label": "PROF210    Introduction to Healthcare Delivery",
+      "group": "PROF"
+    },
+    { "label": "PROF240    Healthcare Professionalism", "group": "PROF" },
+    { "label": "PROF252    Professional Practice", "group": "PROF" },
+    { "label": "PROF276    Professional Practice", "group": "PROF" },
+    { "label": "PROF350    Professional Preparation", "group": "PROF" },
+    {
+      "label": "PROJ212    Applied Business Intelligence Project",
+      "group": "PROJ"
+    },
+    { "label": "PROJ216    Software Project Concepts", "group": "PROJ" },
+    { "label": "PROJ222    RPAS Capstone", "group": "PROJ" },
+    { "label": "PROJ237    Project Management for DBA", "group": "PROJ" },
+    { "label": "PROJ301    Applied Water Project Management", "group": "PROJ" },
+    {
+      "label": "PROJ306    Planning and Tools for Electronics Projects",
+      "group": "PROJ"
+    },
+    { "label": "PROJ309    Capstone Project", "group": "PROJ" },
+    { "label": "PROJ318    Journalism Projects I", "group": "PROJ" },
+    { "label": "PROJ323    Special Projects", "group": "PROJ" },
+    { "label": "PROJ327    Technical Project Management", "group": "PROJ" },
+    { "label": "PROJ333    Technical Project Management", "group": "PROJ" },
+    { "label": "PROJ336    Petroleum  Management", "group": "PROJ" },
+    {
+      "label": "PROJ348    Automotive Service Technology Capstone Project",
+      "group": "PROJ"
+    },
+    { "label": "PROJ373    Capstone Project Course", "group": "PROJ" },
+    { "label": "PROJ399    Project Management", "group": "PROJ" },
+    { "label": "PROJ406    Data Analytics Capstone Project", "group": "PROJ" },
+    { "label": "PROJ407    Capstone: Applied Projects", "group": "PROJ" },
+    { "label": "PROJ421    Project Management", "group": "PROJ" },
+    { "label": "PSYC1010    Introduction to Psychology", "group": "PSYC" },
+    {
+      "label": "PTOP3350    Technology in Canadian Oil and Gas Operations",
+      "group": "PTOP"
+    },
+    {
+      "label": "PTPR1255    Overview of the Canadian Oil and Gas Industry",
+      "group": "PTPR"
+    },
+    {
+      "label": "PTPR207    Fundamentals of Petroleum Operations",
+      "group": "PTPR"
+    },
+    {
+      "label": "PTPR322    Sub-Surface Production Operations",
+      "group": "PTPR"
+    },
+    {
+      "label": "PTPR412    Production Operations Engineering",
+      "group": "PTPR"
+    },
+    { "label": "PTPR465    Advanced Production Engineering", "group": "PTPR" },
+    {
+      "label": "PTPR470    Well Completions, Stimulations, and Workovers",
+      "group": "PTPR"
+    },
+    { "label": "PWEN251    Power Qualifications Theory I", "group": "PWEN" },
+    { "label": "PWEN262    Power Qualifications Lab I", "group": "PWEN" },
+    { "label": "RADP210    Radiation Protection", "group": "RADP" },
+    { "label": "RCDR201    Railway Industry Fundamentals", "group": "RCDR" },
+    {
+      "label": "RESP212    Respiratory Therapy Anatomy &amp; Physiology",
+      "group": "RESP"
+    },
+    { "label": "RESP214    Patient Assessment 1", "group": "RESP" },
+    { "label": "RESP216    RT Clinical Practice 1", "group": "RESP" },
+    { "label": "RESP218    Respiratory Therapy Fundamentals", "group": "RESP" },
+    { "label": "RESP315    Patient Assessment 3", "group": "RESP" },
+    {
+      "label": "RESP317    Respiratory Therapy Clinical Practice 3",
+      "group": "RESP"
+    },
+    { "label": "RESP319    Interventions 2", "group": "RESP" },
+    {
+      "label": "RESP350    Respiratory Therapy Clinical Theory 2",
+      "group": "RESP"
+    },
+    { "label": "RESP352    Practicum Foundations 2", "group": "RESP" },
+    {
+      "label": "RESR335    Intermediate Reservoir Engineering Technology",
+      "group": "RESR"
+    },
+    { "label": "RESR412    Reservoir", "group": "RESR" },
+    { "label": "RESR464    Heavy Oil Recovery", "group": "RESR" },
+    { "label": "RESR473    Oilsands Mining and Processing", "group": "RESR" },
+    {
+      "label": "REST250    Restaurant Operations and Service",
+      "group": "REST"
+    },
+    { "label": "REST300    Event Operations and Service", "group": "REST" },
+    { "label": "REST310    Culinary Arts and Management", "group": "REST" },
+    {
+      "label": "REST350    Management of Service Operations Capstone",
+      "group": "REST"
+    },
+    {
+      "label": "RFRG200    Canada&#39;s Ozone Layer Protection Awareness",
+      "group": "RFRG"
+    },
+    { "label": "RFRG211    Refrigeration Theory I", "group": "RFRG" },
+    { "label": "RFRG220    Refrigeration Shop I", "group": "RFRG" },
+    { "label": "RHAB230    Anatomy of Movement", "group": "RHAB" },
+    { "label": "RHAB232    Fundamentals of Client Care", "group": "RHAB" },
+    {
+      "label": "RHAB260    Practice Skills - Mental Health Concepts",
+      "group": "RHAB"
+    },
+    {
+      "label": "RHAB262    Occupational Therapy Assistant Advanced Practice Skills",
+      "group": "RHAB"
+    },
+    {
+      "label": "RHAB264    Physical Therapy Assistant Advanced Practice Skills",
+      "group": "RHAB"
+    },
+    { "label": "RHAB300    Health Conditions 3", "group": "RHAB" },
+    { "label": "RLOP209    Railway Practical Applications", "group": "RLOP" },
+    { "label": "RLOP210    Railway Operations", "group": "RLOP" },
+    {
+      "label": "RREG202    Regulatory, Health, Safety and Environment",
+      "group": "RREG"
+    },
+    { "label": "RSCH203    News Research for Journalists", "group": "RSCH" },
+    { "label": "RSMG300    Management of Water Risks", "group": "RSMG" },
+    { "label": "SAFE160    Safety Orientation", "group": "SAFE" },
+    { "label": "SAFE412    Safety in the Petroleum Industry", "group": "SAFE" },
+    { "label": "SCIE2230    Science of Health and Wellness", "group": "SCIE" },
+    {
+      "label": "SCIE2240    Science: Past, Present, and Future",
+      "group": "SCIE"
+    },
+    {
+      "label": "SCMT2300    Operations Planning and Scheduling",
+      "group": "SCMT"
+    },
+    { "label": "SCMT2310    Logistics I", "group": "SCMT" },
+    { "label": "SCMT2370    Procurement I", "group": "SCMT" },
+    {
+      "label": "SCMT255    Introduction to Supply Chain Management",
+      "group": "SCMT"
+    },
+    {
+      "label": "SCMT300    Operations Planning and Scheduling",
+      "group": "SCMT"
+    },
+    { "label": "SCMT310    Logistics I", "group": "SCMT" },
+    {
+      "label": "SCMT320    Quality: A Supply Chain Perspective",
+      "group": "SCMT"
+    },
+    {
+      "label": "SCMT350    Operational Performance Analytics",
+      "group": "SCMT"
+    },
+    {
+      "label": "SCMT360    Professional Practice in Supply Chain Management",
+      "group": "SCMT"
+    },
+    { "label": "SCMT370    Procurement I", "group": "SCMT" },
+    { "label": "SCMT380    Materials Management", "group": "SCMT" },
+    { "label": "SCMT4010    Procurement II", "group": "SCMT" },
+    { "label": "SCMT4020    Logistics II", "group": "SCMT" },
+    { "label": "SCPT300    Radio Scriptwriting II", "group": "SCPT" },
+    { "label": "SCPT351    Script Writing for Film", "group": "SCPT" },
+    { "label": "SFTY201    Chemical Safety", "group": "SFTY" },
+    { "label": "SFTY202    Safety and Rigging", "group": "SFTY" },
+    { "label": "SFTY215    Safety and Environment", "group": "SFTY" },
+    { "label": "SMTL246    Strength of Materials", "group": "SMTL" },
+    { "label": "SOCI2010    Introduction to Sociology", "group": "SOCI" },
+    { "label": "SOCI2020    Pop Culture", "group": "SOCI" },
+    { "label": "SOCI3060    Technology and Society", "group": "SOCI" },
+    { "label": "SOCI3340    Society and the Workplace", "group": "SOCI" },
+    {
+      "label": "SOCI3380    Conformity and Deviance in the Workplace",
+      "group": "SOCI"
+    },
+    { "label": "SPRO207    Clinical Practicum Integration", "group": "SPRO" },
+    {
+      "label": "SPRO208    Medical Device Reprocessing Assembly",
+      "group": "SPRO"
+    },
+    {
+      "label": "SPRO209    Medical Device Reprocessing Departments",
+      "group": "SPRO"
+    },
+    { "label": "SPRO235    Sterilization Methodology", "group": "SPRO" },
+    { "label": "STAT2040    Quantitative Methods", "group": "STAT" },
+    { "label": "STAT220    Statistics", "group": "STAT" },
+    {
+      "label": "STAT245    Statistics for Engineering and Technology I",
+      "group": "STAT"
+    },
+    { "label": "STAT270    Quantitative Methods", "group": "STAT" },
+    {
+      "label": "STAT3110    Statistics for Science and Engineering",
+      "group": "STAT"
+    },
+    { "label": "STAT400    Applied Statistics", "group": "STAT" },
+    { "label": "STAT4010    Research Methodologies", "group": "STAT" },
+    { "label": "STCS200    Civil Engineering Statics", "group": "STCS" },
+    { "label": "STCS255    Engineering Statics", "group": "STCS" },
+    { "label": "STDP200    Standard Practices Theory", "group": "STDP" },
+    { "label": "STDP201    Standard Practices Lab", "group": "STDP" },
+    { "label": "STDP215    Standard Practices I Theory", "group": "STDP" },
+    { "label": "STDP224    Standard Practices I Lab", "group": "STDP" },
+    { "label": "STDP240    Aircraft Standard Practices", "group": "STDP" },
+    { "label": "STDP283    Standard Practices II Lab", "group": "STDP" },
+    {
+      "label": "STDP310    Employability Fundamentals for Aircraft Maintenance",
+      "group": "STDP"
+    },
+    { "label": "SURV1010    Construction Surveying", "group": "SURV" },
+    { "label": "SURV203    Civil Surveying", "group": "SURV" },
+    { "label": "SURV214    Surveying I", "group": "SURV" },
+    {
+      "label": "SURV325    Surveys and Geographic Information Systems",
+      "group": "SURV"
+    },
+    { "label": "SURV330    Surveying III", "group": "SURV" },
+    { "label": "SURV342    Remote Sensing", "group": "SURV" },
+    { "label": "THRM200    Introduction to Thermodynamics", "group": "THRM" },
+    { "label": "THRM208    Thermodynamics I Theory", "group": "THRM" },
+    { "label": "THRM235    Thermodynamics", "group": "THRM" },
+    { "label": "THRM317    Thermodynamics III Theory", "group": "THRM" },
+    { "label": "THRM318    Thermodynamics", "group": "THRM" },
+    { "label": "THRM319    Thermodynamics I Lab", "group": "THRM" },
+    { "label": "THRM320    Thermodynamics and Heat Transfer", "group": "THRM" },
+    { "label": "THRM405    Fundamentals of Engineering", "group": "THRM" },
+    {
+      "label": "TOUR260    Travel and Destination Exploration I",
+      "group": "TOUR"
+    },
+    {
+      "label": "TOUR300    Travel and Destination Exploration II",
+      "group": "TOUR"
+    },
+    { "label": "TOUR3210    Global Tourism", "group": "TOUR" },
+    {
+      "label": "TOUR360    Special Interest Tourism and Sustainability",
+      "group": "TOUR"
+    },
+    { "label": "TOUR4110    Tourism Policy and Planning", "group": "TOUR" },
+    {
+      "label": "TPRD260    Product and Reservation Fundamentals",
+      "group": "TPRD"
+    },
+    { "label": "TPRD300    Tour and Travel Planning", "group": "TPRD" },
+    { "label": "TPRD350    Tour Product Design Capstone", "group": "TPRD" },
+    {
+      "label": "TRBN360    Aircraft Turbine Engine Essentials",
+      "group": "TRBN"
+    },
+    {
+      "label": "VDEO205    Introduction to Television Production",
+      "group": "VDEO"
+    },
+    { "label": "VDEO301    TV Production II", "group": "VDEO" },
+    { "label": "VDEO302    Producing for Television II", "group": "VDEO" },
+    { "label": "VDEO303    Post-Production II", "group": "VDEO" },
+    {
+      "label": "VDEO304    Electronic News Gathering/Electronic Field Production Camera and Production II",
+      "group": "VDEO"
+    },
+    { "label": "WATR203    Water Fundamentals", "group": "WATR" },
+    { "label": "WATR206    Water Management", "group": "WATR" },
+    {
+      "label": "WATR220    Industrial Water and Wastewater Process and Operations",
+      "group": "WATR"
+    },
+    { "label": "WATR300    Water and Climate Change", "group": "WATR" },
+    {
+      "label": "WATR302    Innovation and Disruption in Water Systems",
+      "group": "WATR"
+    },
+    { "label": "WDSG235    Weld and Inspection Practices I", "group": "WDSG" },
+    { "label": "WDSG325    Weld and Design Practices I", "group": "WDSG" },
+    { "label": "WELD250    Off Campus Tours - Welding", "group": "WELD" },
+    {
+      "label": "WELD254    Gas Metal Arc Welding Level 1 Theory",
+      "group": "WELD"
+    },
+    {
+      "label": "WELD255    Gas Metal Arc Welding Level 1 Lab",
+      "group": "WELD"
+    },
+    {
+      "label": "WELD256    Gas Metal Arc Welding Level 2 Theory",
+      "group": "WELD"
+    },
+    {
+      "label": "WELD257    Gas Metal Arc Welding Level 2 Lab",
+      "group": "WELD"
+    },
+    { "label": "WELD259    Oxyacetylene Welding", "group": "WELD" },
+    { "label": "WFAB201    Metal Fabrication", "group": "WFAB" },
+    { "label": "WLDG217    Wire Feed Lab 1", "group": "WLDG" },
+    { "label": "WLDG218    Wire Feed Theory 1", "group": "WLDG" },
+    { "label": "WLDG219    Wire Feed Theory 2", "group": "WLDG" },
+    { "label": "WLDG225    Wire Feed Lab 2", "group": "WLDG" },
+    { "label": "WLDG303    Advanced Welding Lab", "group": "WLDG" },
+    { "label": "WLDG304    Advanced Welding Theory", "group": "WLDG" },
+    { "label": "WLNS202    Childhood Wellness", "group": "WLNS" },
+    { "label": "WRIT230    Writing for Journalism", "group": "WRIT" },
+    { "label": "WRIT310    Writing for Television II", "group": "WRIT" },
+    { "label": "XRAY200    Dental Radiography 1", "group": "XRAY" },
+    { "label": "XRAY250    Dental Radiography 2", "group": "XRAY" }
+  ]
+}
