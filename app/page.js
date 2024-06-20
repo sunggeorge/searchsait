@@ -83,7 +83,7 @@ export default function CheckboxesTags() {
           placeholder = "Search by course code or name"
           />}
       />
-
+      <CourseTableList courseList={filteredList}/>
 
       {/* <div>
         {shortlist.map((item, index) => (
@@ -91,27 +91,27 @@ export default function CheckboxesTags() {
         ))}
       </div> */}
 
-      <div className= 'p-8 rounded-lg shadow-md'>
-        {filteredList.map((item, index, arr) => {
-          const prevItem = arr[index - 1];
-          const isNewValue = prevItem ? item.value !== prevItem.value : true;
+      {/* <div className= 'p-8 rounded-lg shadow-md'> */}
+        {/* {filteredList.map((item, index, arr) => {
+          // const prevItem = arr[index - 1];
+          // const isNewValue = prevItem ? item.value !== prevItem.value : true;
 
           return (
             <div key={index}>
-              {isNewValue && <div className='font-bold'><br/>{item.value}</div>}
+              {/* <CourseTableList courseList={filteredList}/> */}
+              {/* {isNewValue && <div className='font-bold'><br/>{item.value}</div>}
               <p>
                 {item.value}-{item.section}: {item.title} {item.enrollment}/{item.maxEnrollment}
-              </p>           
+              </p>            */}
 
             </div>
 
-          );
-        })}
-      </div>
+  
+      {/* </div> */}
 
     </div>
-    </div>
-    </div>
+    // </div>
+    // </div>
 
     );
 }
