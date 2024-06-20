@@ -5,7 +5,8 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
 import jsonData from '@/public/res/dropdown.json';
-
+import CourseTable from './components/CourseTable.js';
+import CourseTableList from './components/CourseTableList.js';
   
 export default function CheckboxesTags() {
     // Convert the object to an array if it's not already
@@ -35,15 +36,17 @@ export default function CheckboxesTags() {
 
       if (value.length > 0) {
         const sortedValue = [...value].sort((a, b) => a.label.localeCompare(b.label));
-        // setShortlist(sortedValue.map(item => ({
-        //   'value': item.label,
-        //   'key': item.label.split(' ')[0]
-        // })));
+
+
         const selectedList = sortedValue.map(item => ({
           'value': item.label,
           'key': item.label.split(' ')[0]
         }));        
-        console.log('Shortlist value: ' + selectedList.length);        
+        console.log('Shortlist value: ' + selectedList.length);   
+        console.log('class list');
+        console.log(classList);
+        console.log('select list');        
+        console.log(selectedList);
 
         // Filter class list with shortlist
         const tempList = classList.filter(item => {
@@ -51,7 +54,7 @@ export default function CheckboxesTags() {
         });
         const sortedList = [...tempList].sort((a, b) => a.value.localeCompare(b.value) || a.section.localeCompare(b.section));
         setFilteredList(sortedList);
-        console.log('Filtered list: ' + filteredList.length);
+        console.log('Filtered list: ' + sortedList.length);
       } else {
         setShortlist([]);
         setFilteredList([]);
@@ -63,7 +66,7 @@ export default function CheckboxesTags() {
     return (
 
 
-      <div className='bg-teal-100 w-svw h-screen text-black'>
+      <div className='bg-teal-100 w-svw min-h-screen text-black'>
       <div className='p-10 mx-auto w-4/5 text-black'>  
       <h1 className='mx-auto w-4/5'><p>SAIT Course Offerings (2024 Fall)</p></h1>
       <Autocomplete className='m-5 mx-auto w-1/2'
@@ -81,30 +84,8 @@ export default function CheckboxesTags() {
           />}
       />
 
+          <CourseTableList courseList={filteredList}/>
 
-      {/* <div>
-        {shortlist.map((item, index) => (
-          <p key={index}>{item.value} and key: {item.key}</p>
-        ))}
-      </div> */}
-
-      <div>
-        {filteredList.map((item, index, arr) => {
-          const prevItem = arr[index - 1];
-          const isNewValue = prevItem ? item.value !== prevItem.value : true;
-
-          return (
-            <div key={index}>
-              {isNewValue && <div className='font-bold'><br/>{item.value}</div>}
-              <p>
-                {item.value}-{item.section}: {item.title} {item.enrollment}/{item.maxEnrollment}
-              </p>           
-
-            </div>
-
-          );
-        })}
-      </div>
 
     </div>
     </div>
