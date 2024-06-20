@@ -10,27 +10,40 @@ export default function CourseTableList({courseList}) {
                 const prevItem = arr[index - 1];
                 const isNewValue = prevItem ? item.value !== prevItem.value : true;
                 const fullSection = `${item.value}-${item.section}`
-
-                if((isNewValue && index > 0) || index === arr.length - 1){
+    
+                if((isNewValue && index > 0) || index == arr.length - 1){
                     console.log('index: ' + index + '   arr.length: ' + arr.length);
-                    // console.log(items);
                     
-                    if(index == 0)
-                        items.push(item);   //only one item case 
+                    if(index == 0){
+                        items.push(item);   //only one item case     
+                        let temp_items = [...items];
+                        return <CourseTable key={fullSection} course={temp_items}/>;
+                    }
 
-                    let temp_items = [...items];
-                    items = [item];
 
-                    console.log('deug:');
-                    console.log(temp_items);
-                    return <CourseTable key={fullSection} course={temp_items}/>
+    
+                    // Last record and New record case
+                    if (isNewValue > 0 && index == arr.length - 1) {    
+                        let temp_items = [...items];
+                        items=[item];   //only one item case 
+                        return (
+                            <>
+                                <CourseTable key={fullSection} course={temp_items}/>
+                                <CourseTable key={fullSection} course={items}/>
+                            </>
+                        );
+                        // Nomal last record
+                    } else {
+                        let temp_items = [...items];                        
+                        items=[item];   //only one item case     
 
-                    
+                        return <CourseTable key={fullSection} course={temp_items}/>;
+                    }
+
 
                 } else {
-                    items.push(item);    
+                    items.push(item);
                 }             
-
             })}
         </div>
     )
