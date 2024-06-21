@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
-// import {fetchInstructor} from './functions/fetchInstructor.js';
+import {fetchInstructor} from './functions/fetchInstructor.js';
 import jsonData from '@/public/res/dropdown.json';
 // import CourseTable from './components/CourseTable.js';
 import CourseTableList from './components/CourseTableList.js';
