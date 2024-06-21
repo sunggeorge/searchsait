@@ -12,19 +12,21 @@ import PracIcon from '@mui/icons-material/Architecture';
 import OnlineIcon from '@mui/icons-material/LaptopMac';
 import PersonIcon from '@mui/icons-material/Person';
 
-export default function CourseTable({course}) {      
+export default function CourseTable({course, insList}) {      
     
     let rows = [];
 
     function createData(section, type, startTime, endTime, room, building, startDate, endDate,
-        mon, tue, wed, thu, fri, sat, sun
+        mon, tue, wed, thu, fri, sat, sun, instructor, key
     ) {
         let datePeriod = `${startDate} - ${endDate}`;
         let weekDay = renderWeekDay(mon, tue, wed, thu, fri, sat, sun);
-        let timePeriod = `${weekDay && startTime ? weekDay + ' : ' + startTime + ' - ' + endTime: ''}`;        
-        return { section, type, timePeriod, room, building, datePeriod};
+        let timePeriod = `${weekDay && startTime ? weekDay + ' : ' + startTime + ' - ' + endTime: ''}`;   
+        return { section, type, timePeriod, room, building, datePeriod, instructor, key};
       }
     // console.log(course);
+    // console.log('Instructor list inside:');  
+    // console.log(insList);      
 
 
 
@@ -32,6 +34,7 @@ export default function CourseTable({course}) {
         classes.class.map((section, index) => {
             rows.push(createData(
                 index==0?`${classes.value}-${classes.section}`:'', 
+                // `${classes.value}-${classes.section}`,
                 section.type,
                 section.startTime,
                 section.endTime,
@@ -45,9 +48,13 @@ export default function CourseTable({course}) {
                 section.thu,
                 section.fri,
                 section.sat,
-                section.sun
+                section.sun,
+                insList.filter(ins => ins.key === classes.crn)[0].value || 'N/A',
+                `${classes.crn}${section.mon?1:0}${section.tue?1:0}${section.wed?1:0}${section.thu?1:0}${section.fri?1:0}${section.sat?1:0}${section.sun?1:0}`
             ));
-            // console.log(item);
+            console.log(classes.crn);
+            console.log(insList.filter(ins => ins.key === classes.crn)[0].value) || 'N/A';
+            console.log(insList);
         });
     })
 
@@ -121,16 +128,18 @@ export default function CourseTable({course}) {
                 <TableCell>Section</TableCell>
                 {/* <TableCell align="right">Type</TableCell> */}
                 <TableCell align="left">Time</TableCell>
+                <TableCell align="left">Instructor</TableCell>
                 <TableCell align="left">Room</TableCell>
                 <TableCell align="left">Building</TableCell>
                 <TableCell align="left">Date</TableCell>
+                <TableCell align="left">Class Type</TableCell>
                                 
               </TableRow>
             </TableHead>
             <TableBody>
               {rows.map((row) => (
                 <TableRow
-                  key={row.section}
+                  key={row.key}
                   
 
                 //   sx={row.section === '' 
@@ -139,11 +148,14 @@ export default function CourseTable({course}) {
                 // }
 
 
-                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                    // sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
-                  <TableCell component="th" scope="row" className='text-blue-700'>{row.section}</TableCell>
-                  {/* <TableCell align='right'>{renderMeetingTypeIcon(row.type)}</TableCell> */}
-                  <TableCell align='left'>{row.timePeriod}</TableCell>
+                  <TableCell align='left' className='text-blue-700'>{row.section}</TableCell>
+
+                  {row.type === 'CLAS' ?
+                    <TableCell align='left' className='text-blue-700'>{row.timePeriod}</TableCell> :
+                    <TableCell align='left' >{row.timePeriod}</TableCell> }
+                  <TableCell align='left'>{row.instructor}</TableCell>
                   <TableCell align='left'>{row.room}</TableCell>
                   <TableCell align='left'>{row.building}</TableCell>
                   <TableCell align='left'>{row.datePeriod}</TableCell>

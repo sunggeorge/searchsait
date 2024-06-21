@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
+// import {fetchInstructor} from './functions/fetchInstructor.js';
 import jsonData from '@/public/res/dropdown.json';
-import CourseTable from './components/CourseTable.js';
+// import CourseTable from './components/CourseTable.js';
 import CourseTableList from './components/CourseTableList.js';
   
 export default function CheckboxesTags() {
@@ -13,9 +14,10 @@ export default function CheckboxesTags() {
     const [shortlist, setShortlist] = useState([]); 
     const [classList, setClassList] = useState([]);
     const [filteredList, setFilteredList] = useState([]);
-
+    const [instructorList, setInstructorList] = useState([]);
 
     let classJsonData;
+    let instructorJsonData;
     const data = Array.isArray(jsonData['data']) ? jsonData['data'] : Object.values(jsonData['data']);  
 
     useEffect(() => {
@@ -24,7 +26,14 @@ export default function CheckboxesTags() {
         classJsonData = module.default;
         const data = Array.isArray(classJsonData) ? classJsonData : Object.values(classJsonData);
         setClassList(data);
-        // console.log(data.length);
+
+        // load dictionary
+        const module_ins = await import('@/public/res/instructor.json');
+        instructorJsonData = module_ins.default;
+        const data_ins = Array.isArray(instructorJsonData) ? instructorJsonData : Object.entries(instructorJsonData).map(([key, value]) => ({key, value}));
+        setInstructorList(data_ins);    
+        // console.log('Instructor list: ' + instructorJsonData.length);  
+        // console.log(instructorList);  
       };
   
       fetchData();
@@ -33,6 +42,9 @@ export default function CheckboxesTags() {
      // When selected classes changed
     const handleAutocompleteChange = (event, value) => {
       console.log('Selected value: ' + value.length);
+      // console.log('Instructor list: ' + instructorList.length);  
+      // console.log(instructorList);  
+
 
       if (value.length > 0) {
         const sortedValue = [...value].sort((a, b) => a.label.localeCompare(b.label));
@@ -63,12 +75,21 @@ export default function CheckboxesTags() {
 
     };
 
+  //   function loadInstructor() {
+  //     fetchInstructor(23460).then(displayName => {
+  //       console.log(displayName);
+  //     }).catch(error => {
+  //       console.error(error);
+  //     });
+  //  }
+  //  loadInstructor();
+
     return (
 
 
       <div className='bg-teal-100 w-svw min-h-screen text-black'>
       <div className='p-10 mx-auto w-4/5 text-black'>  
-      <h1 className='mx-auto w-4/5'><p>SAIT Course Offerings (2024 Fall)</p></h1>
+      <h1 className='mx-auto w-4/5 text-center'><p>SAIT Course Offerings (2024 Fall)</p></h1>
       <Autocomplete className='m-5 mx-auto w-1/2'
         disablePortal
         disableCloseOnSelect
@@ -83,7 +104,7 @@ export default function CheckboxesTags() {
           placeholder = "Search by course code or name"
           />}
       />
-      <CourseTableList courseList={filteredList}/>
+      <CourseTableList courseList={filteredList} insList={instructorList}/>
 
       {/* <div>
         {shortlist.map((item, index) => (
