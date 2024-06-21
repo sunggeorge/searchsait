@@ -18,7 +18,12 @@ export default function CheckboxesTags() {
 
     let classJsonData;
     let instructorJsonData;
-    const data = Array.isArray(jsonData['data']) ? jsonData['data'] : Object.values(jsonData['data']);  
+    // const data = Array.isArray(jsonData['data']) ? jsonData['data'] : Object.values(jsonData['data']);  
+    // Replace "&amp;" with "&" in the "label" element of each object in jsonData
+    const data = jsonData.map(item => ({
+      ...item,
+      label: item.label.replace(/&amp;/g, '&').replace(/&#39;/g, "'")
+    }));
 
     useEffect(() => {
       const fetchData = async () => {
