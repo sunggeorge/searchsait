@@ -31,3 +31,15 @@ body {
     text-wrap: balance;
   }
 }
+
+.weekLegendOff {
+  @apply text-xs border border-black ;
+}
+
+.weekLegendClass {
+  @apply text-xs border border-black bg-blue-900 text-white;
+}
+
+.weekLegendOther {
+  @apply text-xs border border-black bg-pink-400;
+}

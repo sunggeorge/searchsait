@@ -11,6 +11,7 @@ import Tooltip from '@mui/material/Tooltip';
 import PracIcon from '@mui/icons-material/Architecture';
 import OnlineIcon from '@mui/icons-material/LaptopMac';
 import PersonIcon from '@mui/icons-material/Person';
+import WeekLegend from './WeekLegend';
 
 export default function CourseTable({course, insList}) {      
     
@@ -21,8 +22,10 @@ export default function CourseTable({course, insList}) {
     ) {
         let datePeriod = `${startDate} - ${endDate}`;
         let weekDay = renderWeekDay(mon, tue, wed, thu, fri, sat, sun);
-        let timePeriod = `${weekDay && startTime ? weekDay + ' : ' + startTime + ' - ' + endTime: ''}`;   
-        return { section, type, timePeriod, room, building, datePeriod, instructor, key};
+        let timePeriod = ' : ' + startTime + ' - ' + endTime;   
+        let weekPeriod = weekDay ?? 'N/A';
+        instructor = instructor.replace("&#39;", "'")
+        return { section, type, weekPeriod, timePeriod, room, building, datePeriod, instructor, key};
       }
     // console.log(course);
     // console.log('Instructor list inside:');  
@@ -52,29 +55,33 @@ export default function CourseTable({course, insList}) {
                 insList.filter(ins => ins.key === classes.crn)[0].value || 'N/A',
                 `${classes.crn}${section.mon?1:0}${section.tue?1:0}${section.wed?1:0}${section.thu?1:0}${section.fri?1:0}${section.sat?1:0}${section.sun?1:0}`
             ));
-            console.log(classes.crn);
-            console.log(insList.filter(ins => ins.key === classes.crn)[0].value) || 'N/A';
-            console.log(insList);
+            // console.log(classes.crn);
+            // console.log(insList.filter(ins => ins.key === classes.crn)[0].value) || 'N/A';
+            // console.log(insList);
         });
     })
 
     function renderWeekDay(isMon, isTue, isWed, isThu, isFri, isSat, isSun) {
+        let output = []
         if(isMon)
-            return 'Mon';
-        else if(isTue)
-            return 'Tue';
-        else if(isWed)
-            return 'Wed';
-        else if(isThu)
-            return 'Thu';
-        else if(isFri)
-            return 'Fri';
-        else if(isSat)
-            return 'Sat';
-        else if(isSun)
-            return 'Sun';
+            output.push('Mon');
+        if(isTue)
+            output.push('Tue');
+        if(isWed)
+            output.push('Wed');
+        if(isThu)
+          output.push('Thu');
+        if(isFri)
+          output.push('Fri');
+        if(isSat)
+          output.push('Sat');
+        if(isSun)
+          output.push('Sun');
+        if (output.length > 0)
+          return output.join(' / ');
         else
-            return null;
+          return null;
+
     }
 
     function renderMeetingTypeIcon(meetingType) {
@@ -125,14 +132,14 @@ export default function CourseTable({course, insList}) {
             <TableHead>
               <TableRow>
                 {/* Column header starts here */}
-                <TableCell>Section</TableCell>
+                <TableCell className='font-bold'>Section</TableCell>
                 {/* <TableCell align="right">Type</TableCell> */}
-                <TableCell align="left">Time</TableCell>
-                <TableCell align="left">Instructor</TableCell>
-                <TableCell align="left">Room</TableCell>
-                <TableCell align="left">Building</TableCell>
-                <TableCell align="left">Date</TableCell>
-                <TableCell align="left">Class Type</TableCell>
+                <TableCell align="left" className='font-bold'>Time</TableCell>
+                <TableCell align="left" className='font-bold'>Instructor</TableCell>
+                <TableCell align="left" className='font-bold'>Room</TableCell>
+                <TableCell align="left" className='font-bold'>Building</TableCell>
+                <TableCell align="left" className='font-bold'>Date</TableCell>
+                <TableCell align="left" className='font-bold'>Class Type</TableCell>
                                 
               </TableRow>
             </TableHead>
@@ -151,10 +158,7 @@ export default function CourseTable({course, insList}) {
                     // sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
                   <TableCell align='left' className='text-blue-700'>{row.section}</TableCell>
-
-                  {row.type === 'CLAS' ?
-                    <TableCell align='left' className='text-blue-700'>{row.timePeriod}</TableCell> :
-                    <TableCell align='left' >{row.timePeriod}</TableCell> }
+                  <TableCell align='left' ><WeekLegend weekString={row.key.slice(-7)} type={row.type} /><span className='text-blue-700'>{row.weekPeriod}</span><span>{row.timePeriod}</span></TableCell> 
                   <TableCell align='left'>{row.instructor}</TableCell>
                   <TableCell align='left'>{row.room}</TableCell>
                   <TableCell align='left'>{row.building}</TableCell>
