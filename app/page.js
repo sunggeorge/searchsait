@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
-import {fetchInstructor} from './functions/fetchInstructor.js';
+
 import jsonData from '@/public/res/dropdown.json';
 // import CourseTable from './components/CourseTable.js';
 import CourseTableList from './components/CourseTableList.js';
@@ -54,11 +54,11 @@ export default function CheckboxesTags() {
           'value': item.label,
           'key': item.label.split(' ')[0]
         }));        
-        console.log('Shortlist value: ' + selectedList.length);   
-        console.log('class list');
-        console.log(classList);
-        console.log('select list');        
-        console.log(selectedList);
+        // console.log('Shortlist value: ' + selectedList.length);   
+        // console.log('class list');
+        // console.log(classList);
+        // console.log('select list');        
+        // console.log(selectedList);
 
         // Filter class list with shortlist
         const tempList = classList.filter(item => {
@@ -68,8 +68,8 @@ export default function CheckboxesTags() {
         setFilteredList(sortedList);
         console.log('Filtered list: ' + sortedList.length);
       } else {
-        setShortlist([]);
-        setFilteredList([]);
+          setShortlist([]);
+          setFilteredList([]);
       }
 
 

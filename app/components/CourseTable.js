@@ -55,7 +55,7 @@ export default function CourseTable({course, insList}) {
                 insList.filter(ins => ins.key === classes.crn)[0].value || 'N/A',
                 `${classes.crn}${section.mon?1:0}${section.tue?1:0}${section.wed?1:0}${section.thu?1:0}${section.fri?1:0}${section.sat?1:0}${section.sun?1:0}`
             ));
-            // console.log(classes.crn);
+            console.log(classes);
             // console.log(insList.filter(ins => ins.key === classes.crn)[0].value) || 'N/A';
             // console.log(insList);
         });
@@ -130,7 +130,7 @@ export default function CourseTable({course, insList}) {
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
             <TableHead>
-              <TableRow>
+              <TableRow key={rows[0].key+'H'}>
                 {/* Column header starts here */}
                 <TableCell className='font-bold'>Section</TableCell>
                 {/* <TableCell align="right">Type</TableCell> */}
@@ -147,6 +147,7 @@ export default function CourseTable({course, insList}) {
               {rows.map((row) => (
                 <TableRow
                   key={row.key}
+                  // rowKey={row.key}
                   
 
                 //   sx={row.section === '' 

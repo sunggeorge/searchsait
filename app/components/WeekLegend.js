@@ -16,7 +16,7 @@ export default function WeekLegend({weekString, type}) { //Format: 1010101
     
   let [mon, tue, wed, thu, fri, sat, sun] = weekString;
 
-  console.log(mon, tue, wed, thu, fri, sat, sun, type);
+  // console.log(mon, tue, wed, thu, fri, sat, sun, type);
   
   let CSS1 = mon == 1 ? (type === 'CLAS' ? 'weekLegendClass' : 'weekLegendOther') : 'weekLegendOff';
   let CSS2 = tue == 1 ? (type === 'CLAS' ? 'weekLegendClass' : 'weekLegendOther') : 'weekLegendOff';
@@ -30,7 +30,7 @@ export default function WeekLegend({weekString, type}) { //Format: 1010101
     return (
     
           <table className="table-auto w-2/3 text-center">
-            <thead>
+          <tbody>
               <tr>
                 <th className={CSS7}>S</th>
                 <th className={CSS1}>M</th>
@@ -40,7 +40,7 @@ export default function WeekLegend({weekString, type}) { //Format: 1010101
                 <th className={CSS5}>F</th>
                 <th className={CSS6}>S</th>
               </tr>
-            </thead>
+              </tbody>
           </table>
 
       );
