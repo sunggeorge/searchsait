@@ -32,14 +32,22 @@ body {
   }
 }
 
+/* Base class for common cell styles */
+.table-cell {
+  @apply text-xs border border-black;
+  padding: 3px; /*Adjust padding to control cell size
+  /* min-width: 100px; Adjust minimum width as needed */
+  width: auto; /* Adjust width as needed, could be a specific value or percentage */
+}
+
 .weekLegendOff {
-  @apply text-xs border border-black ;
+  @apply table-cell bg-transparent ;
 }
 
 .weekLegendClass {
-  @apply text-xs border border-black bg-blue-900 text-white;
+  @apply table-cell bg-blue-900 text-white;
 }
 
 .weekLegendOther {
-  @apply text-xs border border-black bg-pink-400;
+  @apply table-cell bg-pink-400;
 }
