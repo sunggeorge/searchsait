@@ -70,7 +70,7 @@ export default function CourseTableList({courseList, insList}) {
     return (
         <div>
             <div>
-                <ProcessCombination combination={[...combination]}/>
+                <ProcessCombination selCombo={[...combination]}/>
             </div>
             <div>
                 {displayElements}
