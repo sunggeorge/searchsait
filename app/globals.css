@@ -51,3 +51,12 @@ body {
 .weekLegendOther {
   @apply table-cell bg-pink-400;
 }
+
+/* Override the row height in the calendar */
+.toastui-calendar-timegrid-hour-rows {
+  height: 300px; /* Adjust this value to your desired row height */
+}
+
+.tui-full-calendar-timegrid-container .tui-full-calendar-timegrid-row {
+  height: 20px; /* Adjust this value to your desired row height */
+}

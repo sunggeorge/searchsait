@@ -46,14 +46,24 @@ export default function CheckboxesTags() {
 
      // When selected classes changed
     const handleAutocompleteChange = (event, value) => {
-      console.log('Selected value: ' + value.length);
+      // console.log('Selected value: ' + value.length);
       // console.log('Instructor list: ' + instructorList.length);  
       // console.log(instructorList);  
 
+      // Check for duplicate labels
+      const labels = value.map(item => item.label);
+      const uniqueLabels = new Set(labels);
+      if (labels.length !== uniqueLabels.size) {
+        console.log('Duplicate label found, exiting function.');
+        return; // Exit the function if a duplicate label is found
+      }
 
       if (value.length > 0) {
-        const sortedValue = [...value].sort((a, b) => a.label.localeCompare(b.label));
 
+
+        const sortedValue = [...value].sort((a, b) => a.label.localeCompare(b.label));
+        // console.log('Sorted value: ');
+        // console.log(sortedValue);
 
         const selectedList = sortedValue.map(item => ({
           'value': item.label,
@@ -79,6 +89,10 @@ export default function CheckboxesTags() {
 
 
     };
+
+    // const filterOptions = (options, state) => {
+    //   return options.filter(option => !filteredList.includes(option));
+    // };
 
   //   function loadInstructor() {
   //     fetchInstructor(23460).then(displayName => {
@@ -106,6 +120,7 @@ export default function CheckboxesTags() {
         options={data}
         sx={{ width: 300 }}
         onChange={handleAutocompleteChange} // Add this line
+        // filterOptions={filterOptions}
         renderInput={(params) => 
           <TextField {...params} 
           // label="Browse Course Offerings" 
