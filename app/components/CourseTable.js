@@ -13,7 +13,7 @@ import OnlineIcon from '@mui/icons-material/LaptopMac';
 import PersonIcon from '@mui/icons-material/Person';
 import WeekLegend from './WeekLegend';
 
-export default function CourseTable({course, insList}) {      
+export default function CourseTable({course, insList, appendCombination}) {      
     
     let rows = [];
 
@@ -35,8 +35,23 @@ export default function CourseTable({course, insList}) {
 
 
 
+    let combinationData = [];
+    let sectionTimes = [];
+    let sectionData = [];
+
+    // Loop Section Data
     course.map((classes) => {
+
+
+        sectionTimes = [];
+        // Loop Section Time Data
         classes.class.map((section, index) => {
+            
+            sectionTimes.push(section);
+            // classSections[`${classes.value}-${classes.section}`] = section;
+            // console.log('Class Sections:' + classes.value + '-' + classes.section);
+            // console.log(classSections);
+
             rows.push(createData(
                 index==0?`${classes.value}-${classes.section}`:'', 
                 // `${classes.value}-${classes.section}`,
@@ -59,11 +74,27 @@ export default function CourseTable({course, insList}) {
                 insList.filter(ins => ins.key === classes.crn)[0].value || 'N/A',
                 `${classes.crn}${section.mon?1:0}${section.tue?1:0}${section.wed?1:0}${section.thu?1:0}${section.fri?1:0}${section.sat?1:0}${section.sun?1:0}`
             ));
-            console.log(classes);
+
+            // Section actions:
+            // console.log(classes);
+            
             // console.log(insList.filter(ins => ins.key === classes.crn)[0].value) || 'N/A';
             // console.log(insList);
         });
+        // Section actions:
+        sectionData.push({section: classes.value + classes.section, times: sectionTimes});
+      // console.log('Combination Elements:');
+      // console.log(combination);            
     })
+    // combinationData.push({classes: course[0].value, section: [...classSections]});
+    combinationData.push({
+      course: course[0].value,
+      // section: Object.entries(classSections).map(([key, value]) => ({ key, value }))
+      section: sectionData
+    });
+    appendCombination(...combinationData);
+    console.log('Add Combination Elements (final):');
+    console.log(combinationData);    
 
     function renderWeekDay(isMon, isTue, isWed, isThu, isFri, isSat, isSun) {
         let output = []
@@ -126,7 +157,7 @@ export default function CourseTable({course, insList}) {
           </TableCell>
         );
       }
-
+      // updateCombination({test: 'test'});
 
     return (
         <div>

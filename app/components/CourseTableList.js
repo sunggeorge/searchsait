@@ -1,19 +1,23 @@
 'use client'
 import { useEffect, useState } from 'react';
 import CourseTable from "./CourseTable.js";
+import ProcessCombination from './ProcessCombination.js';
 
 
 
 export default function CourseTableList({courseList, insList}) {
 
     const [displayElements, setDisplayElements] = useState([]);
+    const [combination, setCombination] = useState([]);
 
     useEffect(() => {
 
         let items = [];
         let elements = [];
 
-        console.log('CourseTableList:')
+        setCombination([]);
+
+        console.log('CourseTableList in next page:')
         console.log(courseList);
         // console.log('Instructor list:');  
         // console.log(insList);  
@@ -27,7 +31,8 @@ export default function CourseTableList({courseList, insList}) {
             if(isNewValue && index > 0){
                 let temp_items = [...items];
                 key = prevItem.crn;
-                elements.push(<CourseTable key={key} course={temp_items} insList={insList}/>);
+                // elements.push(<CourseTable key={key} course={temp_items} insList={insList} appendCombination={(prev, list)=>setCombination([...prev,list])}/>);
+                elements.push(<CourseTable key={key} course={temp_items} insList={insList} appendCombination={(list)=>setCombination(prev=>[...prev, list])}/>);
                 // elements.push(<CourseTable  course={temp_items} insList={insList}/>);
                 items = [item];
             } else {
@@ -38,20 +43,38 @@ export default function CourseTableList({courseList, insList}) {
             if(index === arr.length - 1){
                 let temp_items = [...items];
                 key = item.crn;
-                elements.push(<CourseTable key={key} course={temp_items} insList={insList}/>);
+                elements.push(<CourseTable key={key} course={temp_items} insList={insList} appendCombination={(list)=>setCombination(prev=>[...prev, list])}/>);
             }
         });
         setDisplayElements(elements);
 
-
     }, [courseList, insList]);
 
-    console.log('Display Elements:');
-    console.log(displayElements);
+
+
+
+    useEffect(() => {
+
+
+
+
+        console.log('Combination Elements change:');
+        console.log(combination);
+    }, [combination]);
+
+    // console.log('Display Elements:');
+    // console.log(displayElements);
+    // console.log('Combination Elements:');
+    // console.log(combination);    
 
     return (
         <div>
-            {displayElements}
+            <div>
+                <ProcessCombination selCombo={[...combination]}/>
+            </div>
+            <div>
+                {displayElements}
+            </div>
         </div>
     )
 }

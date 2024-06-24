@@ -15,6 +15,9 @@ export default function CheckboxesTags() {
     const [classList, setClassList] = useState([]);
     const [filteredList, setFilteredList] = useState([]);
     const [instructorList, setInstructorList] = useState([]);
+    const [dropDownSelectedValue, setDropDownSelectedValue] = useState([]); 
+
+    const MAX_SELECTION = 5;
 
     let classJsonData;
     let instructorJsonData;
@@ -46,39 +49,60 @@ export default function CheckboxesTags() {
 
      // When selected classes changed
     const handleAutocompleteChange = (event, value) => {
-      console.log('Selected value: ' + value.length);
+      // console.log('Selected value: ' + value.length);
       // console.log('Instructor list: ' + instructorList.length);  
       // console.log(instructorList);  
 
+      // Check for duplicate labels
+      if (value.length <= MAX_SELECTION) {
 
-      if (value.length > 0) {
-        const sortedValue = [...value].sort((a, b) => a.label.localeCompare(b.label));
+        setDropDownSelectedValue(value);
+
+        const labels = value.map(item => item.label);
+        const uniqueLabels = new Set(labels);
+        if (labels.length !== uniqueLabels.size) {
+          console.log('Duplicate label found, exiting function.');
+          return; // Exit the function if a duplicate label is found
+        }
+
+        if (value.length > 0) {
 
 
-        const selectedList = sortedValue.map(item => ({
-          'value': item.label,
-          'key': item.label.split(' ')[0]
-        }));        
-        // console.log('Shortlist value: ' + selectedList.length);   
-        // console.log('class list');
-        // console.log(classList);
-        // console.log('select list');        
-        // console.log(selectedList);
+          const sortedValue = [...value].sort((a, b) => a.label.localeCompare(b.label));
+          // console.log('Sorted value: ');
+          // console.log(sortedValue);
 
-        // Filter class list with shortlist
-        const tempList = classList.filter(item => {
-          return selectedList.some(selectedItem => selectedItem.key === item.value);
-        });
-        const sortedList = [...tempList].sort((a, b) => a.value.localeCompare(b.value) || a.section.localeCompare(b.section));
-        setFilteredList(sortedList);
-        console.log('Filtered list: ' + sortedList.length);
+          const selectedList = sortedValue.map(item => ({
+            'value': item.label,
+            'key': item.label.split(' ')[0]
+          }));        
+          // console.log('Shortlist value: ' + selectedList.length);   
+          // console.log('class list');
+          // console.log(classList);
+          // console.log('select list');        
+          // console.log(selectedList);
+
+          // Filter class list with shortlist
+          const tempList = classList.filter(item => {
+            return selectedList.some(selectedItem => selectedItem.key === item.value);
+          });
+          const sortedList = [...tempList].sort((a, b) => a.value.localeCompare(b.value) || a.section.localeCompare(b.section));
+          setFilteredList(sortedList);
+          console.log('Filtered list: ' + sortedList.length);
+        } else {
+            setShortlist([]);
+            setFilteredList([]);
+        }
       } else {
-          setShortlist([]);
-          setFilteredList([]);
+        alert(`You can only select up to ${MAX_SELECTION} courses.`);
       }
-
+      
 
     };
+
+    // const filterOptions = (options, state) => {
+    //   return options.filter(option => !filteredList.includes(option));
+    // };
 
   //   function loadInstructor() {
   //     fetchInstructor(23460).then(displayName => {
@@ -91,10 +115,6 @@ export default function CheckboxesTags() {
 
     return (
 
-
-
-
-
       <div className='bg-teal-100 w-svw min-h-screen text-black'>
       <div className='p-10 mx-auto w-4/5 text-black'>  
       <h1 className='mx-auto w-4/5 text-center'><p>SAIT Course Offerings (2024 Fall)</p></h1>
@@ -104,8 +124,11 @@ export default function CheckboxesTags() {
         multiple
         id="combo-box-demo"
         options={data}
+        value={dropDownSelectedValue}  
         sx={{ width: 300 }}
+        isOptionEqualToValue={(option, value) => option.label === value.label}
         onChange={handleAutocompleteChange} // Add this line
+        // filterOptions={filterOptions}
         renderInput={(params) => 
           <TextField {...params} 
           // label="Browse Course Offerings" 
