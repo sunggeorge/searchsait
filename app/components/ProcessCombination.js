@@ -1,11 +1,12 @@
 'use client'
-import {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Checkbox from '@mui/material/Checkbox';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
+import WeekLegend from './WeekLegend';
 
 const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
 const checkedIcon = <CheckBoxIcon fontSize="small" />;
@@ -21,6 +22,8 @@ export default function ProcessCombination({selCombo}) {
     const [sectionDropDownList, setSectionDropDownList] = useState([]);
     const [dropDownSelectedValue, setDropDownSelectedValue] = useState([]);
     const [displayedCombo, setDisplayedCombo] = useState([]);
+    const [displayedComboContent, setDisplayedComboContent] = useState([]);
+
 
     useEffect(() => {
 
@@ -93,6 +96,12 @@ export default function ProcessCombination({selCombo}) {
             setDisplayedCombo([]);
         }
     }, [selCombo]);
+
+    function getWeekLegendFromString(inputString) {
+      tempSplit = inputString.split('|');
+      return `<WeekLegend weekString=${tempSplit[0]} type=${tempSplit[1]} />
+          <span className='text-blue-700'>${tempSplit[2]}</span><span>${tempSplit[3]}</span>`;
+    }
 
     function getNumOfCombination(array) {
         let numOfCombination = 1; // Start with 1 because it's a multiplication operation
@@ -318,6 +327,29 @@ export default function ProcessCombination({selCombo}) {
         setDropDownSelectedValue(newValue);
     };
 
+    function displayWeekLegendFromString(inputString) {
+        const tempSplit = inputString.split('|');
+        return `${<WeekLegend weekString={tempSplit[0]} type={tempSplit[1]}/>}`
+           + `<span className='text-blue-700'>${tempSplit[2]}</span><span>${tempSplit[3]}</span>`
+         
+        
+    }
+
+    useEffect(() => {
+    //   let tempDisplayedComboContent = [];
+    //   displayedCombo.forEach((item) => {
+    //     item.forEach((section) => {
+    //       section.weekLegendString.forEach((weekLegend) => {
+    //         const message = displayWeekLegendFromString(weekLegend);
+    //         tempDisplayedComboContent.push(message);
+    //       });
+    //     });
+    //   });
+      console.log('Displayed Combo Content:');
+      console.log(displayedComboContent);
+    //   setDisplayedComboContent(tempDisplayedComboContent.length > 0 ? tempDisplayedComboContent : []);
+    }, [displayedCombo]);
+
     return (
         <div>
                 <div className='flex justify-around items-center text-center mb-5'>
@@ -358,13 +390,40 @@ export default function ProcessCombination({selCombo}) {
 
                     </div>
                 </div> 
-                {displayedCombo.map((item, index) => (
-                    <div key={index} className='text-center mt-1' >
-                        <span style={{ whiteSpace: 'pre-wrap' }}>
-                            {item.map((section, index2) => `${section.section}${' '.repeat(10)}`).join('')}
-                        </span>
-                    </div>
-                ))}
-        </div>
-    );
-}
+                
+                {/* <div className='text-center grid grid-cols-3 gap-2'> */}
+                <div className='text-center flex flex-row flex-wrap items-center justify-center'>
+                  {displayedCombo.map((item, index1) => {
+                    // Moved the logic outside of the return statement
+                    // const allWeekLegendStrings = item.map(s => `${s.section}: ${s.weekLegendString.split('|')[2]}${s.weekLegendString.split('|')[3]}`).join('\n');
+                    console.log('All Week Legend Strings:', item);
+                    const allWeekLegendStrings = item.map(s => s.weekLegendString.map(wls => `${s.section}: ${wls.split('|')[2]}${wls.split('|')[3]}`).join('\n')).join('\n');
+                    // console.log('All Week Legend Strings:', allWeekLegendStrings);
+
+                    return (
+                      <div key={item.id} className='m-5 p-5 bg-green-200 rounded-xl drop-shadow-lg text-xs flex flex-col items-center'>
+                        {/* Displaying allWeekLegendStrings. Assuming you want to display it as a preformatted text */}
+                        <pre>{allWeekLegendStrings}</pre>
+
+                        <div className='m-2'>
+                        {item.map((section, index2) => {
+                          return section.weekLegendString.map((wls, wlsIndex) => {
+                            const tempSplit = wls.split('|');
+                            return (
+                              <div key={`${index1}-${index2}-${wlsIndex}`}> {/* Updated key to include wlsIndex */}
+                                <div>
+                                  <WeekLegend weekString={tempSplit[0]} type={tempSplit[1]} />
+                                </div>
+                              </div>
+                            );
+                          });
+                        })}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+                
+              </div>
+    )
+};
