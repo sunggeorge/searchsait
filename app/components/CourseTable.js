@@ -12,6 +12,7 @@ import PracIcon from '@mui/icons-material/Architecture';
 import OnlineIcon from '@mui/icons-material/LaptopMac';
 import PersonIcon from '@mui/icons-material/Person';
 import WeekLegend from './WeekLegend';
+import SeatBar from './SeatBar';
 
 export default function CourseTable({course, insList, appendCombination}) {      
     
@@ -26,12 +27,12 @@ export default function CourseTable({course, insList, appendCombination}) {
     function createData(originalSection, section, type, startTime, endTime, room, building, startDate, endDate,
         mon, tue, wed, thu, fri, sat, sun, enrollment, maxEnrollment, instructor, key
     ) {
-        let datePeriod = `${startDate} - ${endDate}`;
+        let datePeriod = startDate && `${startDate} - ${endDate}`;
         let weekDay = renderWeekDay(mon, tue, wed, thu, fri, sat, sun);
         let timePeriod = ' : ' + startTime + ' - ' + endTime;   
         let weekPeriod = weekDay ?? 'N/A';
-        let enrollmentStatus = `${enrollment}/${maxEnrollment}`;
-        instructor = instructor.replace("&#39;", "'")
+        // let enrollmentStatus = `${enrollment}/${maxEnrollment}`;
+        instructor = instructor && instructor.replace("&#39;", "'")
 
         // Check if the key exists in the dictionary
         if (!tempWeekLegendString.hasOwnProperty(originalSection)) {
@@ -46,7 +47,7 @@ export default function CourseTable({course, insList, appendCombination}) {
         console.log(section);
         console.log('tempWeekLegendString: ', tempWeekLegendString);
 
-        return { section, type, weekPeriod, timePeriod, room, building, datePeriod, instructor, enrollmentStatus, key};
+        return { section, type, weekPeriod, timePeriod, room, building, datePeriod, instructor, enrollment, maxEnrollment, key};
       }
     // console.log(course);
     // console.log('Instructor list inside:');  
@@ -79,8 +80,8 @@ export default function CourseTable({course, insList, appendCombination}) {
                 section.endTime,
                 section.room,
                 section.building,
-                section.startDate,
-                section.endDate,
+                index==0? section.startDate : '',
+                index==0? section.endDate : '',
                 section.mon,
                 section.tue,
                 section.wed,
@@ -88,9 +89,9 @@ export default function CourseTable({course, insList, appendCombination}) {
                 section.fri,
                 section.sat,
                 section.sun,
-                classes.enrollment,
-                classes.maxEnrollment,
-                insList.filter(ins => ins.key === classes.crn)[0].value || 'N/A',
+                index==0? classes.enrollment : '',
+                index==0? classes.maxEnrollment : '',
+                index==0? insList.filter(ins => ins.key === classes.crn)[0].value || 'N/A' : '',
                 `${classes.crn}${section.mon?1:0}${section.tue?1:0}${section.wed?1:0}${section.thu?1:0}${section.fri?1:0}${section.sat?1:0}${section.sun?1:0}`
             ));
 
@@ -194,7 +195,7 @@ export default function CourseTable({course, insList, appendCombination}) {
                 <TableCell align="left" className='font-bold'>Instructor</TableCell>
                 <TableCell align="left" className='font-bold'>Room</TableCell>
                 <TableCell align="left" className='font-bold'>Building</TableCell>
-                <TableCell align="left" className='font-bold'>Enrollment</TableCell>
+                <TableCell align="left" className='font-bold'>Availability</TableCell>
                 <TableCell align="left" className='font-bold'>Date</TableCell>
                 <TableCell align="left" className='font-bold'>Class Type</TableCell>
                                 
@@ -220,7 +221,7 @@ export default function CourseTable({course, insList, appendCombination}) {
                   <TableCell align='left'>{row.instructor}</TableCell>
                   <TableCell align='left'>{row.room}</TableCell>
                   <TableCell align='left'>{row.building}</TableCell>
-                  <TableCell align='left'>{row.enrollmentStatus}</TableCell>
+                  <TableCell align='left'><SeatBar enrollment={row.enrollment} maxEnrollment={row.maxEnrollment}/></TableCell>
                   <TableCell align='left'>{row.datePeriod}</TableCell>
                   <TableCell align='left'>{renderMeetingTypeIcon(row.type)}</TableCell>
 
