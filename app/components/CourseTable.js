@@ -27,6 +27,8 @@ export default function CourseTable({course, insList, appendCombination}) {
         let enrollmentStatus = `${enrollment}/${maxEnrollment}`;
         instructor = instructor.replace("&#39;", "'")
 
+        tempWeekLegendString[section] = [key.slice(-7), type, weekPeriod, timePeriod].join('|');
+        // <WeekLegend weekString={row.key.slice(-7)} type={row.type} /><span className='text-blue-700'>{row.weekPeriod}</span><span>{row.timePeriod}
         return { section, type, weekPeriod, timePeriod, room, building, datePeriod, instructor, enrollmentStatus, key};
       }
     // console.log(course);
@@ -38,10 +40,10 @@ export default function CourseTable({course, insList, appendCombination}) {
     let combinationData = [];
     let sectionTimes = [];
     let sectionData = [];
+    let tempWeekLegendString = {};
 
     // Loop Section Data
     course.map((classes) => {
-
 
         sectionTimes = [];
         // Loop Section Time Data
@@ -75,6 +77,8 @@ export default function CourseTable({course, insList, appendCombination}) {
                 `${classes.crn}${section.mon?1:0}${section.tue?1:0}${section.wed?1:0}${section.thu?1:0}${section.fri?1:0}${section.sat?1:0}${section.sun?1:0}`
             ));
 
+            // <WeekLegend weekString={row.key.slice(-7)} type={row.type} /><span className='text-blue-700'>{row.weekPeriod}</span><span>{row.timePeriod}
+            
             // Section actions:
             // console.log(classes);
             
@@ -82,7 +86,7 @@ export default function CourseTable({course, insList, appendCombination}) {
             // console.log(insList);
         });
         // Section actions:
-        sectionData.push({section: classes.value + classes.section, times: sectionTimes});
+        sectionData.push({section: classes.value + '-' + classes.section, times: sectionTimes, weekLegendString: tempWeekLegendString[classes.value + '-' + classes.section]});
       // console.log('Combination Elements:');
       // console.log(combination);            
     })
