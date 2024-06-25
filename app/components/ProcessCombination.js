@@ -336,16 +336,18 @@ export default function ProcessCombination({selCombo}) {
     }
 
     useEffect(() => {
-      let tempDisplayedComboContent = [];
-      displayedCombo.forEach((item) => {
-        item.forEach((section) => {
-          const message = displayWeekLegendFromString(section.weekLegendString);
-          tempDisplayedComboContent.push(message);
-        });
-      });
+    //   let tempDisplayedComboContent = [];
+    //   displayedCombo.forEach((item) => {
+    //     item.forEach((section) => {
+    //       section.weekLegendString.forEach((weekLegend) => {
+    //         const message = displayWeekLegendFromString(weekLegend);
+    //         tempDisplayedComboContent.push(message);
+    //       });
+    //     });
+    //   });
       console.log('Displayed Combo Content:');
-      console.log(tempDisplayedComboContent);
-      setDisplayedComboContent(tempDisplayedComboContent.length > 0 ? tempDisplayedComboContent : []);
+      console.log(displayedComboContent);
+    //   setDisplayedComboContent(tempDisplayedComboContent.length > 0 ? tempDisplayedComboContent : []);
     }, [displayedCombo]);
 
     return (
@@ -390,18 +392,20 @@ export default function ProcessCombination({selCombo}) {
                 </div> 
                 
                 {/* <div className='text-center grid grid-cols-3 gap-2'> */}
-                <div className='text-center flex flex-row items-center justify-center'>
+                <div className='text-center flex flex-row flex-wrap items-center justify-center'>
                   {displayedCombo.map((item, index1) => {
                     // Moved the logic outside of the return statement
                     // const allWeekLegendStrings = item.map(s => `${s.section}: ${s.weekLegendString.split('|')[2]}${s.weekLegendString.split('|')[3]}`).join('\n');
+                    console.log('All Week Legend Strings:', item);
                     const allWeekLegendStrings = item.map(s => s.weekLegendString.map(wls => `${s.section}: ${wls.split('|')[2]}${wls.split('|')[3]}`).join('\n')).join('\n');
-                    console.log('All Week Legend Strings:', allWeekLegendStrings);
+                    // console.log('All Week Legend Strings:', allWeekLegendStrings);
 
                     return (
-                      <div key={item.id} className='m-2 p-2 bg-green-200 rounded-sm text-xs flex flex-col items-center'>
+                      <div key={item.id} className='m-5 p-5 bg-green-200 rounded-xl drop-shadow-lg text-xs flex flex-col items-center'>
                         {/* Displaying allWeekLegendStrings. Assuming you want to display it as a preformatted text */}
                         <pre>{allWeekLegendStrings}</pre>
 
+                        <div className='m-2'>
                         {item.map((section, index2) => {
                           return section.weekLegendString.map((wls, wlsIndex) => {
                             const tempSplit = wls.split('|');
@@ -414,6 +418,7 @@ export default function ProcessCombination({selCombo}) {
                             );
                           });
                         })}
+                        </div>
                       </div>
                     );
                   })}

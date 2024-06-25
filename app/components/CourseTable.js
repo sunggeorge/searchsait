@@ -17,7 +17,13 @@ export default function CourseTable({course, insList, appendCombination}) {
     
     let rows = [];
 
-    function createData(section, type, startTime, endTime, room, building, startDate, endDate,
+    let combinationData = [];
+    let sectionTimes = [];
+    let sectionData = [];
+    let tempWeekLegendString = {};
+
+
+    function createData(originalSection, section, type, startTime, endTime, room, building, startDate, endDate,
         mon, tue, wed, thu, fri, sat, sun, enrollment, maxEnrollment, instructor, key
     ) {
         let datePeriod = `${startDate} - ${endDate}`;
@@ -27,20 +33,30 @@ export default function CourseTable({course, insList, appendCombination}) {
         let enrollmentStatus = `${enrollment}/${maxEnrollment}`;
         instructor = instructor.replace("&#39;", "'")
 
-        tempWeekLegendString[section] = [key.slice(-7), type, weekPeriod, timePeriod].join('|');
-        // <WeekLegend weekString={row.key.slice(-7)} type={row.type} /><span className='text-blue-700'>{row.weekPeriod}</span><span>{row.timePeriod}
+        // Check if the key exists in the dictionary
+        if (!tempWeekLegendString.hasOwnProperty(originalSection)) {
+          // If not, initialize it with an empty array
+          tempWeekLegendString[originalSection] = [];
+        }
+
+        // Now, safely push the new value into the array
+        tempWeekLegendString[originalSection].push([key.slice(-7), type, weekPeriod, timePeriod].join('|'));
+
+        console.log('In createData loop');
+        console.log(section);
+        console.log('tempWeekLegendString: ', tempWeekLegendString);
+
         return { section, type, weekPeriod, timePeriod, room, building, datePeriod, instructor, enrollmentStatus, key};
       }
     // console.log(course);
     // console.log('Instructor list inside:');  
     // console.log(insList);      
 
+      React.useEffect(() => {
+        console.log('tempWeekLegendString: ', tempWeekLegendString);
+      }, [tempWeekLegendString]);
 
 
-    let combinationData = [];
-    let sectionTimes = [];
-    let sectionData = [];
-    let tempWeekLegendString = {};
 
     // Loop Section Data
     course.map((classes) => {
@@ -55,6 +71,7 @@ export default function CourseTable({course, insList, appendCombination}) {
             // console.log(classSections);
 
             rows.push(createData(
+                `${classes.value}-${classes.section}`,
                 index==0?`${classes.value}-${classes.section}`:'', 
                 // `${classes.value}-${classes.section}`,
                 section.type,
@@ -86,7 +103,7 @@ export default function CourseTable({course, insList, appendCombination}) {
             // console.log(insList);
         });
         // Section actions:
-        sectionData.push({section: classes.value + '-' + classes.section, times: sectionTimes, weekLegendString: tempWeekLegendString[classes.value + '-' + classes.section]});
+        sectionData.push({section: classes.value + '-' + classes.section, times: sectionTimes, weekLegendString: [...tempWeekLegendString[classes.value + '-' + classes.section]]});
       // console.log('Combination Elements:');
       // console.log(combination);            
     })
