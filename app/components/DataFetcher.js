@@ -24,7 +24,7 @@ export default function DataFetcher() {
             const tempTokenList = fileList.map(file => file.split('.')[0]);
             setTokenList(tempTokenList);
         }
-        // axios.get(`/res/202420/${file}`).then(response => ({ [file]: response.data }))
+        // axios.get(`/res/202430/${file}`).then(response => ({ [file]: response.data }))
         );
 
         // const fileDataArray = await Promise.all(dataPromises);

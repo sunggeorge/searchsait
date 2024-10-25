@@ -30,7 +30,7 @@ export default function CheckboxesTags() {
 
     useEffect(() => {
       const fetchData = async () => {
-        const module = await import('@/public/res/202420.json');
+        const module = await import('@/public/res/202430.json');
         classJsonData = module.default;
         const data = Array.isArray(classJsonData) ? classJsonData : Object.values(classJsonData);
         setClassList(data);
@@ -117,7 +117,7 @@ export default function CheckboxesTags() {
 
       <div className='bg-teal-100 w-svw min-h-screen text-black'>
       <div className='p-10 mx-auto w-4/5 text-black'>  
-      <h1 className='mx-auto w-4/5 text-center'><p>SAIT Course Offerings (2024 Fall)</p></h1>
+      <h1 className='mx-auto w-4/5 text-center'><p>SAIT Course Offerings (2025 Winter)</p></h1>
       <Autocomplete className='m-5 mx-auto w-1/2'
         disablePortal
         disableCloseOnSelect

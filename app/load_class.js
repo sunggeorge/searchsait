@@ -12,7 +12,7 @@
 import { useState } from 'react';
 
 export default function Home() {
-  const [term, setTerm] = useState('202420');
+  const [term, setTerm] = useState('202430');
   const [subject, setSubject] = useState('CPRG');
   const [results, setResults] = useState(null);
 
