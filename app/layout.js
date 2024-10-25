@@ -5,9 +5,9 @@ import { Key } from "@mui/icons-material";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "SAIT Course Catalogue (2024 Fall)",
+  title: "SAIT Course Catalogue (2025 Winter)",
   description: "An easy way to browse SAIT offerings",
-  keywords: "SAIT Course, 2024 Fall, Timetable"
+  keywords: "SAIT Course, 2025 Winter, Timetable"
 };
 
 export default function RootLayout({ children }) {

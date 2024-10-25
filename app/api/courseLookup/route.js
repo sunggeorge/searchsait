@@ -29,7 +29,7 @@ export async function POST(req) {
 
         console.log(JSON.stringify(lookupParams))
 //     //   Step 1: Post to term search
-      const postResult = await fetch(`${baseurl}/term/search?mode=search&term=202420`, {
+      const postResult = await fetch(`${baseurl}/term/search?mode=search&term=202430`, {
       // const postResult = await fetch(`${baseurl}/term/search`, {
         // credentials: 'include',  
         credentials: "same-origin",
@@ -43,7 +43,7 @@ export async function POST(req) {
       console.log(postResult.headers);        
       // return await response.json();;
 
-      const testResult = await fetch(`${baseurl}/searchResults/getFacultyMeetingTimes?term=202420&courseReferenceNumber=21040`, {
+      const testResult = await fetch(`${baseurl}/searchResults/getFacultyMeetingTimes?term=202430&courseReferenceNumber=21040`, {
         // const searchResult = await fetch(`${baseurl}/searchResults/searchResults`, {
           // credentials: 'include',   
           // credentials: "same-origin",     
@@ -58,8 +58,8 @@ export async function POST(req) {
 
       // Step 2: Get search results
       // const searchResult = await fetch(`${baseurl}/searchResults/searchResults?txt_term=${txt_term}&txt_subject=${txt_subject}&pageOffset=0&pageMaxSize=500`, {
-      // const searchResult = await fetch(`${baseurl}/classSearch/classSearch?txt_term=202420&txt_subject=CPRG&pageOffset=0&pageMaxSize=500`, {
-      const searchResult = await fetch(`${baseurl}/searchResults/searchResults?txt_term=202420&txt_subject=CPRG&txt_courseNumber=306&pageOffset=0&pageMaxSize=500`, {
+      // const searchResult = await fetch(`${baseurl}/classSearch/classSearch?txt_term=202430&txt_subject=CPRG&pageOffset=0&pageMaxSize=500`, {
+      const searchResult = await fetch(`${baseurl}/searchResults/searchResults?txt_term=202430&txt_subject=CPRG&txt_courseNumber=306&pageOffset=0&pageMaxSize=500`, {
       // const searchResult = await fetch(`${baseurl}/searchResults/searchResults`, {
         // credentials: 'include',   
         credentials: "same-origin",     
