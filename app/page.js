@@ -3,6 +3,8 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
+import { useAtom } from 'jotai';
+import { ratingsAtom } from './stateAtoms.js';
 
 
 import jsonData from '@/public/res/dropdown.json';
@@ -16,6 +18,7 @@ export default function CheckboxesTags() {
     const [filteredList, setFilteredList] = useState([]);
     const [instructorList, setInstructorList] = useState([]);
     const [dropDownSelectedValue, setDropDownSelectedValue] = useState([]); 
+    const [, setRatings] = useAtom(ratingsAtom);
 
     const MAX_SELECTION = 5;
 
@@ -42,6 +45,9 @@ export default function CheckboxesTags() {
         setInstructorList(data_ins);    
         // console.log('Instructor list: ' + instructorJsonData.length);  
         // console.log(instructorList);  
+        const RMP_data = await import('@/public/res/RMP.json');
+        setRatings(RMP_data);
+        // console.log('RMP data:', RMP_data);      
       };
   
       fetchData();
