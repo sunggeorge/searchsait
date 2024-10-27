@@ -132,7 +132,7 @@ export default function CheckboxesTags() {
 
       <div className='bg-teal-100 w-svw min-h-screen text-black'>
       <div className='p-10 mx-auto w-4/5 text-black'>  
-      <h1 className='mx-auto w-4/5 text-center'><p>SAIT Course Offerings (2025 Winter)</p></h1>
+      <h1 className='mx-auto w-4/5 text-center'><p>SAIT Course Offerings (2025 Winter) - Beta</p></h1>
       <p className="text-center font-light text-gray-600 text-sm">{getTimeAgo(lastUpdateTime)}</p>
       <Autocomplete className='m-5 mx-auto w-1/2'
         disablePortal
