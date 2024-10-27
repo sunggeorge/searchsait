@@ -383,7 +383,7 @@ export default function ProcessCombination({selCombo}) {
                             )}
                             style={{ width: 500 }}
                             renderInput={(params) => (
-                                <TextField {...params} label="Combination sections" placeholder="Choose sections" />
+                                <TextField {...params} label="Choose combination sections" placeholder="Please choose sections" />
                             )}
                             />
 
