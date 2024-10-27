@@ -5,6 +5,7 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { useAtom } from 'jotai';
 import { ratingsAtom } from './stateAtoms.js';
+import { getTimeAgo } from './functions/getTimeAgo.js';
 
 
 import jsonData from '@/public/res/dropdown.json';
@@ -18,18 +19,21 @@ export default function CheckboxesTags() {
     const [filteredList, setFilteredList] = useState([]);
     const [instructorList, setInstructorList] = useState([]);
     const [dropDownSelectedValue, setDropDownSelectedValue] = useState([]); 
+    const [lastUpdateTime, setLastUpdateTime] = useState('');
     const [, setRatings] = useAtom(ratingsAtom);
 
     const MAX_SELECTION = 5;
 
     let classJsonData;
     let instructorJsonData;
+    let server_data;
     // const data = Array.isArray(jsonData['data']) ? jsonData['data'] : Object.values(jsonData['data']);  
     // Replace "&amp;" with "&" in the "label" element of each object in jsonData
     const data = jsonData.map(item => ({
       ...item,
       label: item.label.replace(/&amp;/g, '&').replace(/&#39;/g, "'")
     }));
+
 
     useEffect(() => {
       const fetchData = async () => {
@@ -48,6 +52,9 @@ export default function CheckboxesTags() {
         const RMP_data = await import('@/public/res/RMP.json');
         setRatings(RMP_data);
         // console.log('RMP data:', RMP_data);      
+        server_data = await import('@/public/res/server_log.json');
+        setLastUpdateTime(server_data.update_log.lastUpdateTime);
+        // console.log('Server data:', server_data);
       };
   
       fetchData();
@@ -119,11 +126,14 @@ export default function CheckboxesTags() {
   //  }
   //  loadInstructor();
 
+
+
     return (
 
       <div className='bg-teal-100 w-svw min-h-screen text-black'>
       <div className='p-10 mx-auto w-4/5 text-black'>  
       <h1 className='mx-auto w-4/5 text-center'><p>SAIT Course Offerings (2025 Winter)</p></h1>
+      <p className="text-center font-light text-gray-600 text-sm">{getTimeAgo(lastUpdateTime)}</p>
       <Autocomplete className='m-5 mx-auto w-1/2'
         disablePortal
         disableCloseOnSelect
