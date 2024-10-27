@@ -7,12 +7,14 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
+
 import Tooltip from '@mui/material/Tooltip';
 import PracIcon from '@mui/icons-material/Architecture';
 import OnlineIcon from '@mui/icons-material/LaptopMac';
 import PersonIcon from '@mui/icons-material/Person';
 import WeekLegend from './WeekLegend';
 import SeatBar from './SeatBar';
+import DisplayInstructor from './DisplayInstructor';
 
 export default function CourseTable({course, insList, appendCombination}) {      
     
@@ -218,7 +220,7 @@ export default function CourseTable({course, insList, appendCombination}) {
                 >
                   <TableCell align='left' className='text-blue-700'>{row.section}</TableCell>
                   <TableCell align='left' ><WeekLegend weekString={row.key.slice(-7)} type={row.type} /><span className='text-blue-700'>{row.weekPeriod}</span><span>{row.timePeriod}</span></TableCell> 
-                  <TableCell align='left'>{row.instructor}</TableCell>
+                  <TableCell align='left'><DisplayInstructor instructor={row.instructor}/></TableCell>
                   <TableCell align='left'>{row.room}</TableCell>
                   <TableCell align='left'>{row.building}</TableCell>
                   <TableCell align='left'><SeatBar enrollment={row.enrollment} maxEnrollment={row.maxEnrollment}/></TableCell>

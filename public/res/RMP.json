@@ -1,0 +1,730 @@
+{
+    "Ayoko Tettegah": {
+        "ID": 2920196,
+        "rating": 1
+    },
+    "Rhonda Heninger": {
+        "ID": 514977,
+        "rating": 4.8
+    },
+    "Olga Tsvetkova": {
+        "ID": 2391635,
+        "rating": 2.8
+    },
+    "Fiaz Merani": {
+        "ID": 884501,
+        "rating": 2.4
+    },
+    "Taylor Luna": {
+        "ID": 2967969,
+        "rating": 4.4
+    },
+    "Cynthia Maier": {
+        "ID": 1006749,
+        "rating": 1.2
+    },
+    "Margarita Pankiw": {
+        "ID": 2391144,
+        "rating": 4.8
+    },
+    "Ivan Guertin": {
+        "ID": 1324771,
+        "rating": 3.6
+    },
+    "Jill Conner": {
+        "ID": 2845818,
+        "rating": 4.7
+    },
+    "Natasha Hemraj": {
+        "ID": 1853710,
+        "rating": 3.9
+    },
+    "Najlaa Kallousa": {
+        "ID": 1763852,
+        "rating": 4.2
+    },
+    "Aymie Rondeau": {
+        "ID": 2265889,
+        "rating": 4
+    },
+    "Sandra Pereversoff": {
+        "ID": 1056671,
+        "rating": 3
+    },
+    "Shafik Janmohamed": {
+        "ID": 1328907,
+        "rating": 3.8
+    },
+    "Coralie Lush": {
+        "ID": 1752014,
+        "rating": 4.8
+    },
+    "Jeff Logan": {
+        "ID": 2513749,
+        "rating": 4.1
+    },
+    "Samia Ebrahiem": {
+        "ID": 2838089,
+        "rating": 3.3
+    },
+    "Alaa Kandil": {
+        "ID": 1928647,
+        "rating": 4.1
+    },
+    "Lyndsay Samuelson": {
+        "ID": 1928674,
+        "rating": 4.8
+    },
+    "Kevin Conniff": {
+        "ID": 2775548,
+        "rating": 3
+    },
+    "Sanoop Sadique": {
+        "ID": 2921586,
+        "rating": 4.3
+    },
+    "Denise Lillejord": {
+        "ID": 2205087,
+        "rating": 4.8
+    },
+    "Roxanne Nelson": {
+        "ID": 932818,
+        "rating": 3.9
+    },
+    "Ashish Jhamb": {
+        "ID": 2428693,
+        "rating": 4.4
+    },
+    "Kathy Moore": {
+        "ID": 2983464,
+        "rating": 1
+    },
+    "Marti Rodriguez": {
+        "ID": 2942539,
+        "rating": 4.9
+    },
+    "Madeleine MacDonald": {
+        "ID": 2792694,
+        "rating": 5
+    },
+    "Salah U-Din": {
+        "ID": 2850418,
+        "rating": 1.5
+    },
+    "Mollick Hussain": {
+        "ID": 2315944,
+        "rating": 3.4
+    },
+    "Amina Beecroft": {
+        "ID": 1220822,
+        "rating": 2.9
+    },
+    "Maxim Treff": {
+        "ID": 2291994,
+        "rating": 4.4
+    },
+    "Don Rae": {
+        "ID": 2090004,
+        "rating": 4.6
+    },
+    "Tony Wrobel": {
+        "ID": 2333969,
+        "rating": 4.8
+    },
+    "Sazia Shifa": {
+        "ID": 2916892,
+        "rating": 5
+    },
+    "Kyle Meema": {
+        "ID": 1756243,
+        "rating": 2.5
+    },
+    "Ethel Lewicki": {
+        "ID": 745195,
+        "rating": 4.1
+    },
+    "Siona Gunn-Graham": {
+        "ID": 2430961,
+        "rating": 1.6
+    },
+    "Aron Klein": {
+        "ID": 1461233,
+        "rating": 4.7
+    },
+    "Joseph Farah": {
+        "ID": 1918455,
+        "rating": 2.2
+    },
+    "Petro Babak": {
+        "ID": 2456442,
+        "rating": 4.8
+    },
+    "Ge Shi": {
+        "ID": 1908480,
+        "rating": 3.7
+    },
+    "Janice Rey": {
+        "ID": 925750,
+        "rating": 2.8
+    },
+    "Erin Dauk": {
+        "ID": 2170330,
+        "rating": 3.5
+    },
+    "Tareq Baker": {
+        "ID": 1858001,
+        "rating": 2.3
+    },
+    "Corwin Neufeld": {
+        "ID": 2643440,
+        "rating": 2.6
+    },
+    "Gita Moghaddami": {
+        "ID": 2163244,
+        "rating": 1
+    },
+    "Ramin Asheghan": {
+        "ID": 2513744,
+        "rating": 3.5
+    },
+    "Geoff Lobley": {
+        "ID": 2513737,
+        "rating": 1
+    },
+    "Taher Hassan": {
+        "ID": 2513738,
+        "rating": 3.3
+    },
+    "Jose Lemus": {
+        "ID": 2656167,
+        "rating": 4
+    },
+    "Jolanta Warpechowska-Gruca": {
+        "ID": 2683176,
+        "rating": 1
+    },
+    "Reza Pasand": {
+        "ID": 1735541,
+        "rating": 2.6
+    },
+    "Sherryl Melnyk": {
+        "ID": 2487212,
+        "rating": 1.9
+    },
+    "Liz Pirnie": {
+        "ID": 2561230,
+        "rating": 5
+    },
+    "Catherine MacKenzie": {
+        "ID": 2932507,
+        "rating": 1.7
+    },
+    "Sonia Perna": {
+        "ID": 567161,
+        "rating": 3.1
+    },
+    "Suzanne Chomery": {
+        "ID": 1952530,
+        "rating": 4.6
+    },
+    "Tonalee Andrews": {
+        "ID": 2986936,
+        "rating": 4.8
+    },
+    "Brianna Hilman": {
+        "ID": 2658821,
+        "rating": 3.7
+    },
+    "Karen Riley": {
+        "ID": 1783817,
+        "rating": 4.8
+    },
+    "Aidan Wyatt": {
+        "ID": 2227760,
+        "rating": 3.4
+    },
+    "Rebecca Walsh": {
+        "ID": 1957880,
+        "rating": 5
+    },
+    "Amy Sheppard": {
+        "ID": 1254247,
+        "rating": 4.3
+    },
+    "Raelyn Anderson": {
+        "ID": 2920613,
+        "rating": 3
+    },
+    "Vanessa Mendoza": {
+        "ID": 2462170,
+        "rating": 3.1
+    },
+    "Jishnu Subedi": {
+        "ID": 2211603,
+        "rating": 4.9
+    },
+    "Sandeep Heer": {
+        "ID": 2675518,
+        "rating": 3.7
+    },
+    "Nina Choi": {
+        "ID": 2041038,
+        "rating": 2.6
+    },
+    "Fikru Debele": {
+        "ID": 2643274,
+        "rating": 4.6
+    },
+    "Dyland Desmarais": {
+        "ID": 1953417,
+        "rating": 3.6
+    },
+    "Douglas Warden": {
+        "ID": 760163,
+        "rating": 4.6
+    },
+    "Hamdy Ibrahim": {
+        "ID": 2083065,
+        "rating": 3.1
+    },
+    "Maryam Moussavi": {
+        "ID": 881560,
+        "rating": 4.5
+    },
+    "Marcel Tozser": {
+        "ID": 2667858,
+        "rating": 4.8
+    },
+    "Dudley Storey": {
+        "ID": 90514,
+        "rating": 2.6
+    },
+    "Nicole Berard": {
+        "ID": 1624763,
+        "rating": 4.6
+    },
+    "Leticia Gindri": {
+        "ID": 2984259,
+        "rating": 4.4
+    },
+    "Aakash Patel": {
+        "ID": 3020645,
+        "rating": 1
+    },
+    "Hani Mohammed": {
+        "ID": 2875008,
+        "rating": 2
+    },
+    "Alex Schmidt": {
+        "ID": 632987,
+        "rating": 2.5
+    },
+    "Mamta Verma": {
+        "ID": 2940109,
+        "rating": 3.4
+    },
+    "Frank Bergdoll": {
+        "ID": 1462270,
+        "rating": 2.9
+    },
+    "Almagul Galiyeva": {
+        "ID": 3020640,
+        "rating": 1
+    },
+    "Achala Vinnakota": {
+        "ID": 2570747,
+        "rating": 3.1
+    },
+    "Pieter Aukes": {
+        "ID": 2725256,
+        "rating": 3
+    },
+    "Christine Freund": {
+        "ID": 2345121,
+        "rating": 4
+    },
+    "Nikolay Bukharin": {
+        "ID": 2155371,
+        "rating": 4.4
+    },
+    "Jean Paterson": {
+        "ID": 2570796,
+        "rating": 5
+    },
+    "Ben Millen": {
+        "ID": 2290370,
+        "rating": 4.3
+    },
+    "Colin McDonald": {
+        "ID": 1785779,
+        "rating": 3.6
+    },
+    "Kerry Kijewski": {
+        "ID": 506644,
+        "rating": 4.7
+    },
+    "Lawrence Whitby": {
+        "ID": 2102331,
+        "rating": 2.3
+    },
+    "Cherolette Davis": {
+        "ID": 2530865,
+        "rating": 3
+    },
+    "Cameron Gall": {
+        "ID": 1254250,
+        "rating": 4.4
+    },
+    "Akshit Gandhi": {
+        "ID": 2211378,
+        "rating": 3.9
+    },
+    "Muhammad Mudasser": {
+        "ID": 2048048,
+        "rating": 2.9
+    },
+    "Richard Babich": {
+        "ID": 1525025,
+        "rating": 2.6
+    },
+    "Olayemi Olabiyi": {
+        "ID": 1813322,
+        "rating": 4.8
+    },
+    "Nabil Abdulkadir": {
+        "ID": 1478901,
+        "rating": 4.1
+    },
+    "Natalya Tukanova": {
+        "ID": 2211816,
+        "rating": 2
+    },
+    "Andrey Imanoff": {
+        "ID": 2644015,
+        "rating": 5
+    },
+    "Bennett Xia": {
+        "ID": 3030223,
+        "rating": 5
+    },
+    "Evgeny Anisimov": {
+        "ID": 2721213,
+        "rating": 4
+    },
+    "Davide Veronesi": {
+        "ID": 2965603,
+        "rating": 5
+    },
+    "David Roberts": {
+        "ID": 967042,
+        "rating": 3.4
+    },
+    "Bernardes Toledo": {
+        "ID": 2976982,
+        "rating": 5
+    },
+    "Candice Young-Rojanschi": {
+        "ID": 2694798,
+        "rating": 2.6
+    },
+    "Jason Bray": {
+        "ID": 1021403,
+        "rating": 4.9
+    },
+    "Philip Letourneau": {
+        "ID": 1849609,
+        "rating": 5
+    },
+    "Ryan Schriml": {
+        "ID": 2332368,
+        "rating": 4
+    },
+    "Duane Martin": {
+        "ID": 2627572,
+        "rating": 2.1
+    },
+    "Adrian Faraguna": {
+        "ID": 2203419,
+        "rating": 4.1
+    },
+    "Carina Butterworth": {
+        "ID": 1865314,
+        "rating": 3.4
+    },
+    "Carlos Serpas": {
+        "ID": 1985876,
+        "rating": 3.5
+    },
+    "Tigran Melkumyan": {
+        "ID": 2288227,
+        "rating": 2.8
+    },
+    "Sobia Ekram": {
+        "ID": 2677244,
+        "rating": 1.3
+    },
+    "Donald Mason": {
+        "ID": 841479,
+        "rating": 4.8
+    },
+    "Ken Upton": {
+        "ID": 876863,
+        "rating": 2.7
+    },
+    "Tamanna Malik": {
+        "ID": 2710512,
+        "rating": 4.8
+    },
+    "Liza Merkley": {
+        "ID": 2994040,
+        "rating": 2.3
+    },
+    "Prashant Taneja": {
+        "ID": 2547653,
+        "rating": 2.6
+    },
+    "Betty Golightly": {
+        "ID": 1804495,
+        "rating": 4
+    },
+    "Iles Wade": {
+        "ID": 2793351,
+        "rating": 5
+    },
+    "Viktor Lyagutsky": {
+        "ID": 2404219,
+        "rating": 5
+    },
+    "Gary Rowe": {
+        "ID": 2581812,
+        "rating": 4.2
+    },
+    "Patricia Castillo": {
+        "ID": 562277,
+        "rating": 2.3
+    },
+    "Etienne Pitout": {
+        "ID": 2652352,
+        "rating": 3.4
+    },
+    "Faith Miller": {
+        "ID": 2408105,
+        "rating": 3.9
+    },
+    "Tina Petrick": {
+        "ID": 2954088,
+        "rating": 5
+    },
+    "Rami Haddad": {
+        "ID": 3033729,
+        "rating": 4
+    },
+    "Brent Janke": {
+        "ID": 2891152,
+        "rating": 3.3
+    },
+    "Monica Rovers": {
+        "ID": 2806540,
+        "rating": 1.6
+    },
+    "Jamie Larkam": {
+        "ID": 2282427,
+        "rating": 2.4
+    },
+    "Luisa Cusano": {
+        "ID": 1803772,
+        "rating": 3.5
+    },
+    "Heather Kuryk": {
+        "ID": 2173967,
+        "rating": 5
+    },
+    "Ahmad Bahaaddeen": {
+        "ID": 2388985,
+        "rating": 5
+    },
+    "Milad Sabeti": {
+        "ID": 1643173,
+        "rating": 4.1
+    },
+    "AJ Singh": {
+        "ID": 2954058,
+        "rating": 3.7
+    },
+    "Ayopo Odunuga": {
+        "ID": 1664557,
+        "rating": 2.1
+    },
+    "Yevgen Kanevskiy": {
+        "ID": 2085239,
+        "rating": 5
+    },
+    "Antony Chen": {
+        "ID": 1982025,
+        "rating": 4.9
+    },
+    "Marina Abrosimova": {
+        "ID": 1485248,
+        "rating": 4.9
+    },
+    "Paul Obour": {
+        "ID": 1926138,
+        "rating": 3.4
+    },
+    "Donnell Wolff": {
+        "ID": 1845810,
+        "rating": 4.6
+    },
+    "Nargis Hirji": {
+        "ID": 2765334,
+        "rating": 3.9
+    },
+    "Janifer Calvez": {
+        "ID": 1415143,
+        "rating": 3.3
+    },
+    "Marvellous Unuadjefe": {
+        "ID": 2847824,
+        "rating": 1.3
+    },
+    "David Gaudet": {
+        "ID": 557397,
+        "rating": 3.9
+    },
+    "Robert Eirich": {
+        "ID": 2580923,
+        "rating": 1.5
+    },
+    "Irene Karras": {
+        "ID": 2547701,
+        "rating": 4.4
+    },
+    "Roberto Soares": {
+        "ID": 2946079,
+        "rating": 3.2
+    },
+    "Norman Leach": {
+        "ID": 1526757,
+        "rating": 2.4
+    },
+    "Adebayo Adejuwon": {
+        "ID": 2581751,
+        "rating": 2.3
+    },
+    "Keith Dundas": {
+        "ID": 2547532,
+        "rating": 3.3
+    },
+    "Chukwunonso Oraedu": {
+        "ID": 2926273,
+        "rating": 4.4
+    },
+    "Karl Schwonik": {
+        "ID": 2782666,
+        "rating": 2.7
+    },
+    "Kai Hochhausen": {
+        "ID": 2892452,
+        "rating": 5
+    },
+    "Anthony Mallette": {
+        "ID": 713071,
+        "rating": 4.4
+    },
+    "Tom Morin": {
+        "ID": 2766020,
+        "rating": 4.8
+    },
+    "Igor Paramonov": {
+        "ID": 1714782,
+        "rating": 3.4
+    },
+    "Diane Porter": {
+        "ID": 2801788,
+        "rating": 5
+    },
+    "Maxwell Omotubi": {
+        "ID": 2821115,
+        "rating": 3.1
+    },
+    "Joy Ishigo": {
+        "ID": 2462329,
+        "rating": 2.1
+    },
+    "Enoc Velazquez": {
+        "ID": 2468390,
+        "rating": 5
+    },
+    "Lauren Kirychuk": {
+        "ID": 2872794,
+        "rating": 3
+    },
+    "Meles Bahru": {
+        "ID": 2876226,
+        "rating": 1.4
+    },
+    "Janne Dunnion": {
+        "ID": 2176372,
+        "rating": 3
+    },
+    "Alan Rauk": {
+        "ID": 1564790,
+        "rating": 2.5
+    },
+    "Garry Saundh": {
+        "ID": 2280430,
+        "rating": 5
+    },
+    "Pierson Tse": {
+        "ID": 2716376,
+        "rating": 4.4
+    },
+    "Dotan Rousso": {
+        "ID": 2628241,
+        "rating": 4.8
+    },
+    "Setareh Ezzatabadi": {
+        "ID": 2985950,
+        "rating": 5
+    },
+    "Mahmoud Elrayes": {
+        "ID": 2810524,
+        "rating": 4.7
+    },
+    "Arjun Chopra": {
+        "ID": 2286395,
+        "rating": 4.1
+    },
+    "Sonya Tiltmann": {
+        "ID": 1458316,
+        "rating": 3.2
+    },
+    "Sheldon Thunstrom": {
+        "ID": 1827015,
+        "rating": 2.6
+    },
+    "Sally Haggis": {
+        "ID": 2828614,
+        "rating": 3
+    },
+    "Shawn Simlik": {
+        "ID": 2460280,
+        "rating": 5
+    },
+    "Tricia Telfer": {
+        "ID": 1336854,
+        "rating": 2.1
+    },
+    "Abigail Watt": {
+        "ID": 2995571,
+        "rating": 5
+    },
+    "Gerry Duffy": {
+        "ID": 2630937,
+        "rating": 4.4
+    },
+    "Stephanie Mercredi": {
+        "ID": 2650515,
+        "rating": 4
+    }
+}
