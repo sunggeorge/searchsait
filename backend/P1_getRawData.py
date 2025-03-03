@@ -24,9 +24,9 @@ def index_terms(terms):
     subject_params = {
       'term': term['code'],
       'offset': 1,
-      'max': 500, # Again, hopefully this is enough
+      'max': 500,
     }
-    subjects = requests.get(f'{base_url}/classSearch/get_subject', params = subject_params).json()
+    subjects = requests.get(f'{base_url}/classSearch/get_subject', params=subject_params).json()
     # Let's not touch terms that have no data
     if (len(subjects) == 0):
       continue
@@ -42,13 +42,13 @@ def process_term(session: requests.Session, desc: str, code: str):
   subject_params = {
     'term': code,
     'offset': 1,
-    'max': 500, # Again, hopefully this is enough
+    'max': 500, 
   }
 
   # Should we force-update this quarter?
   view_only = 'View Only' in desc
 
-  subjects = session.get(f'{base_url}/classSearch/get_subject', params = subject_params).json()
+  subjects = session.get(f'{base_url}/classSearch/get_subject', params=subject_params).json()
   # Let's not touch terms that have no data
   if (len(subjects) == 0):
     return
@@ -65,7 +65,7 @@ def process_term(session: requests.Session, desc: str, code: str):
     with open(f'{temp_dir}/subjects.json', 'w') as f:
       f.write(json.dumps(subjects))
 
-    # Tentatively, this doesn't matter
+    # Tentatively, this doesn’t matter
     # It seems that banner ignores page parameters?
     page_max_size = 500
 
@@ -96,16 +96,15 @@ def process_term(session: requests.Session, desc: str, code: str):
       subject_file.close()
       print(f'[{threading.current_thread().name}] {code} {subject_code} success!')
 
-
     # Finalize updating
-    if os.path.isdir(term_output_dir): # Remove old data if it exists
+    if os.path.isdir(term_output_dir):  # Remove old data if it exists
       shutil.rmtree(term_output_dir)
     os.rename(temp_dir, term_output_dir)
     print(f'[{threading.current_thread().name}] Successfully updated term {desc} to {term_output_dir}')
 
 def course_lookup(session: requests.Session, lookup_params):
   session.post(f'{base_url}/term/search?mode=search&term={lookup_params["txt_term"]}')
-  result = session.get(f'{base_url}/searchResults/searchResults', params = lookup_params)
+  result = session.get(f'{base_url}/searchResults/searchResults', params=lookup_params)
   session.post(f'{base_url}/classSearch/resetDataForm')
   return result
 
@@ -124,23 +123,22 @@ def main():
     "max": 500, # This should be good enough for 100+ years
   }
 
-  # NOTE: based on previous queries with banner, it seems
-  # UCR only has class data as far back as Fall 2006
-  terms = session.get(f'{base_url}/classSearch/getTerms', params = term_params).json()
+  terms = session.get(f'{base_url}/classSearch/getTerms', params=term_params).json()
   index_terms(terms)
 
   # Recommend (4x +/- 1) threads to evenly distribute work/maximize efficiency
   # Even numbers will result in some threads finishing a lot faster than others
+  # For searchsait project, there will be just 1 term for demo thus 1 thread only
   max_threads = 5
   term_collection = []
   threads = []
-
+  flag_added_term = False
   thread_index = 0
   if not term_code:
-      print("TERM_CODE not defined in .env. Displaying first 20 terms:")
-      for t in terms[:20]:
-          print(f"Code: {t['code']}, Description: {t['description']}")
-      exit(0)
+    print("TERM_CODE not defined in .env. Displaying first 20 terms:")
+    for t in terms[:20]:
+      print(f"Code: {t['code']}, Description: {t['description']}")
+    exit(0)
   for term in terms:
     code = term['code']
     desc = term['description']
@@ -150,6 +148,7 @@ def main():
     # Add new collection if possible
     if len(term_collection) <= thread_index:
       term_collection.append([])
+      flag_added_term = True
     term_collection[thread_index].append({
       'code': code,
       'desc': desc
@@ -157,14 +156,19 @@ def main():
     thread_index += 1
     if (thread_index >= max_threads):
       thread_index = 0
-      
 
   for i in range(len(term_collection)):
-    t = threading.Thread(name = f'th{i}', target = thread_exec, args = (requests.Session(), term_collection[i]))
+    t = threading.Thread(name=f'th{i}', target=thread_exec, args=(requests.Session(), term_collection[i]))
     t.start()
+    threads.append(t)
 
   for thread in threads:
     thread.join()
   
+  if flag_added_term:
+    print("Term info fetched")
+  else:
+    print("No term info fetched")
+
 if __name__ == '__main__':
   main()

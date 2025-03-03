@@ -11,7 +11,7 @@ export default function SeatBar({enrollment, maxEnrollment}){
           width: `${availableSeats/maxEnrollment}%`,
           backgroundColor: progressBarColor,
           height: '20px',
-          position: 'relative', // Added for positioning the overlay text
+          position: 'relative', 
         };
       
         // Correct the width calculation
@@ -26,7 +26,6 @@ export default function SeatBar({enrollment, maxEnrollment}){
             progressBarColor = '#ffadc6'; // Mild red
         }
 
-        // Now, apply the color to the progressBarStyle
         progressBarStyle.backgroundColor = progressBarColor;
 
         // If enrollmentRate indicates full, adjust width to 100%

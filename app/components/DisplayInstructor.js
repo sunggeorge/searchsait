@@ -11,7 +11,6 @@ export default function DisplayInstructor({ instructor }) {
   
   // Async function to fetch instructor data
   const fetchInstructorData = async (instructor) => {
-    // Simulate fetching data (if needed)
     return ratings[instructor];
   };
 

@@ -23,7 +23,6 @@ class CustomFunctions(jmespath.functions.Functions):
 # Instantiate JMESPath options with the custom functions
 options = jmespath.Options(custom_functions=CustomFunctions())
 
-# directory = "api/v1/202430/"
 directory = f"{base_dir}/{term_code}/"
 files = os.listdir(directory)
 json_files = [f for f in files if f.endswith('.json') and f != 'subjects.json']
@@ -63,7 +62,6 @@ with open(output_file, 'w') as f:
     f.write(json.dumps(unique_data))
 
 # After your unique_json has been created and written to dropdown.json
-
 # Prepare the current date and time
 current_time = datetime.now().isoformat()  # Format: YYYY-MM-DDTHH:MM:SS
 

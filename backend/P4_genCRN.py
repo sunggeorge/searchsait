@@ -10,7 +10,6 @@ my_session = requests.Session()
 load_dotenv()
 base_url = os.getenv('BASE_URL')
 term_code = os.getenv('TERM_CODE')
-# base_dir = os.getenv('RAW_DATA_DIR')
 output_dir = os.getenv('OUTPUT_DIR')
 
 current_dir = os.path.dirname(__file__)
@@ -71,7 +70,6 @@ def load_instructor(crn_list):
     failed_file = os.path.join(current_dir, '..', output_dir, 'failed_instructor.json')
     if len(failed_list) > 0:
         with open(failed_file, 'w') as f:
-        # with open('D:\\Source\\Git\\searchsait\\public\\res\\failed_instructor.json', 'w') as f:
             f.write(json.dumps(failed_list))
 
 # end of load_instructor ----------------------------------- 
@@ -88,13 +86,11 @@ options = jmespath.Options(custom_functions=CustomFunctions())
 
 class_file = os.path.join(current_dir, '..', output_dir, 'class.json')
 with open(class_file) as f:
-# with open( 'D:\\Source\\Git\\searchsait\\public\\res\\202430.json') as f:
     data = json.load(f)
     
     path = jmespath.search(
                             '[].crn'
                         , data, options=options)
-    # merged_data.extend(path)
     print(path)
 
 load_instructor(path)

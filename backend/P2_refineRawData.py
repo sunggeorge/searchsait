@@ -64,8 +64,6 @@ for file in json_files:
     merged_data.extend(path)
 
 output_file = os.path.join(current_dir, '..', output_dir, 'class.json')
-# output_path = f"{output_dir}/class.json"
-# with open('D:\\Source\\Git\\searchsait\\public\\res\\202430.json', 'w') as f:
 with open(output_file, 'w') as f:
     f.write(json.dumps(merged_data))
     

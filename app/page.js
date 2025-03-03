@@ -6,10 +6,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 import { useAtom } from 'jotai';
 import { ratingsAtom } from './stateAtoms.js';
 import { getTimeAgo } from './functions/getTimeAgo.js';
-
-
 import jsonData from '@/public/res/dropdown.json';
-// import CourseTable from './components/CourseTable.js';
 import CourseTableList from './components/CourseTableList.js';
   
 export default function CheckboxesTags() {
@@ -27,8 +24,6 @@ export default function CheckboxesTags() {
     let classJsonData;
     let instructorJsonData;
     let server_data;
-    // const data = Array.isArray(jsonData['data']) ? jsonData['data'] : Object.values(jsonData['data']);  
-    // Replace "&amp;" with "&" in the "label" element of each object in jsonData
     const data = jsonData.map(item => ({
       ...item,
       label: item.label.replace(/&amp;/g, '&').replace(/&#39;/g, "'")
@@ -101,7 +96,7 @@ export default function CheckboxesTags() {
           });
           const sortedList = [...tempList].sort((a, b) => a.value.localeCompare(b.value) || a.section.localeCompare(b.section));
           setFilteredList(sortedList);
-          console.log('Filtered list: ' + sortedList.length);
+          // console.log('Filtered list: ' + sortedList.length);
         } else {
             setShortlist([]);
             setFilteredList([]);
@@ -112,20 +107,6 @@ export default function CheckboxesTags() {
       
 
     };
-
-    // const filterOptions = (options, state) => {
-    //   return options.filter(option => !filteredList.includes(option));
-    // };
-
-  //   function loadInstructor() {
-  //     fetchInstructor(23460).then(displayName => {
-  //       console.log(displayName);
-  //     }).catch(error => {
-  //       console.error(error);
-  //     });
-  //  }
-  //  loadInstructor();
-
 
 
     return (
@@ -143,11 +124,9 @@ export default function CheckboxesTags() {
         value={dropDownSelectedValue}  
         sx={{ width: 300 }}
         isOptionEqualToValue={(option, value) => option.label === value.label}
-        onChange={handleAutocompleteChange} // Add this line
-        // filterOptions={filterOptions}
+        onChange={handleAutocompleteChange} 
         renderInput={(params) => 
           <TextField {...params} 
-          // label="Browse Course Offerings" 
           placeholder = "Search by course code or name"
           />}
       />
