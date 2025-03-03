@@ -33,7 +33,10 @@ venv/
 .env*.local
 
 # vercel
-.vercel
+.vercel/
+
+# vscode
+.vscode/
 
 # typescript
 *.tsbuildinfo
