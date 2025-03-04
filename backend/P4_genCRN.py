@@ -4,6 +4,10 @@ import jmespath
 import requests
 from dotenv import load_dotenv
 
+print("----------------------------------------------------------------------------------------------------")
+print("Starting P4_genCRN.py: Generating instructor.json...")
+print("----------------------------------------------------------------------------------------------------")
+
 my_dict = {}
 my_session = requests.Session()
 

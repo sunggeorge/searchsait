@@ -4,6 +4,10 @@ import jmespath
 from datetime import datetime
 from dotenv import load_dotenv
 
+print("----------------------------------------------------------------------------------------------------")
+print("Starting P3_genDropdown.py: Generating dropdown.json...")
+print("----------------------------------------------------------------------------------------------------")
+
 load_dotenv()
 term_code = os.getenv('TERM_CODE')
 base_dir = os.getenv('RAW_DATA_DIR')

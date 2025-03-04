@@ -3,13 +3,16 @@ import os
 import jmespath
 from dotenv import load_dotenv
 
+print("----------------------------------------------------------------------------------------------------")
+print("Starting P2_refineRawData.py: Refining raw class data to generate class.json...")
+print("----------------------------------------------------------------------------------------------------")
+
 load_dotenv()
 term_code = os.getenv('TERM_CODE')
 base_dir = os.getenv('RAW_DATA_DIR')
 output_dir = os.getenv('OUTPUT_DIR')
 
 current_dir = os.path.dirname(__file__)
-
 
 def join_with_space(left, right):
     return f"{left}    {right}"
@@ -29,42 +32,36 @@ json_files = [f for f in files if f.endswith('.json') and f != 'subjects.json']
 merged_data = []
 # merged_data2 = []
 for file in json_files:
-
-    with open( directory + file) as f:
+    with open(directory + file) as f:
         data = json.load(f)
-
-
-
     path = jmespath.search(
-                            'data[*].{value: join(``, [@.subject, @.courseNumber]),'
-                            'subject: subject,'
-                            'section: sequenceNumber,'
-                            'title: courseTitle,'
-                            'id: id,'
-                            'crn: courseReferenceNumber,'
-                            'maxEnrollment: maximumEnrollment,'
-                            'enrollment: enrollment,'
-                            'class: meetingsFaculty[].meetingTime[].{'
-                            'type: meetingType,'
-                            'startTime: beginTime,'
-                            'endTime: endTime,'
-                            'startDate: startDate,'
-                            'endDate: endDate,'
-                            'building: buildingDescription,'
-                            'room: room,'
-                            'mon: monday,'
-                            'tue: tuesday,'
-                            'wed: wednesday,'
-                            'thu: thursday,'
-                            'fri: friday,'
-                            'sat: saturday,'
-                            'sun: sunday'
-                            '}}'
-                        , data)
+        'data[*].{value: join(``, [@.subject, @.courseNumber]),'
+        'subject: subject,'
+        'section: sequenceNumber,'
+        'title: courseTitle,'
+        'id: id,'
+        'crn: courseReferenceNumber,'
+        'maxEnrollment: maximumEnrollment,'
+        'enrollment: enrollment,'
+        'class: meetingsFaculty[].meetingTime[].{'
+        'type: meetingType,'
+        'startTime: beginTime,'
+        'endTime: endTime,'
+        'startDate: startDate,'
+        'endDate: endDate,'
+        'building: buildingDescription,'
+        'room: room,'
+        'mon: monday,'
+        'tue: tuesday,'
+        'wed: wednesday,'
+        'thu: thursday,'
+        'fri: friday,'
+        'sat: saturday,'
+        'sun: sunday'
+        '}}'
+    , data)
     merged_data.extend(path)
 
 output_file = os.path.join(current_dir, '..', output_dir, 'class.json')
 with open(output_file, 'w') as f:
     f.write(json.dumps(merged_data))
-    
-    
