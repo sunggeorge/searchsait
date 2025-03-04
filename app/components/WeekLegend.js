@@ -1,18 +1,6 @@
 import * as React from 'react';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
 
-import Tooltip from '@mui/material/Tooltip';
-import PracIcon from '@mui/icons-material/Architecture';
-import OnlineIcon from '@mui/icons-material/LaptopMac';
-import PersonIcon from '@mui/icons-material/Person';
-
-export default function WeekLegend({weekString, type}) { //Format: 1010101      
+export default function WeekLegend({weekString, type}) {       
     
   let [mon, tue, wed, thu, fri, sat, sun] = weekString;
 

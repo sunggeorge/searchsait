@@ -35,9 +35,8 @@ body {
 /* Base class for common cell styles */
 .table-cell {
   @apply text-xs border border-black;
-  padding: 3px; /*Adjust padding to control cell size
-  /* min-width: 100px; Adjust minimum width as needed */
-  width: auto; /* Adjust width as needed, could be a specific value or percentage */
+  padding: 3px; 
+  width: auto; 
 }
 
 .weekLegendOff {
@@ -54,9 +53,9 @@ body {
 
 /* Override the row height in the calendar */
 .toastui-calendar-timegrid-hour-rows {
-  height: 300px; /* Adjust this value to your desired row height */
+  height: 300px; 
 }
 
 .tui-full-calendar-timegrid-container .tui-full-calendar-timegrid-row {
-  height: 20px; /* Adjust this value to your desired row height */
+  height: 20px; 
 }

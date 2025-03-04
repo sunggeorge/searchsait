@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+<p align="center">
+  <a href="searchsait.vercel.app"><img src="https://img.shields.io/website/https/searchsait.vercel.app.svg" alt="Website"></a> <a href="https://code.visualstudio.com/"><img src="https://badges.aleen42.com/src/visual_studio_code.svg" alt="VS Code Badge"></a> <a href="https://reactjs.org/"><img src="https://cdn.rawgit.com/aleen42/badges/master/src/react.svg" alt="React Badge"></a>  <a href="https://nodejs.org/en/"><img src="https://cdn.rawgit.com/aleen42/badges/master/src/python.svg" alt="Node.js"></a>  <a href="https://github.com/sunggeorge/searchsait/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a>
+</p>
 
+
+# SAIT (Ellucian) Class Registration Planning Tool
+
+This is a **Next.js + Python** application designed to help with class registration planning originally aimed at SAIT (Southern Alberta Institute of Technology) but with the potential to support most class registration systems built on the Ellucian platform. As a starter application, there is plenty of room for improvement and additional features.
+
+---
+
+### Features:
+- **Quick class search by name or code:** Search in the textbox on top with autocompletion.
+- **Class combination:** Choose desired classes and browse valid combination instantly
+- **Visual weekly schedule and seat availability:** Follow mySAIT class registration platform styles.
+- **Instructor rating:** Instructor rating from RMP are matched.
+
+Your contributions and feedback are welcome!
+
+---
+
+## Next.js Frontend
+
+The frontend is built using [Next.js](https://nextjs.org/) and bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It includes basic features such as:
+- **Dynamic Page Rendering:** The homepage is served by `app/page.js`. It auto-updates as you make changes.
+- **State Management:** Global and component-level state is managed with tools like [Jotai](https://github.com/pmndrs/jotai).
+- **Styling and UI Components:** Basic styling is applied through Tailwind CSS and custom CSS (`app/globals.css`), with components organized under `app/components/`.
+
+To start the development server, run:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
+Then open [http://localhost:3000](http://localhost:3000) to view the frontend.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Python Backend
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The backend is responsible for fetching, refining, and processing class data as well as providing additional functionalities such as generating dropdown menus and fetching instructor ratings using external APIs.
 
-## Learn More
+### Scripts:
+- **Data Fetching:** `P1_getRawData.py` retrieves raw data from SAIT (or other Ellucian-based systems) and saves it locally. (`backend/rawdata`) Mainly using logic from [ucrapi](https://github.com/jstnf/ucrapi.justinf.dev).
+- **Data Refinement:** `P2_refineRawData.py` processes the raw data into `class.json`.
+- **Dropdown Generation:** `P3_genDropdown.py` uses the refined data to generate dropdown options `dropdown.json` for class selection.
+- **CRN Generation and Instructor Info:** `P4_genCRN.py` fetches course registration numbers (CRN) and corresponding instructor details `instructor.json`.
+- **Optional RMP Integration:** `P5_getRMP.py` uses `RateMyProfessorAPI` to fetch and match professor ratings from RateMyProfessor. This package is extremely slow. Please only run when needed.
 
-To learn more about Next.js, take a look at the following resources:
+### Setup Instructions:
+1. **Create and Activate Virtual Environment:**
+   ```bash
+   # Create virtual environment
+   python -m venv venv
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   # Activate virtual environment (Windows)
+   venv\Scripts\activate
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   # Or on macOS/Linux:
+   source venv/bin/activate
+   ```
+2. **Install Required Packages:**
+   ```bash
+   pip install -r backend/requirements.txt
+   ```
+3. **Configure Environment Variables:**
+   - Copy `backend/.env.sample` to `backend/.env` and adjust your configuration (e.g., `BASE_URL`, `TERM_CODE`, etc.).
+4. **Run the Backend Pipeline:**
+   - Execute the master script to run the complete data fetching and processing pipeline:
+     ```bash
+     python backend/main.py
+     ```
+   - This will sequentially run `P1_getRawData.py`, then `P2_refineRawData.py`, `P3_genDropdown.py`, and optionally `P4_genCRN.py` based on flags in the output.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Future Improvements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+As a starter application, there is ample scope to enhance the functionality and robustness of this tool including:
+
+- Docker environment with database for class data
+- Improved UI/UX design for the frontend. For example:
+Filter for weekday, AM/PM
+Sorting by number of off-day, study day
+- Export to calendar (SAIT's Ellucian GO is depreciated) 
+- Anonymous code for class planning account.
+- Advanced error handling, logging and state management with typescript.
+
+The final goal can be like [searchNEU](https://github.com/sandboxnu/searchneu) or [notangles](https://github.com/devsoc-unsw/notangles).
+

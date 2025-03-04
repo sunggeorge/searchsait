@@ -27,10 +27,6 @@ export default function ProcessCombination({selCombo}) {
 
     useEffect(() => {
 
-        // console.log('Selected Combination:');
-        // console.log(selCombo);
-        // console.log(selCombo.length);
-
         if (selCombo.length > 0) {
 
             // Eliminate duplicate elements based on the "course" property
@@ -43,15 +39,13 @@ export default function ProcessCombination({selCombo}) {
                 }
             }, []);        
 
-            console.log('Unique Combinations:'); 
-            console.log(uniqueCombinations);
+            // console.log('Unique Combinations:'); 
+            // console.log(uniqueCombinations);
             
             let fullCombo = [];
             // Usual way of generating combinations            
             if (uniqueCombinations.length < 3){
                 fullCombo = generateCombinations(uniqueCombinations);
-
-
 
             // Quick combination for more than  2 unique courses
             } else {
@@ -59,9 +53,9 @@ export default function ProcessCombination({selCombo}) {
                 if(!newSections){
                     fullCombo = generateCombinations(uniqueCombinations);
                 } else {
-                    console.log('Quick combination');
-                    console.log(newSections);
-                    console.log(resultCombo);
+                    // console.log('Quick combination');
+                    // console.log(newSections);
+                    // console.log(resultCombo);
                     for (let sections of validCombo) {
                         for (let newSection of newSections) {
                             fullCombo.push([...sections, newSection]);
@@ -72,8 +66,8 @@ export default function ProcessCombination({selCombo}) {
             }
 
 
-                console.log('Full Combination:');
-                console.log(fullCombo);
+                // console.log('Full Combination:');
+                // console.log(fullCombo);
                 setComboCnt(getNumOfCombination(uniqueCombinations));
                 setResultCombo(fullCombo);
 
@@ -83,8 +77,8 @@ export default function ProcessCombination({selCombo}) {
                 setPreSelCombo(uniqueCombinations);
                 setSectionDropDownList(getSectionDropDown(uniqueCombinations));
 
-                console.log('Valid Combination:');
-                console.log(tempValidCombo);
+                // console.log('Valid Combination:');
+                // console.log(tempValidCombo);
             
 
         } else {
@@ -104,7 +98,7 @@ export default function ProcessCombination({selCombo}) {
     }
 
     function getNumOfCombination(array) {
-        let numOfCombination = 1; // Start with 1 because it's a multiplication operation
+        let numOfCombination = 1; 
       
         array.forEach(member => {
           if (member.section && Array.isArray(member.section)) {
@@ -336,18 +330,8 @@ export default function ProcessCombination({selCombo}) {
     }
 
     useEffect(() => {
-    //   let tempDisplayedComboContent = [];
-    //   displayedCombo.forEach((item) => {
-    //     item.forEach((section) => {
-    //       section.weekLegendString.forEach((weekLegend) => {
-    //         const message = displayWeekLegendFromString(weekLegend);
-    //         tempDisplayedComboContent.push(message);
-    //       });
-    //     });
-    //   });
-      console.log('Displayed Combo Content:');
-      console.log(displayedComboContent);
-    //   setDisplayedComboContent(tempDisplayedComboContent.length > 0 ? tempDisplayedComboContent : []);
+      // console.log('Displayed Combo Content:');
+      // console.log(displayedComboContent);
     }, [displayedCombo]);
 
     return (
@@ -391,18 +375,15 @@ export default function ProcessCombination({selCombo}) {
                     </div>
                 </div> 
                 
-                {/* <div className='text-center grid grid-cols-3 gap-2'> */}
                 <div className='text-center flex flex-row flex-wrap items-center justify-center'>
                   {displayedCombo.map((item, index1) => {
                     // Moved the logic outside of the return statement
-                    // const allWeekLegendStrings = item.map(s => `${s.section}: ${s.weekLegendString.split('|')[2]}${s.weekLegendString.split('|')[3]}`).join('\n');
-                    console.log('All Week Legend Strings:', item);
+                    // console.log('All Week Legend Strings:', item);
                     const allWeekLegendStrings = item.map(s => s.weekLegendString.map(wls => `${s.section}: ${wls.split('|')[2]}${wls.split('|')[3]}`).join('\n')).join('\n');
                     // console.log('All Week Legend Strings:', allWeekLegendStrings);
 
                     return (
                       <div key={item.id} className='m-5 p-5 bg-green-200 rounded-xl drop-shadow-lg text-xs flex flex-col items-center'>
-                        {/* Displaying allWeekLegendStrings. Assuming you want to display it as a preformatted text */}
                         <pre>{allWeekLegendStrings}</pre>
 
                         <div className='m-2'>

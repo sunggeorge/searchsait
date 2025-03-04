@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Key } from "@mui/icons-material";
 
 const inter = Inter({ subsets: ["latin"] });
 

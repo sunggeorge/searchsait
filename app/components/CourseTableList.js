@@ -4,7 +4,6 @@ import CourseTable from "./CourseTable.js";
 import ProcessCombination from './ProcessCombination.js';
 
 
-
 export default function CourseTableList({courseList, insList}) {
 
     const [displayElements, setDisplayElements] = useState([]);
@@ -17,23 +16,19 @@ export default function CourseTableList({courseList, insList}) {
 
         setCombination([]);
 
-        console.log('CourseTableList in next page:')
-        console.log(courseList);
-        // console.log('Instructor list:');  
-        // console.log(insList);  
+        // console.log('CourseTableList in next page:')
+        // console.log(courseList);
+
 
         courseList.forEach((item, index, arr) => {
             const prevItem = arr[index - 1];
             const isNewValue = prevItem ? item.value !== prevItem.value : true;
-            // const fullSection = `${item.value}-${item.section}`
             let key;   
 
             if(isNewValue && index > 0){
                 let temp_items = [...items];
                 key = prevItem.crn;
-                // elements.push(<CourseTable key={key} course={temp_items} insList={insList} appendCombination={(prev, list)=>setCombination([...prev,list])}/>);
                 elements.push(<CourseTable key={key} course={temp_items} insList={insList} appendCombination={(list)=>setCombination(prev=>[...prev, list])}/>);
-                // elements.push(<CourseTable  course={temp_items} insList={insList}/>);
                 items = [item];
             } else {
                 items.push(item);
@@ -51,21 +46,10 @@ export default function CourseTableList({courseList, insList}) {
     }, [courseList, insList]);
 
 
-
-
     useEffect(() => {
-
-
-
-
-        console.log('Combination Elements change:');
-        console.log(combination);
-    }, [combination]);
-
-    // console.log('Display Elements:');
-    // console.log(displayElements);
-    // console.log('Combination Elements:');
-    // console.log(combination);    
+        // console.log('Combination Elements change:');
+        // console.log(combination);
+    }, [combination]); 
 
     return (
         <div>
