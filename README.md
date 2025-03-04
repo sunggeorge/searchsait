@@ -19,6 +19,10 @@ This is a **Next.js + Python** application designed to help with class registrat
 
 Your contributions and feedback are welcome!
 
+![image](https://github.com/user-attachments/assets/353433d5-f6c2-4233-bb1f-d47978e3bc13)
+
+![image](https://github.com/user-attachments/assets/2415b478-e538-4bf5-b10f-7c8e723c564c)
+
 ---
 
 ## Next.js Frontend
