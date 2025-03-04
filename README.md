@@ -23,6 +23,11 @@ Your contributions and feedback are welcome!
 
 ![image](https://github.com/user-attachments/assets/2415b478-e538-4bf5-b10f-7c8e723c564c)
 
+### Remarks:
+- `public/res/*.json` files for 2025 Winter class data included for demo use and they are all accessible publicly from the internet. (SAIT Course Offerings and RMP)
+- If no classes combinations can be displayed, that means either there's time conflict or some class with null time.
+- The RMP rating are just based on simple instructor name matching so there can be potential mistake. 
+- For fast development as starter application, JSON files are used for class data in this project. Database will be another good option to consider as all fields can be stored. And no complicated JSON manipulation in backend scripts `P2`, `P3` will be needed. 
 ---
 
 ## Next.js Frontend
