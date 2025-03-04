@@ -1,69 +1,78 @@
-
-
 <p align="center">
-  <a href="searchsait.vercel.app"><img src="https://img.shields.io/website/https/searchsait.vercel.app.svg" alt="Website"></a> <a href="https://code.visualstudio.com/"><img src="https://badges.aleen42.com/src/visual_studio_code.svg" alt="VS Code Badge"></a> <a href="https://reactjs.org/"><img src="https://cdn.rawgit.com/aleen42/badges/master/src/react.svg" alt="React Badge"></a>  <a href="https://nodejs.org/en/"><img src="https://cdn.rawgit.com/aleen42/badges/master/src/python.svg" alt="Node.js"></a>  <a href="https://github.com/sunggeorge/searchsait/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a>
+  <a href="https://searchsait.vercel.app"><img src="https://img.shields.io/website/https/searchsait.vercel.app.svg" alt="Website"></a>
+  <a href="https://code.visualstudio.com/"><img src="https://badges.aleen42.com/src/visual_studio_code.svg" alt="VS Code Badge"></a>
+  <a href="https://reactjs.org/"><img src="https://cdn.rawgit.com/aleen42/badges/master/src/react.svg" alt="React Badge"></a>
+  <a href="https://nodejs.org/en/"><img src="https://cdn.rawgit.com/aleen42/badges/master/src/python.svg" alt="Node.js"></a>
+  <a href="https://github.com/sunggeorge/searchsait/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a>
 </p>
-
 
 # SAIT (Ellucian) Class Registration Planning Tool
 
-This is a **Next.js + Python** application designed to help with class registration planning originally aimed at SAIT (Southern Alberta Institute of Technology) but with the potential to support most class registration systems built on the Ellucian platform. As a starter application, there is plenty of room for improvement and additional features.
+This is a **Next.js + Python** application designed to assist with class registration planning. Originally developed for SAIT (Southern Alberta Institute of Technology). It has the potential to support most class registration systems built on the Ellucian platform. As a starter project, it offers a solid foundation with room for improvement and additional features.
 
 ---
 
-### Features:
-- **Quick class search by name or code:** Search in the textbox on top with autocompletion.
-- **Class combination:** Choose desired classes and browse valid combination instantly
-- **Visual weekly schedule and seat availability:** Follow mySAIT class registration platform styles.
-- **Instructor rating:** Instructor rating from RMP are matched.
+## Features
 
-Your contributions and feedback are welcome!
+- **Quick Class Search:** Search by name or code in the top textbox with autocompletion.
+- **Class Combinations:** Select desired classes and instantly view valid combinations.
+- **Visual Schedule & Availability:** Displays a weekly schedule and seat availability, styled like the mySAIT registration platform.
+- **Instructor Ratings:** Matches instructor ratings from RateMyProfessors (RMP).
 
-![image](https://github.com/user-attachments/assets/353433d5-f6c2-4233-bb1f-d47978e3bc13)
+Contributions and feedback are welcome!
 
-![image](https://github.com/user-attachments/assets/2415b478-e538-4bf5-b10f-7c8e723c564c)
+![Screenshot 1](https://github.com/user-attachments/assets/353433d5-f6c2-4233-bb1f-d47978e3bc13)
+![Screenshot 2](https://github.com/user-attachments/assets/2415b478-e538-4bf5-b10f-7c8e723c564c)
 
-### Remarks:
-- `public/res/*.json` files for 2025 Winter class data included for demo use and they are all accessible publicly from the internet. (SAIT Course Offerings and RMP)
-- If no classes combinations can be displayed, that means either there's time conflict or some class with null time.
-- The RMP rating are just based on simple instructor name matching so there can be potential mistake. 
-- For fast development as starter application, JSON files are used for class data in this project. Database will be another good option to consider as all fields can be stored. And no complicated JSON manipulation in backend scripts `P2`, `P3` will be needed. 
+### Notes
+
+- The `public/res/*.json` files contain 2025 Winter class data for demo purposes, sourced publicly from SAIT Course Offerings and RMP.
+- If no class combinations are displayed, it may indicate a time conflict or missing time data for some classes.
+- RMP ratings rely on simple name matching, so errors may occur.
+- For rapid development, JSON files store class data. A database could improve scalability, eliminating complex JSON manipulation in backend scripts (`P2`, `P3`).
+
 ---
 
 ## Next.js Frontend
 
-The frontend is built using [Next.js](https://nextjs.org/) and bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It includes basic features such as:
-- **Dynamic Page Rendering:** The homepage is served by `app/page.js`. It auto-updates as you make changes.
-- **State Management:** Global and component-level state is managed with tools like [Jotai](https://github.com/pmndrs/jotai).
-- **Styling and UI Components:** Basic styling is applied through Tailwind CSS and custom CSS (`app/globals.css`), with components organized under `app/components/`.
+The frontend is built with [Next.js](https://nextjs.org/), bootstrapped using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). Key features include:
 
-To start the development server, run:
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- **Dynamic Rendering:** The homepage (`app/page.js`) updates automatically with changes.
+- **State Management:** Uses [Jotai](https://github.com/pmndrs/jotai) for global and component-level state.
+- **Styling:** Combines Tailwind CSS and custom CSS (`app/globals.css`), with components in `app/components/`.
+
+### Getting Started
+
+1. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+
+   # Star development server
+   npm run dev
+   # or
+   yarn dev
+   ```
 Then open [http://localhost:3000](http://localhost:3000) to view the frontend.
 
 ---
 
 ## Python Backend
 
-The backend is responsible for fetching, refining, and processing class data as well as providing additional functionalities such as generating dropdown menus and fetching instructor ratings using external APIs.
+The backend fetches, refines, and processes class data, generating dropdown menus and instructor ratings via external APIs.
 
 ### Scripts:
-- **Data Fetching:** `P1_getRawData.py` retrieves raw data from SAIT (or other Ellucian-based systems) and saves it locally. (`backend/rawdata`) Mainly using logic from [ucrapi](https://github.com/jstnf/ucrapi.justinf.dev).
-- **Data Refinement:** `P2_refineRawData.py` processes the raw data into `class.json`.
-- **Dropdown Generation:** `P3_genDropdown.py` uses the refined data to generate dropdown options `dropdown.json` for class selection.
-- **CRN Generation and Instructor Info:** `P4_genCRN.py` fetches course registration numbers (CRN) and corresponding instructor details `instructor.json`.
-- **Optional RMP Integration:** `P5_getRMP.py` uses `RateMyProfessorAPI` to fetch and match professor ratings from RateMyProfessor. This package is extremely slow. Please only run when needed.
+- **Data Fetching:** `P1_getRawData.py` retrieves raw data from SAIT (or other Ellucian systems) and saves it locally. (`backend/rawdata`) Adapted from [ucrapi](https://github.com/jstnf/ucrapi.justinf.dev).
+- **Data Refinement:** `P2_refineRawData.py` processes raw data into `class.json`.
+- **Dropdown Generation:** `P3_genDropdown.py` Creates dropdown options `dropdown.json` from refined data.
+- **CRN Generation and Instructor Info:** `P4_genCRN.py` Generates course registration numbers (CRN) and instructor details `instructor.json`.
+- **`P5_getRMP.py` (optional)** Fetch and match professor ratings from RateMyProfessor using `RateMyProfessorAPI`. This is slow and should only be run when necessary.
 
 ### Setup Instructions:
-1. **Create and Activate Virtual Environment:**
+1. **Set Up Virtual Environment:**
    ```bash
-   # Create virtual environment
+   cd backend
    python -m venv venv
 
    # Activate virtual environment (Windows)
@@ -72,32 +81,36 @@ The backend is responsible for fetching, refining, and processing class data as 
    # Or on macOS/Linux:
    source venv/bin/activate
    ```
-2. **Install Required Packages:**
+2. **Install Dependencies:**
    ```bash
-   pip install -r backend/requirements.txt
+   pip install -r requirements.txt
    ```
 3. **Configure Environment Variables:**
-   - Copy `backend/.env.sample` to `backend/.env` and adjust your configuration (e.g., `BASE_URL`, `TERM_CODE`, etc.).
-4. **Run the Backend Pipeline:**
-   - Execute the master script to run the complete data fetching and processing pipeline:
+   - Copy `backend/.env.sample` to `backend/.env` and update settings (e.g., `BASE_URL`, `TERM_CODE`, etc.).
+4. **Run the Pipeline:**
+   - Execute the main script to run the complete data fetching and processing pipeline:
      ```bash
-     python backend/main.py
+     python main.py
      ```
-   - This will sequentially run `P1_getRawData.py`, then `P2_refineRawData.py`, `P3_genDropdown.py`, and optionally `P4_genCRN.py` based on flags in the output.
+   - This will sequentially run `P1_getRawData.py`, then `P2_refineRawData.py`, `P3_genDropdown.py` and `P4_genCRN.py` based on result of `P1` execution. Comment out `P5` or execute it separately if necessary.
 
+### Execution Time (2025 Winter - 202430) class data:
+- `P1` - `P4`: Less than 10 minutes
+Data fetching, refining, and JSON generation
+- `P5`: Around 4 hours
+~4 hours (RMP matching, due to slow API responses). `RMP.json` is included so rerunning is unnecessary unless instructor data changes.
 ---
 
 ## Future Improvements
 
-As a starter application, there is ample scope to enhance the functionality and robustness of this tool including:
+This starter application has significant potential for enhancements including:
 
-- Docker environment with database for class data
-- Improved UI/UX design for the frontend. For example:
-Filter for weekday, AM/PM
+- Dockerized environment with a database for class data.
+- Enhanced UI/UX (e.g., filters for weekday or AM/PM, sorting by off-days or study days).
 Sorting by number of off-day, study day
-- Export to calendar (SAIT's Ellucian GO is depreciated) 
-- Anonymous code for class planning account.
-- Advanced error handling, logging and state management with typescript.
+- Calendar export (replacing SAIT’s deprecated Ellucian GO).
+- Anonymous class planning accounts.
+- Advanced error handling, logging, and TypeScript integration.
 
-The final goal can be like [searchNEU](https://github.com/sandboxnu/searchneu) or [notangles](https://github.com/devsoc-unsw/notangles).
+The final goal isto rival tools like [searchNEU](https://github.com/sandboxnu/searchneu) or [notangles](https://github.com/devsoc-unsw/notangles).
 
